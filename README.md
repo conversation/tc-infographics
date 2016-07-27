@@ -4,4 +4,4 @@
 Infographics created by The Conversation
 
 We believe in the free flow of information. 
-We use a [Creative Commons Attribution NoDerivatives licence](http://creativecommons.org/licenses/by-nd/4.0/),so you can republish our infographics for free, online or in print.
+We use a [Creative Commons Attribution NoDerivatives licence](http://creativecommons.org/licenses/by-nd/4.0/), so you can republish our infographics for free, online or in print.
