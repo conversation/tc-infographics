@@ -1,0 +1,279 @@
+    
+/* Reset */
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, em, img, samp, strong, b, u, i, center,
+dl, dt, dd, ol, ul, li, table, caption, tbody,
+figure, figcaption, footer, header, 
+menu, nav, section, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+	/* font-family: "Libre Baskerville", Georgia, Times, "Times New Roman", serif; */
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+@font-face {
+ font-family: "Libre Baskerville";
+ src: url("librebaskerville-regular.eot");
+ src: url("librebaskerville-regular.eot?#iefix") format("embedded-opentype"),
+      url("librebaskerville-regular.woff") format("woff"),
+      url("librebaskerville-regular.ttf") format("truetype");
+ font-weight: normal;
+ font-style: normal;
+}
+
+svg {
+    padding-bottom: 10px;
+}
+
+body {
+  background-color: #fefefe;
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+.axis {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.axis path {
+  fill: none;
+  stroke: #555;
+  shape-rendering: crispEdges;
+}
+
+.axis text {
+  fill: #555;
+}
+
+.yMarker path {
+  fill: none;
+  stroke: #e6e6e6;
+  shape-rendering: crispEdges;
+}
+
+.bar {
+  fill: #4a90e2;
+}
+
+.bar:hover {
+  fill: #d8352a;
+}
+
+.dot {
+  stroke: #727272;
+  stroke-width: 0.5px;
+  opacity: 0.75;
+}
+
+.dot:hover {
+    stroke: #000000;
+    stroke-width: 0.75px;     
+    opacity: 1.0;
+   
+}
+.axis {
+  font: 10px sans-serif;
+}
+
+.x.axis path {
+  display: none;
+}
+
+#yLabel {
+    font-size: 1.15em;
+}
+
+div.tooltip {	
+    position: absolute;			
+    text-align: left;			
+    width: auto; /*approx 160px */					
+    height: auto;					
+    padding: 5px;
+    font-size: 0.75em;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #727272;
+    background: rgb(255, 255, 255);
+    background: rgba(255, 255, 255, .75);      
+    pointer-events: none;			
+}
+
+.menu {
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.menu div {
+    display: inline-block;
+    text-align: center;
+    font-size: .80em;
+    width: 150px;
+    height: auto;
+    padding: 5px;
+    border: 1px solid black;
+    background-color: white;
+    cursor: pointer;
+    opacity: 0.5;    
+}
+
+.menu div:hover {
+    background-color: #ccc;
+    opacity: 0.75;
+}
+
+.menu .active {
+    background-color: #fce1b6;
+    pointer-events: none;
+    opacity: 1.0;
+}
+
+
+.submenu {
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.submenu div {
+    display: inline-block;
+    text-align: center;
+    font-size: 0.75em;
+    width: 120px;
+    height: auto;
+    padding: 2.5px;
+    border: 1px solid black;
+    background-color: white;
+    cursor: pointer;
+    opacity: 0.5;    
+}
+
+.submenu div:hover {
+    background-color: #ccc;
+    color: #5d5d5d;
+    opacity: 0.75;   
+}
+
+.submenu .active {
+    background-color: #5d5d5d;
+    color: white;
+    opacity: 1.0;    
+}
+
+.submenu #resetRace {
+    display: none;
+}
+
+.submenu #startRace {
+    display: none;
+    color: #000;
+    background-color: #f4c2be;    
+}
+
+.overlayText div {
+    display: none;
+    position: absolute;
+    font-size: 0.85em;
+    font-weight: 300;
+    width: 40%;
+    max-width: 300px;
+    top: 100px;
+    left: 110px;
+    background: rgb(255, 255, 255);
+    background: rgba(255, 255, 255, .5);    
+    
+}
+
+.overlayText div p {
+    margin-top: 10px;        
+}
+
+.overlayImg div {
+    position: fixed;
+    display: none;
+    height: 400px;
+    opacity: 0.4;
+    top: 250px;
+    left: 100px;
+    z-index: -1;
+}
+
+.overlayImg div img {
+    width: 80%;       
+}
+
+
+.overlayImg .active{
+    display: inline-block;
+}
+
+.overlayText .active{
+    display: inline-block;
+}
+
+
+/* -------------------------------------------- */
+
+@media all and (max-width: 599px) {
+    .overlayImg div {
+        top: 300px; 
+        left: 50px;
+    }
+    
+    .overlayImg div img {
+        width: 60%;       
+    }
+    
+}
+
+/* -------------------------------------------- */
+
+@media all and (max-width: 499px) {
+    
+    .menu div {
+        font-size: .7em;
+        width: 130px;
+        height: auto;
+        padding: 5px;
+    }
+
+    .submenu div {
+        font-size: 0.65em;
+        width: 100px;
+        height: auto;
+    }    
+    
+    #mensFastestTimeText {
+        width: 30%;
+    }
+
+    #mensFastestImg {
+        display: none;
+    }
+
+    #womensFastestTimeText {
+        width: 30%;
+    }
+
+    #womensFastestImg {
+        display: none;
+    }
+        
+    
+}
+
+/* -------------------------------------------- */
+
+@media all and (max-width: 399px) {
+    
+    #womensFastestTimeText {
+        display: none;
+    }
+    
+    #mensFastestTimeText {
+        display: none;
+    }
+        
+}

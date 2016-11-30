@@ -1,0 +1,153 @@
+    
+/* Reset */
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, em, img, samp, strong, b, u, i, center,
+dl, dt, dd, ol, ul, li, table, caption, tbody,
+figure, figcaption, footer, header, 
+menu, nav, section, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+	/* font-family: "Libre Baskerville", Georgia, Times, "Times New Roman", serif; */
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+@font-face {
+ font-family: "Libre Baskerville";
+ src: url("librebaskerville-regular.eot");
+ src: url("librebaskerville-regular.eot?#iefix") format("embedded-opentype"),
+      url("librebaskerville-regular.woff") format("woff"),
+      url("librebaskerville-regular.ttf") format("truetype");
+ font-weight: normal;
+ font-style: normal;
+}
+
+
+body {
+  background-color: #fefefe;
+  height: 100%;
+  margin: 0;
+}
+
+
+.menu {
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.menu div {
+    display: inline-block;
+    text-align: center;
+    font-size: .80em;
+    width: 150px;
+    height: auto;
+    padding: 5px;
+    border: 1px solid black;
+    background-color: white;
+    cursor: pointer;
+    opacity: 0.5;
+    margin-top: 5px;
+}
+
+.menu div:hover {
+    background-color: #ccc;
+    opacity: 0.75;
+}
+
+.menu .active {
+    background-color: #fce1b6;
+    pointer-events: none;
+    opacity: 1.0;
+}
+
+
+.submenu {
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.submenu div {
+    display: inline-block;
+    text-align: center;
+    font-size: 0.75em;
+    width: 120px;
+    height: auto;
+    padding: 2.5px;
+    border: 1px solid black;
+    background-color: white;
+    cursor: pointer;
+    opacity: 0.5;    
+}
+
+.submenu div:hover {
+    background-color: #ccc;
+    color: #5d5d5d;
+    opacity: 0.75;   
+}
+
+.submenu .active {
+    background-color: #5d5d5d;
+    color: white;
+    opacity: 1.0;    
+}
+
+.submenu #resetRace {
+    display: none;
+}
+
+.submenu #startRace {
+    display: none;
+    color: #000;
+    background-color: #f4c2be;    
+}
+
+.container.active {
+    display: block;
+}
+
+.container {
+    display: none;
+}
+
+.sportCard {
+    display: inline-block;
+    width: 49%;
+}
+
+img {
+    width: 100%;
+}
+
+.menuText {
+    color: #a6a6a6;
+}
+
+/* -------------------------------------------- */
+
+@media all and (max-width: 599px) {
+
+    
+}
+
+/* -------------------------------------------- */
+
+@media all and (max-width: 499px) {
+
+    .sportCard {
+        width: 100%;
+    }    
+    
+}
+
+/* -------------------------------------------- */
+
+@media all and (max-width: 399px) {
+    
+    .sportCard {
+        width: 100%;
+    }    
+        
+}

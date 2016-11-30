@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html id="doc">
+<head>
+    <meta charset="utf-8">
+    <link href='css/baisc-stats-style.css' rel='stylesheet' type='text/css'>
+    <script src="js/d3.min.js"></script>
+    <script src="js/jquery-1.11.3.min.js"></script>    
+    <script src="js/bar-chart-script.js"></script>
+    <script type="text/javascript" src="js/pym.min.js"></script>    
+</head>    
+<body>
+    <div class='statsTooltip'>
+        <div id="cityTooltip" class= "hidden">
+            <p><span id="city"></span></p>
+        </div>
+        <div id="valueTooltip" class= "hidden">
+            <p><span id="value"></span></p>
+        </div>
+    </div>
+    <div class="menu">
+        <div id="numEvents" class="active">Events</div>
+        <div id="numCountries">Countries</div>
+        <div id="numAthletes">Athletes</div>
+    </div>
+    <svg></svg>
+
+    <!-- add pym responsive height script -->
+    <script>
+        var pymChild = new pym.Child({ polling: 500 });
+    </script>    
+</body>
+</html>

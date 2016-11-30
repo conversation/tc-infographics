@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html id="doc">
+<head>
+    <meta charset="utf-8">
+    <link href='css/style.css' rel='stylesheet' type='text/css'>
+    <script src="js/jquery-1.11.3.min.js"></script>    
+    <script src="js/spending-script.js"></script>
+    <script type="text/javascript" src="js/pym.min.js"></script>       
+</head>    
+<body>
+    <div class="menu">
+        <p class="menuText">Sort by:</p>
+        <div id="totalMedalsBtn" class="active">Total medals</div>
+        <div id="totalCostBtn">Total cost</div>
+        <div id="costPerMedalBtn">Cost per medal</div>
+        <div id="costPerTeamBtn">Cost per team member</div>
+        <div id="costPerMedalWeightedBtn">Weighted cost per medal</div>
+    </div>
+
+    <div class="sportsList">
+        <div id="totalMedalsView" class="container active">
+          <div class="sportCard"><img src="images/swimming.png"></div>
+          <div class="sportCard"><img src="images/sailing.png"></div>
+          <div class="sportCard"><img src="images/rowing.png"></div>
+          <div class="sportCard"><img src="images/athletics.png"></div>
+            <div class="sportCard"><img src="images/canoe.png"></div>            
+          <div class="sportCard"><img src="images/rugby.png"></div>        
+          <div class="sportCard"><img src="images/shooting.png"></div>        
+          <div class="sportCard"><img src="images/cycling.png"></div>        
+          <div class="sportCard"><img src="images/archery.png"></div>        
+          <div class="sportCard"><img src="images/diving.png"></div>        
+          <div class="sportCard"><img src="images/equestrian.png"></div>
+          <div class="sportCard"><img src="images/basketball.png"></div>        
+          <div class="sportCard"><img src="images/hockey.png"></div>        
+        </div>
+
+        <div id="totalCostView" class="container">
+          <div class="sportCard"><img src="images/swimming.png"></div>
+          <div class="sportCard"><img src="images/cycling.png"></div> 
+          <div class="sportCard"><img src="images/rowing.png"></div>
+          <div class="sportCard"><img src="images/sailing.png"></div>
+          <div class="sportCard"><img src="images/athletics.png"></div> 
+          <div class="sportCard"><img src="images/hockey.png"></div>             
+          <div class="sportCard"><img src="images/basketball.png"></div>        
+          <div class="sportCard"><img src="images/canoe.png"></div>        
+          <div class="sportCard"><img src="images/equestrian.png"></div>          
+          <div class="sportCard"><img src="images/diving.png"></div>        
+            <div class="sportCard"><img src="images/shooting.png"></div>
+          <div class="sportCard"><img src="images/rugby.png"></div>        
+          <div class="sportCard"><img src="images/archery.png"></div>         
+        </div>
+        
+        <div id="costPerMedalView" class="container">
+          <div class="sportCard"><img src="images/hockey.png"></div>             
+          <div class="sportCard"><img src="images/basketball.png"></div>
+          <div class="sportCard"><img src="images/cycling.png"></div> 
+          <div class="sportCard"><img src="images/athletics.png"></div> 
+          <div class="sportCard"><img src="images/rowing.png"></div>
+          <div class="sportCard"><img src="images/canoe.png"></div>  
+          <div class="sportCard"><img src="images/equestrian.png"></div> 
+          <div class="sportCard"><img src="images/diving.png"></div> 
+            <div class="sportCard"><img src="images/shooting.png"></div>
+          <div class="sportCard"><img src="images/rugby.png"></div>
+          <div class="sportCard"><img src="images/sailing.png"></div>            
+          <div class="sportCard"><img src="images/swimming.png"></div>
+          <div class="sportCard"><img src="images/archery.png"></div>
+        </div>
+        
+        <div id="costPerTeamView" class="container">
+          <div class="sportCard"><img src="images/sailing.png"></div>
+          <div class="sportCard"><img src="images/canoe.png"></div> 
+          <div class="sportCard"><img src="images/rowing.png"></div>
+          <div class="sportCard"><img src="images/cycling.png"></div> 
+          <div class="sportCard"><img src="images/diving.png"></div>
+          <div class="sportCard"><img src="images/swimming.png"></div>
+          <div class="sportCard"><img src="images/basketball.png"></div>
+          <div class="sportCard"><img src="images/hockey.png"></div>             
+          <div class="sportCard"><img src="images/equestrian.png"></div> 
+          <div class="sportCard"><img src="images/archery.png"></div>
+          <div class="sportCard"><img src="images/athletics.png"></div> 
+            <div class="sportCard"><img src="images/shooting.png"></div>
+          <div class="sportCard"><img src="images/rugby.png"></div>
+        </div>
+        
+        <div id="costPerMedalWeightedView" class="container">
+          <div class="sportCard"><img src="images/cycling.png"></div>
+          <div class="sportCard"><img src="images/canoe.png"></div> 
+          <div class="sportCard"><img src="images/athletics.png"></div> 
+          <div class="sportCard"><img src="images/equestrian.png"></div>
+          <div class="sportCard"><img src="images/diving.png"></div>
+          <div class="sportCard"><img src="images/rowing.png"></div>
+          <div class="sportCard"><img src="images/sailing.png"></div>
+            <div class="sportCard"><img src="images/shooting.png"></div>
+          <div class="sportCard"><img src="images/rugby.png"></div>
+          <div class="sportCard"><img src="images/archery.png"></div> 
+          <div class="sportCard"><img src="images/swimming.png"></div>            
+        </div>        
+        
+    </div>
+    <script>
+        var pymChild = new pym.Child({ polling: 500 });
+    </script>      
+</body>
+</html>

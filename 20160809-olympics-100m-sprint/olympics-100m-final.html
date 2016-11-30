@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html id="doc">
+<head>
+    <meta charset="utf-8">
+    <link href='css/graph.css' rel='stylesheet' type='text/css'>
+    <script src="js/d3.min.js"></script>
+    <script src="js/jquery-1.11.3.min.js"></script>    
+    <script src="js/chart-script.js"></script>
+    <script type="text/javascript" src="js/pym.min.js"></script>       
+</head>    
+<body>
+    <div class="menu">
+        <div id="mens100m" class="active">Men's 100m sprint</div>
+        <div id="womens100m">Women's 100m sprint</div>
+    </div>
+    <div class="submenu">
+        <div id="fastestTime" class="active">Fastest times</div>
+        <div id="raceSimulation">Race simulation</div>         
+        <div id="startRace">Start race</div>
+        <div id="resetRace">Reset race</div>       
+    </div>
+    
+    <div class='overlayText'>        
+        <div id="mensFastestTimeText"><p>Jamaica's Usain Bolt has run the fastest 100m final at the Olympics, with a time of 9.63 seconds at the London Games in 2012.</p><p>In the time Bolt ran the 100m, Thomas Burke - the gold medallist from 1896, with a time of 12 seconds - would have run 80.25 metres, almost 20 metres behind Bolt.</p></div>
+
+        <div id="womensFastestTimeText"><p>Florence Griffith-Joyner's time of 10.54 seconds at the 1988 Seoul Games still remains the fastest womens 100m time at the Olympics.</p><p>In the time Griffith-Joyner ran in 1988, Shelly-Ann Fraser - the gold medallist in 2012 with a time of 10.75 seconds - would have been almost 2 metres behind.</p></div>
+    </div>
+    <div class="overlayImg">    
+        <div id="mensFastestImg">
+          <img src="images/usain-bolt.png"></img>
+        </div> 
+        <div id="womensFastestImg">
+          <img src="images/florence-griffith-joyner.png"></img>
+        </div>
+    </div>
+    
+    <svg></svg>
+
+    <div class='tooltip'></div>
+    <script>
+        var pymChild = new pym.Child({ polling: 500 });
+    </script>      
+</body>
+</html>
