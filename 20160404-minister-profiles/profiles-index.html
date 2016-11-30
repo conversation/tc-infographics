@@ -1,0 +1,992 @@
+<!DOCTYPE html>
+<html id="doc">
+<head>
+<meta charset="UTF-8">
+<title>Profiles of cabinet and shadow cabinet</title>
+<link href="css/profiles-main-style.css" rel="stylesheet" type="text/css">
+<link href="css/electoral-map-sprites.css" rel="stylesheet" type="text/css">
+<link href="css/minister-photos-sprites.css" rel="stylesheet" type="text/css">
+<link href="css/portfolio-icons-sprites.css" rel="stylesheet" type="text/css">
+
+<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="js/d3.js"></script>    
+<script type="text/javascript" src="data/profiledata.js"></script>    
+<script type="text/javascript" src="js/profiles-main-script.js"></script>
+</head>
+  <body id="page">
+	<div class="minister-list-container">	   
+        <div class="tabs">
+
+            <ul class="tab-links">
+                <li class="active"><a href="#all-tab" id="all-tab">All</a></li>
+                <li><a href="#government-tab" id="govt-tab">Government</a></li>
+                <li><a href="#opposition-tab" id="opp-tab">Opposition</a></li>
+                <li><a href="#portfolio-tab" id="port-tab">Portfolio</a></li>
+                <div class='showNamesButton'>Hide names</div>                 
+                <div class='showPositionButton'>Hide titles</div>
+            </ul>
+            <div class="tab-content">
+                <div id="all-tab" class="tab active">
+                        <div class='profile-photo malcolm-turnbull-158' title="Prime Minister" id='malcolm-turnbull'>
+                            <div class="profile-photo-name">Malcolm Turnbull</div>
+                            <div class="profile-position">Prime Minister</div>
+                        </div>
+                        <div class='profile-photo bill-shorten-158' title="Opposition Leader" id='bill-shorten'>  
+                            <div class="profile-photo-name">Bill Shorten</div>
+                            <div class="profile-position">Opposition Leader</div>                            
+                        </div>                    
+                        <div class='profile-photo julie-bishop-158' title="Foreign Minister" id='julie-bishop'>
+                            <div class="profile-photo-name">Julie Bishop</div>
+                            <div class="profile-position">Foreign Minister</div>                            
+                        </div>
+                        <div class='profile-photo tanya-plibersek-158' title="Shadow Minister for Foreign Affairs and International Development" id='tanya-plibersek'>         
+                            <div class="profile-photo-name">Tanya Plibersek</div>
+                            <div class="profile-position">Shadow Foreign Minister</div>                            
+                        </div>                    
+                        <div class='profile-photo scott-morrison-158' title="Treasurer" id='scott-morrison'> 
+                            <div class="profile-photo-name">Scott Morrison</div>
+                            <div class="profile-position">Treasurer</div>                            
+                        </div>
+                        <div class='profile-photo chris-bowen-158' title="Shadow Treasurer" id='chris-bowen'>
+                            <div class="profile-photo-name">Chris Bowen</div>
+                            <div class="profile-position">Shadow Treasurer</div>                            
+                        </div>                    
+                        <div class='profile-photo christopher-pyne-158' title="Minister for Industry, Innovation and Science" id='christopher-pyne'> 
+                            <div class="profile-photo-name">Christopher Pyne</div>
+                            <div class="profile-position">Science Minister</div>                            
+                        </div>
+                        <div class='profile-photo kim-carr-158' title="Shadow Minister for Higher Education, Research, Innovation and Industry" id='kim-carr'>
+                            <div class="profile-photo-name">Kim Carr</div>
+                            <div class="profile-position">Shadow Science Minister</div>      
+                        </div>                    
+                        <div class='profile-photo george-brandis-158' title="Attorney-General" id='george-brandis'> 
+                            <div class="profile-photo-name">George Brandis</div>
+                            <div class="profile-position">Attorney-General</div>                                   
+                        </div>
+                        <div class='profile-photo mark-dreyfus-158' title="Shadow Attorney-General, Shadow Minister for the Arts" id='mark-dreyfus'>
+                            <div class="profile-photo-name">Mark Dreyfus</div>
+                            <div class="profile-position">Shadow Attorney-General</div>                            
+                        </div>                    
+                        <div class='profile-photo sussan-ley-158' title="Minister for Health, Aged Care and Sport" id='sussan-ley'> 
+                            <div class="profile-photo-name">Sussan Ley</div>
+                            <div class="profile-position">Health Minister</div>
+                        </div>
+                        <div class='profile-photo catherine-king-158' title="Shadow Minister for Health" id='catherine-king'>
+                            <div class="profile-photo-name">Catherine King</div>
+                            <div class="profile-position">Shadow Health Minister</div>                            
+                        </div>                    
+                        <div class='profile-photo mathias-cormann-158' title="Minister for Finance, Special Minister of State" id='mathias-cormann'> 
+                            <div class="profile-photo-name">Mathias Cormann</div>
+                            <div class="profile-position">Finance Minister</div>                            
+                        </div>
+                         <div class='profile-photo tony-burke-158' title="Shadow Minister for Finance" id='tony-burke'>
+                            <div class="profile-photo-name">Tony Burke</div>
+                            <div class="profile-position">Shadow Finance Minister</div>                             
+                        </div>                    
+                        <div class='profile-photo darren-chester-158' title="Minister for Infrastructure and Transport" id='darren-chester'> 
+                            <div class="profile-photo-name">Darren Chester</div>
+                            <div class="profile-position">Infrastructure Minister</div>                            
+                        </div>                    
+                        <div class='profile-photo anthony-albanese-158' title="Shadow Minister for Infrastructure and Transport" id='anthony-albanese'>
+                            <div class="profile-photo-name">Anthony Albanese</div>
+                            <div class="profile-position">Shadow Infrastructure Minister</div>                            
+                        </div>                    
+                        <div class='profile-photo michaelia-cash-158' title="Minister for Employment, Women and Minister Assisting the Prime Minister for the Public Service" id='michaelia-cash'> 
+                            <div class="profile-photo-name">Michaelia Cash</div>
+                            <div class="profile-position">Employment Minister</div>                            
+                        </div>
+                        <div class='profile-photo brendan-o-connor-158' title="Shadow Minister for Employment and Workplace Relations" id='brendan-o-connor'>
+                            <div class="profile-photo-name">Brendan O'Connor</div>
+                            <div class="profile-position">Shadow Employment Minister</div>                            
+                        </div>                     
+                        <div class='profile-photo barnaby-joyce-158' title="Minister for Agriculture and Water Resources" id='barnaby-joyce'> 
+                            <div class="profile-photo-name">Barnaby Joyce</div>
+                            <div class="profile-position">Agriculture Minister</div>                            
+                        </div>
+                        <div class='profile-photo joel-fitzgibbon-158' title="Shadow Minister for Agriculture, Fisheries and Forestry" id='joel-fitzgibbon'>
+                            <div class="profile-photo-name">Joel Fitzgibbon</div>
+                            <div class="profile-position">Shadow Agriculture Minister</div>                            
+                        </div>                    
+                        <div class='profile-photo greg-hunt-158' title="Minister for the Environment" id='greg-hunt'> 
+                            <div class="profile-photo-name">Greg Hunt</div>
+                            <div class="profile-position">Environment Minister</div>                            
+                        </div>
+                        <div class='profile-photo mark-butler-158' title="Shadow Minister for Environment, Climate Change and Water" id='mark-butler'>
+                            <div class="profile-photo-name">Mark Butler</div>
+                            <div class="profile-position">Shadow Environment Minister</div>                            
+                        </div>                    
+                        <div class='profile-photo josh-frydenberg-158' title="Minister for Resources, Energy and Northern Australia" id='josh-frydenberg'> 
+                            <div class="profile-photo-name">Josh Frydenberg</div>
+                            <div class="profile-position">Resources Minister</div>                            
+                        </div>
+                        <div class='profile-photo gary-gray-158' title="Shadow Minister for Resources, Shadow Minister for Northern Australia, Shadow Special Minister of State" id='gary-gray'>
+                            <div class="profile-photo-name">Gary Gray</div>
+                            <div class="profile-position">Shadow Resources Minister</div>                            
+                        </div>                    
+                        <div class='profile-photo kelly-o-dwyer-158' title="Assistant Treasurer, Minister for Small Business" id='kelly-o-dwyer'> 
+                            <div class="profile-photo-name">Kelly O'Dwyer</div>
+                            <div class="profile-position">Small Business Minister</div>                            
+                        </div>
+                        <div class='profile-photo michelle-rowland-158' title="Shadow Minister for Small Business, Shadow Minister for Citizenship and Multiculturalism" id='michelle-rowland'>
+                            <div class="profile-photo-name">Michelle Rowland</div>
+                            <div class="profile-position">Shadow Small Business Minister</div>                            
+                        </div>                        
+                       <div class='profile-photo simon-birmingham-158' title="Minister for Education and Training" id='simon-birmingham'> 
+                            <div class="profile-photo-name">Simon Birmingham</div>
+                            <div class="profile-position">Education Minister</div>                           
+                        </div>
+                        <div class='profile-photo kate-ellis-158' title="Shadow Minister for Education, Shadow Minister for Early Childhood" id='kate-ellis'>
+                            <div class="profile-photo-name">Kate Ellis</div>
+                            <div class="profile-position">Shadow Education Minister</div>                            
+                        </div>                    
+                       <div class='profile-photo christian-porter-158' title="Minister for Social Services" id='christian-porter'> 
+                            <div class="profile-photo-name">Christian Porter</div>
+                            <div class="profile-position">Social Services Minister</div>                           
+                        </div>
+                        <div class='profile-photo jenny-macklin-158' title="Shadow Minister for Families and Payments, Shadow Minister for Disability Reform" id='jenny-macklin'>
+                            <div class="profile-photo-name">Jenny Macklin</div>
+                            <div class="profile-position">Shadow Minister for Families and Payments</div>                            
+                        </div>                    
+                       <div class='profile-photo marise-payne-158' title="Minister for Defence" id='marise-payne'> 
+                            <div class="profile-photo-name">Marise Payne</div>
+                            <div class="profile-position">Defence Minister</div>                           
+                        </div>
+                        <div class='profile-photo stephen-conroy-158' title="Shadow Minister for Defence" id='stephen-conroy'>
+                            <div class="profile-photo-name">Stephen Conroy</div>
+                            <div class="profile-position">Shadow Defence Minister</div>                            
+                        </div>                    
+                       <div class='profile-photo peter-dutton-158' title="Minister for Immigration and Border Protection" id='peter-dutton'> 
+                            <div class="profile-photo-name">Peter Dutton</div>
+                            <div class="profile-position">Immigration Minister</div>                           
+                        </div>
+                        <div class='profile-photo richard-marles-158' title="Shadow Minister for Immigration and Border Protection" id='richard-marles'>
+                            <div class="profile-photo-name">Richard Marles</div>
+                            <div class="profile-position">Shadow Immigration Minister</div>                            
+                        </div>                    
+                       <div class='profile-photo fiona-nash-158' title="Minister for Regional Development, Regional Communications and Rural Health" id='fiona-nash'> 
+                            <div class="profile-photo-name">Fiona Nash</div>
+                            <div class="profile-position">Rural Health Minister</div>                           
+                        </div>
+                        <div class='profile-photo katy-gallagher-158' title="Shadow Minister for Housing and Homelessness, Shadow Minister for Mental Health, Shadow Minister Assisting the Leader on State and Territory Relations" id='katy-gallagher'>
+                            <div class="profile-photo-name">Katy Gallagher</div>
+                            <div class="profile-position">Shadow Minister Assisting the Leader on State and Territory Relations</div>                                
+                        </div>                    
+                       <div class='profile-photo mitch-fifield-158' title="Minister for Communications and the Arts, Minister Assisting the Prime Minister for Digital Government" id='mitch-fifield'> 
+                            <div class="profile-photo-name">Mitch Fifield</div>
+                            <div class="profile-position">Communications Minister</div>                           
+                        </div>
+                        <div class='profile-photo jason-clare-158' title="Shadow Minister for Communications" id='jason-clare'>
+                            <div class="profile-photo-name">Jason Clare</div>
+                            <div class="profile-position">Shadow Communications Minister</div>                            
+                        </div>                    
+                       <div class='profile-photo nigel-scullion-158' title="Minister for Indigenous Affairs" id='nigel-scullion'> 
+                            <div class="profile-photo-name">Nigel Scullion</div>
+                            <div class="profile-position">Indigenous Affairs Minister</div>                           
+                        </div>
+                       <div class='profile-photo shayne-neumann-158' title="Shadow Minister for Indigenous Affairs, Shadow Minister for Ageing" id='shayne-neumann'>
+                            <div class="profile-photo-name">Shayne Neumann</div>
+                            <div class="profile-position">Shadow Indigenous Affairs Minister</div>                           
+                        </div>                    
+                        <div class='profile-photo steven-ciobo-158' title="Minister for Trade and Investment" id='steven-ciobo'> 
+                            <div class="profile-photo-name">Steven Ciobo</div>
+                            <div class="profile-position">Trade Minister</div>                            
+                        </div>
+                       <div class='profile-photo penny-wong-158' title="Shadow Minister for Trade and Investment" id='penny-wong'>
+                            <div class="profile-photo-name">Penny Wong</div>
+                            <div class="profile-position">Shadow Trade Minister</div>                            
+                        </div>                                    
+                        <div class='profile-photo arthur-sinodinos-158' title="Cabinet Secretary" id='arthur-sinodinos'> 
+                            <div class="profile-photo-name">Arthur Sinodinos</div>
+                            <div class="profile-position">Cabinet Secretary</div>                            
+                        </div>                                           
+                </div>
+                <div id="government-tab" class="tab">
+                        <div class='profile-photo malcolm-turnbull-158' title="Prime Minister" id='malcolm-turnbull'>
+                            <div class="profile-photo-name">Malcolm Turnbull</div>
+                            <div class="profile-position">Prime Minister</div>
+                        </div>                    
+                        <div class='profile-photo julie-bishop-158' title="Foreign Minister" id='julie-bishop'>
+                            <div class="profile-photo-name">Julie Bishop</div>
+                            <div class="profile-position">Foreign Minister</div>                            
+                        </div>                   
+                        <div class='profile-photo scott-morrison-158' title="Treasurer" id='scott-morrison'> 
+                            <div class="profile-photo-name">Scott Morrison</div>
+                            <div class="profile-position">Treasurer</div>                            
+                        </div>                   
+                        <div class='profile-photo christopher-pyne-158' title="Minister for Industry, Innovation and Science" id='christopher-pyne'> 
+                            <div class="profile-photo-name">Christopher Pyne</div>
+                            <div class="profile-position">Science Minister</div>                            
+                        </div>                   
+                        <div class='profile-photo george-brandis-158' title="Attorney-General" id='george-brandis'> 
+                            <div class="profile-photo-name">George Brandis</div>
+                            <div class="profile-position">Attorney-General</div>                                   
+                        </div>                   
+                        <div class='profile-photo sussan-ley-158' title="Minister for Health, Aged Care and Sport" id='sussan-ley'> 
+                            <div class="profile-photo-name">Sussan Ley</div>
+                            <div class="profile-position">Health Minister</div>
+                        </div>                    
+                        <div class='profile-photo mathias-cormann-158' title="Minister for Finance, Special Minister of State" id='mathias-cormann'> 
+                            <div class="profile-photo-name">Mathias Cormann</div>
+                            <div class="profile-position">Finance Minister</div>                            
+                        </div>                   
+                        <div class='profile-photo darren-chester-158' title="Minister for Infrastructure and Transport" id='darren-chester'> 
+                            <div class="profile-photo-name">Darren Chester</div>
+                            <div class="profile-position">Infrastructure Minister</div>                            
+                        </div>                                       
+                        <div class='profile-photo michaelia-cash-158' title="Minister for Employment, Women and Minister Assisting the Prime Minister for the Public Service" id='michaelia-cash'> 
+                            <div class="profile-photo-name">Michaelia Cash</div>
+                            <div class="profile-position">Employment Minister</div>                            
+                        </div>                     
+                        <div class='profile-photo barnaby-joyce-158' title="Minister for Agriculture and Water Resources" id='barnaby-joyce'> 
+                            <div class="profile-photo-name">Barnaby Joyce</div>
+                            <div class="profile-position">Agriculture Minister</div>                            
+                        </div>                   
+                        <div class='profile-photo greg-hunt-158' title="Minister for the Environment" id='greg-hunt'> 
+                            <div class="profile-photo-name">Greg Hunt</div>
+                            <div class="profile-position">Environment Minister</div>                            
+                        </div>                   
+                        <div class='profile-photo josh-frydenberg-158' title="Minister for Resources, Energy and Northern Australia" id='josh-frydenberg'> 
+                            <div class="profile-photo-name">Josh Frydenberg</div>
+                            <div class="profile-position">Resources Minister</div>                          
+                        </div>
+                        <div class='profile-photo kelly-o-dwyer-158' title="Assistant Treasurer, Minister for Small Business" id='kelly-o-dwyer'> 
+                            <div class="profile-photo-name">Kelly O'Dwyer</div>
+                            <div class="profile-position">Small Business Minister</div>                            
+                        </div>                    
+                       <div class='profile-photo simon-birmingham-158' title="Minister for Education and Training" id='simon-birmingham'> 
+                            <div class="profile-photo-name">Simon Birmingham</div>
+                            <div class="profile-position">Education Minister</div>                           
+                        </div>                   
+                       <div class='profile-photo christian-porter-158' title="Minister for Social Services" id='christian-porter'> 
+                            <div class="profile-photo-name">Christian Porter</div>
+                            <div class="profile-position">Social Services Minister</div>                           
+                        </div>                    
+                       <div class='profile-photo marise-payne-158' title="Minister for Defence" id='marise-payne'> 
+                            <div class="profile-photo-name">Marise Payne</div>
+                            <div class="profile-position">Defence Minister</div>                           
+                        </div>                   
+                       <div class='profile-photo peter-dutton-158' title="Minister for Immigration and Border Protection" id='peter-dutton'> 
+                            <div class="profile-photo-name">Peter Dutton</div>
+                            <div class="profile-position">Immigration Minister</div>                           
+                        </div>                    
+                       <div class='profile-photo fiona-nash-158' title="Minister for Regional Development, Regional Communications and Rural Health" id='fiona-nash'> 
+                            <div class="profile-photo-name">Fiona Nash</div>
+                            <div class="profile-position">Rural Health Minister</div>                        
+                        </div>                    
+                       <div class='profile-photo mitch-fifield-158' title="Minister for Communications and the Arts, Minister Assisting the Prime Minister for Digital Government" id='mitch-fifield'> 
+                            <div class="profile-photo-name">Mitch Fifield</div>
+                            <div class="profile-position">Communications Minister</div>                           
+                        </div>                   
+                       <div class='profile-photo nigel-scullion-158' title="Minister for Indigenous Affairs" id='nigel-scullion'> 
+                            <div class="profile-photo-name">Nigel Scullion</div>
+                            <div class="profile-position">Indigenous Affairs Minister</div>                           
+                        </div>                   
+                        <div class='profile-photo steven-ciobo-158' title="Minister for Trade and Investment" id='steven-ciobo'> 
+                            <div class="profile-photo-name">Steven Ciobo</div>
+                            <div class="profile-position">Trade Minister</div>                            
+                        </div>               
+                        <div class='profile-photo arthur-sinodinos-158' title="Cabinet Secretary" id='arthur-sinodinos'> 
+                            <div class="profile-photo-name">Arthur Sinodinos</div>
+                            <div class="profile-position">Cabinet Secretary</div>                            
+                        </div>                       
+                </div>
+                <div id="opposition-tab" class="tab">
+                        <div class='profile-photo bill-shorten-158' title="Opposition Leader" id='bill-shorten'>  
+                            <div class="profile-photo-name">Bill Shorten</div>
+                            <div class="profile-position">Opposition Leader</div>                            
+                        </div>                    
+                        <div class='profile-photo tanya-plibersek-158' title="Shadow Minister for Foreign Affairs and International Development" id='tanya-plibersek'>         
+                            <div class="profile-photo-name">Tanya Plibersek</div>
+                            <div class="profile-position">Shadow Foreign Minister</div>               
+                        </div>
+                        <div class='profile-photo chris-bowen-158' title="Shadow Treasurer" id='chris-bowen'>
+                            <div class="profile-photo-name">Chris Bowen</div>
+                            <div class="profile-position">Shadow Treasurer</div>                            
+                        </div>                    
+                        <div class='profile-photo kim-carr-158' title="Shadow Minister for Higher Education, Research, Innovation and Industry" id='kim-carr'>
+                            <div class="profile-photo-name">Kim Carr</div>
+                            <div class="profile-position">Shadow Education Minister</div>      
+                        </div>                    
+                        <div class='profile-photo mark-dreyfus-158' title="Shadow Attorney-General, Shadow Minister for the Arts" id='mark-dreyfus'>
+                            <div class="profile-photo-name">Mark Dreyfus</div>
+                            <div class="profile-position">Shadow Attorney-General</div>
+                        </div>
+                        <div class='profile-photo catherine-king-158' title="Shadow Minister for Health" id='catherine-king'>
+                            <div class="profile-photo-name">Catherine King</div>
+                            <div class="profile-position">Shadow Health Minister</div>                            
+                        </div>                    
+                         <div class='profile-photo tony-burke-158' title="Shadow Minister for Finance" id='tony-burke'>
+                            <div class="profile-photo-name">Tony Burke</div>
+                            <div class="profile-position">Shadow Finance Minister</div>                             
+                        </div>                                       
+                        <div class='profile-photo anthony-albanese-158' title="Shadow Minister for Infrastructure and Transport" id='anthony-albanese'>
+                            <div class="profile-photo-name">Anthony Albanese</div>
+                            <div class="profile-position">Shadow Infrastructure Minister</div>                            
+                        </div>                    
+                        <div class='profile-photo brendan-o-connor-158' title="Shadow Minister for Employment and Workplace Relations" id='brendan-o-connor'>
+                            <div class="profile-photo-name">Brendan O'Connor</div>
+                            <div class="profile-position">Shadow Employment Minister</div>                            
+                        </div>
+                        <div class='profile-photo joel-fitzgibbon-158' title="Shadow Minister for Agriculture, Fisheries and Forestry" id='joel-fitzgibbon'>
+                            <div class="profile-photo-name">Joel Fitzgibbon</div>
+                            <div class="profile-position">Shadow Agriculture Minister</div>                        
+                        </div>                    
+                        <div class='profile-photo mark-butler-158' title="Shadow Minister for Environment, Climate Change and Water" id='mark-butler'>
+                            <div class="profile-photo-name">Mark Butler</div>
+                            <div class="profile-position">Shadow Environment Minister</div>                            
+                        </div>                    
+                        <div class='profile-photo gary-gray-158' title="Shadow Minister for Resources, Shadow Minister for Northern Australia, Shadow Special Minister of State" id='gary-gray'>
+                            <div class="profile-photo-name">Gary Gray</div>
+                            <div class="profile-position">Shadow Resources Minister</div>                            
+                        </div>                    
+                        <div class='profile-photo penny-wong-158' title="Shadow Minister for Trade and Investment" id='penny-wong'>
+                            <div class="profile-photo-name">Penny Wong</div>
+                            <div class="profile-position">Shadow Trade Minister</div>                            
+                        </div>                     
+                        <div class='profile-photo kate-ellis-158' title="Shadow Minister for Education, Shadow Minister for Early Childhood" id='kate-ellis'>
+                            <div class="profile-photo-name">Kate Ellis</div>
+                            <div class="profile-position">Shadow Education Minister</div>                            
+                        </div>                    
+                        <div class='profile-photo jenny-macklin-158' title="Shadow Minister for Families and Payments, Shadow Minister for Disability Reform" id='jenny-macklin'>
+                            <div class="profile-photo-name">Jenny Macklin</div>
+                            <div class="profile-position">Shadow Minister for Families and Payments</div>                            
+                        </div>                    
+                        <div class='profile-photo stephen-conroy-158' title="Shadow Minister for Defence" id='stephen-conroy'>
+                            <div class="profile-photo-name">Stephen Conroy</div>
+                            <div class="profile-position">Shadow Defence Minister</div>                            
+                        </div>                    
+                        <div class='profile-photo richard-marles-158' title="Shadow Minister for Immigration and Border Protection" id='richard-marles'>
+                            <div class="profile-photo-name">Richard Marles</div>
+                            <div class="profile-position">Shadow Immigration Minister</div>                            
+                        </div>                               
+                        <div class='profile-photo jason-clare-158' title="Shadow Minister for Communications" id='jason-clare'>
+                            <div class="profile-photo-name">Jason Clare</div>
+                            <div class="profile-position">Shadow Communications Minister</div>                            
+                        </div>                    
+                       <div class='profile-photo shayne-neumann-158' title="Shadow Minister for Indigenous Affairs, Shadow Minister for Ageing" id='shayne-neumann'>
+                            <div class="profile-photo-name">Shayne Neumann</div>
+                            <div class="profile-position">Shadow Indigenous Affairs Minister</div>    
+                        </div>                    
+                        <div class='profile-photo katy-gallagher-158' title="Shadow Minister for Housing and Homelessness, Shadow Minister for Mental Health, Shadow Minister Assisting the Leader on State and Territory Relations" id='katy-gallagher'>
+                            <div class="profile-photo-name">Katy Gallagher</div>
+                            <div class="profile-position">Shadow Minister Assisting the Leader on State and Territory Relations</div>      
+                        </div>                                                          
+                                   
+                </div> 
+                <div id="portfolio-tab" class="tab">
+                        <div class='portfolioButton leadership' id='leadershipPortfolio'>
+                            <div class="portfolioName">Leadership</div>  
+                        </div>
+                        <div class='portfolioButton deputy' id='deputyPortfolio'>
+                            <div class="portfolioName">Deputy Leadership</div>  
+                        </div>                    
+                        <div class='portfolioButton treasury' id='treasuryPortfolio'>
+                            <div class="portfolioName">Treasury</div>  
+                        </div>
+                        <div class='portfolioButton resources' id='resourcesPortfolio'>
+                            <div class="portfolioName">Resources</div>  
+                        </div>
+                        <div class='portfolioButton trade' id='tradePortfolio'>
+                            <div class="portfolioName">Trade and Investment</div>  
+                        </div>
+                        <div class='portfolioButton transport' id='transportPortfolio'>
+                            <div class="portfolioName">Infrastructure and Transport</div>  
+                        </div>                    
+                        <div class='portfolioButton employment' id='employmentPortfolio'>
+                            <div class="portfolioName">Employment</div>  
+                        </div>
+                        <div class='portfolioButton finance' id='financePortfolio'>
+                            <div class="portfolioName">Finance</div>  
+                        </div>
+                        <div class='portfolioButton small-business' id='smallbusinessPortfolio'>
+                            <div class="portfolioName">Small Business</div>  
+                        </div>                    
+                        <div class='portfolioButton foreign-affairs' id='foreignPortfolio'>
+                            <div class="portfolioName">Foreign Affairs</div>  
+                        </div>                    
+                        <div class='portfolioButton education' id='educationPortfolio'>
+                            <div class="portfolioName">Education</div>  
+                        </div>                     
+                        <div class='portfolioButton communications' id='communicationsPortfolio'>
+                            <div class="portfolioName">Communications</div>  
+                        </div>
+                        <div class='portfolioButton arts' id='artsPortfolio'>
+                            <div class="portfolioName">Arts</div>  
+                        </div>                    
+                        <div class='portfolioButton legal' id='legalPortfolio'>
+                            <div class="portfolioName">Legal</div>  
+                        </div>
+                        <div class='portfolioButton environment' id='environmentPortfolio'>
+                            <div class="portfolioName">Environment</div>  
+                        </div>
+                        <div class='portfolioButton agriculture' id='agriculturePortfolio'>
+                            <div class="portfolioName">Agriculture</div>  
+                        </div> 
+                        <div class='portfolioButton health' id='healthPortfolio'>
+                            <div class="portfolioName">Health</div>  
+                        </div>                     
+                        <div class='portfolioButton immigration' id='immigrationPortfolio'>
+                            <div class="portfolioName">Immigration</div>  
+                        </div> 
+                        <div class='portfolioButton defence' id='defencePortfolio'>
+                            <div class="portfolioName">Defence</div>  
+                        </div>
+                        <div class='portfolioButton science' id='sciencePortfolio'>
+                            <div class="portfolioName">Science</div>  
+                        </div>
+                        <div class='portfolioButton indigenous-affairs' id='indigenousPortfolio'>
+                            <div class="portfolioName">Indigenous Affairs</div>  
+                        </div>
+                        <div class='portfolioButton social-services' id='socialPortfolio'>
+                            <div class="portfolioName">Social Services</div>  
+                        </div> 
+                </div>
+        </div>
+      </div>
+    </div>
+      <div class="minister-profile-container">
+            <div class="profile-tabs">
+                <ul class="profile-tab-links">
+                    <li id="back-tab"><a href="#Back-tab">&larr; Back to menu</a></li>
+                </ul>
+                
+                <div class="profile-content" id='selectedMinisterProfile'>
+                    <div class="profileBasics"></div>
+                    <div class="profileSeat">
+                        <div class='profileSeatButton' id='profileSeatButton'>Seat details<span class='expandButton' id="seatExpand">+</span><span class='expandButton seatExpandInfo' id="profileSeatExpand">expand</span></div>
+                        <div class='profileDetail ministerSeatDetails'></div>                        
+                    </div>
+                    <div class="profileAnalysis">
+                        <div class='profileAnalysisButton'>Analysis<span class='expandButton analysisExpand'>-</span><span class='expandButton analysisExpandInfo'>close</span></div>
+                        <div class='profileDetail ministerAnalysis'></div>
+                    </div>
+                </div>
+                <ul class="profile-tab-links">
+                    <li id="bottom-back-tab"><a href="#Back-tab">&larr; Back to menu</a></li>
+                </ul>                
+            </div>
+      </div>
+      <div class="minister-portfolio-container">
+        <div class="profile-tabs">
+            <ul class="profile-tab-links">
+                <li id="back-tab-portfolio"><a href="#Back-tab">&larr; Back to menu</a></li>
+            </ul>
+            <div class='portfolio-content'>
+                <!-- Leadership portfolios -->
+                <div id='leadershipGroup'>
+                    <div class='portfolioDesktop' id='leadershipDesktop'>
+                        <div class='portfolioProfile' id='leadershipPortfolioMTurnbull'>
+                            <div class="profileBasics"></div>
+                            <div class='profileDetailButton'>View details and analysis</div>
+                        </div>
+                        <hr>
+                        <div class='portfolioProfile' id='leadershipPortfolioBShorten'>
+                            <div class="profileBasics"></div>
+                            <div class='profileDetailButton'>View details and analysis</div>                            
+                        </div>                         
+                        <hr>
+                        <div class='portfolioProfile' id='leadershipPortfolioBJoyce'>
+                            <div class="profileBasics"></div>
+                            <div class='profileDetailButton'>View details and analysis</div>                            
+                        </div>
+                            
+                    </div>
+                    <div class='portfolioMobile'>                     
+                        <div class='profile-photo malcolm-turnbull-158' id='malcolm-turnbull'>
+                                <div class="profile-photo-name">Malcolm Turnbull</div>
+                                <div class="profile-position">Prime Minister</div>                    
+                        </div>
+                        <div class='profile-photo bill-shorten-158' id='bill-shorten'>  
+                                <div class="profile-photo-name">Bill Shorten</div>
+                                <div class="profile-position">Opposition Leader</div>                        
+                        </div>                         
+                        <div title="Minister for Agriculture" class='profile-photo barnaby-joyce-158' id='barnaby-joyce'> 
+                            <div class="profile-photo-name">Barnaby Joyce</div>
+                            <div class="profile-position">Deputy Prime Minister</div>                        
+                        </div>                    
+                    </div>
+                </div>
+                <!-- Deputy Leadership portfolios -->
+                <div id='deputyGroup'>
+                    <div class='portfolioDesktop' id='deputyPortfolioDesktop'>
+                        <div class='portfolioProfile' id='deputyPortfolioBBishop'>
+                            <div class="profileBasics"></div>
+                            <div class='profileDetailButton'>View details and analysis</div>
+                        </div>
+                        <hr>
+                        <div class='portfolioProfile' id='deputyPortfolioTPlibersek'>
+                            <div class="profileBasics"></div>
+                            <div class='profileDetailButton'>View details and analysis</div>                            
+                        </div>                       
+                    </div>
+                    <div class='portfolioMobile'>                    
+                        <div class='profile-photo julie-bishop-158' id='julie-bishop'>
+                                <div class="profile-photo-name">Julie Bishop</div>
+                                <div class="profile-position">Deputy Leader of the Liberal Party</div>                        
+                        </div>
+                        <div class='profile-photo tanya-plibersek-158' id='tanya-plibersek'>
+                                <div class="profile-photo-name">Tanya Plibersek</div>                       
+                                <div class="profile-position">Deputy Leader of the Labor Party</div>  
+                        </div>
+                    </div>
+                </div>                
+                <!-- Treasury portfolios -->                
+                <div id='treasuryGroup'>
+                    <div class='portfolioDesktop' id='treasuryPortfolioDesktop'>
+                        <div class='portfolioProfile' id='treasuryPortfolioSMorrison'>
+                            <div class="profileBasics"></div>
+                            <div class='profileDetailButton'>View details and analysis</div>
+                        </div>
+                        <hr>
+                        <div class='portfolioProfile' id='treasuryPortfolioCBowen'>
+                            <div class="profileBasics"></div>
+                            <div class='profileDetailButton'>View details and analysis</div>                            
+                        </div>
+                        <hr> 
+                        <div class='portfolioProfile' id='treasuryPortfolioKODwyer'>
+                            <div class="profileBasics"></div>
+                            <div class='profileDetailButton'>View details and analysis</div>                            
+                        </div>                       
+                    </div>
+                    <div class='portfolioMobile'>
+                        <div class='profile-photo scott-morrison-158' id='scott-morrison'> 
+                            <div class="profile-photo-name">Scott Morrison</div>
+                        </div>                    
+                        <div class='profile-photo chris-bowen-158' id='chris-bowen'>
+                            <div class="profile-photo-name">Chris Bowen</div>  
+                        </div>
+                        <div class='profile-photo kelly-o-dwyer-158' id='kelly-o-dwyer'> 
+                            <div class="profile-photo-name">Kelly O'Dwyer</div>
+                        </div>                          
+                    </div>
+                </div>
+                <!-- Finance portfolios -->                
+                <div id='financeGroup'>
+                    <div class='portfolioDesktop' id='financePortfolioDesktop'>
+                        <div class='portfolioProfile' id='financePortfolioMCormann'>
+                            <div class="profileBasics"></div>
+                            <div class='profileDetailButton'>View details and analysis</div>
+                        </div>
+                        <hr>
+                        <div class='portfolioProfile' id='financePortfolioTBurke'>
+                            <div class="profileBasics"></div>
+                            <div class='profileDetailButton'>View details and analysis</div>                             
+                        </div>                        
+                    </div>
+                    <div class='portfolioMobile'>
+                        <div class='profile-photo mathias-cormann-158' id='mathias-cormann'> 
+                            <div class="profile-photo-name">Mathias Cormann</div>
+                        </div>
+                         <div class='profile-photo tony-burke-158' id='tony-burke'>
+                            <div class="profile-photo-name">Tony Burke</div>  
+                        </div>
+                    </div>
+                </div>
+                <!-- Employment portfolios -->                   
+                <div id='employmentGroup'>
+                    <div class='portfolioDesktop' id='employmentPortfolioDesktop'>
+                        <div class='portfolioProfile' id='employmentPortfolioMCash'>
+                            <div class="profileBasics"></div>
+                            <div class='profileDetailButton'>View details and analysis</div>
+                        </div>
+                        <hr>
+                        <div class='portfolioProfile' id='employmentPortfolioBOConnor'>
+                            <div class="profileBasics"></div>
+                            <div class='profileDetailButton'>View details and analysis</div>                            
+                        </div>                        
+                    </div>                    
+                    <div class='portfolioMobile'>
+                        <div class='profile-photo michaelia-cash-158' id='michaelia-cash'> 
+                            <div class="profile-photo-name">Michaelia Cash</div>
+                        </div>                    
+                        <div class='profile-photo brendan-o-connor-158' id='brendan-o-connor'>
+                            <div class="profile-photo-name">Brendan O'Connor</div>  
+                        </div>
+                    </div>
+                </div>
+                <!-- Resources portfolios -->                   
+                <div id='resourcesGroup'>
+                    <div class='portfolioDesktop' id='resourcesPortfolioDesktop'>                    
+                        <div class='portfolioProfile' id='resourcesPortfolioJFrydenberg'>
+                            <div class="profileBasics"></div>
+                            <div class='profileDetailButton'>View details and analysis</div>
+                        </div>
+                        <hr>
+                         <div class='portfolioProfile' id='resourcesPortfolioGGray'>
+                            <div class="profileBasics"></div>
+                            <div class='profileDetailButton'>View details and analysis</div>                            
+                        </div>                         
+                    </div>                    
+                    <div class='portfolioMobile'>                    
+                        <div class='profile-photo josh-frydenberg-158' id='josh-frydenberg'> 
+                            <div class="profile-photo-name">Josh Frydenberg</div>
+                        </div>
+                        <div class='profile-photo gary-gray-158' id='gary-gray'>
+                            <div class="profile-photo-name">Gary Gray</div>  
+                        </div>
+                    </div>
+                </div>
+
+                                            
+                <!-- Trade portfolios -->                   
+                <div id='tradeGroup'>
+                    <div class='portfolioDesktop' id='resourcesPortfolioDesktop'>                    
+                        <div class='portfolioProfile' id='tradePortfolioSCiobo'>
+                            <div class="profileBasics"></div>
+                            <div class='profileDetailButton'>View details and analysis</div>
+                        </div>
+                        <hr>
+                        <div class='portfolioProfile' id='tradePortfolioPWong'>
+                            <div class="profileBasics"></div>
+                            <div class='profileDetailButton'>View details and analysis</div>                             
+                        </div>                        
+                    </div>                    
+                    <div class='portfolioMobile'>                    
+                        <div class='profile-photo steven-ciobo-158' id='steven-ciobo'> 
+                            <div class="profile-photo-name">Steven Ciobo</div>
+                        </div>
+                        <div class='profile-photo penny-wong-158' id='penny-wong'>
+                            <div class="profile-photo-name">Penny Wong</div>  
+                        </div>
+                    </div>
+                </div>                
+                <!-- Infrastructure and Transport portfolios -->                   
+                <div id='transportGroup'>
+                    <div class='portfolioDesktop' id='transportPortfolioDesktop'>                    
+                        <div class='portfolioProfile' id='transportPortfolioDChester'>
+                            <div class="profileBasics"></div>
+                            <div class='profileDetailButton'>View details and analysis</div>
+                        </div>
+                        <hr>
+                        <div class='portfolioProfile' id='transportPortfolioAAlbanese'>
+                            <div class="profileBasics"></div>
+                            <div class='profileDetailButton'>View details and analysis</div>                             
+                        </div>                        
+                    </div>                    
+                    <div class='portfolioMobile'>
+                        <div class='profile-photo darren-chester-158' id='darren-chester'> 
+                            <div class="profile-photo-name">Darren Chester</div>
+                        </div>
+                        <div class='profile-photo anthony-albanese-158' id='anthony-albanese'>
+                            <div class="profile-photo-name">Anthony Albanese</div>  
+                        </div>
+                    </div>
+                </div> 
+                <!-- Education -->
+                <div id='educationGroup'>
+                    <div class='portfolioDesktop' id='educationPortfolioDesktop'>
+                        <div class='portfolioProfile' id='educationPortfolioSBirmingham'>
+                            <div class="profileBasics"></div>
+                            <div class='profileDetailButton'>View details and analysis</div>
+                        </div>
+                        <hr>
+                        <div class='portfolioProfile' id='employmentPortfolioKEllis'>
+                            <div class="profileBasics"></div>
+                            <div class='profileDetailButton'>View details and analysis</div>                             
+                        </div>                        
+                    </div>                      
+                    <div class='portfolioMobile'> 
+                         <div class='profile-photo simon-birmingham-158' id='simon-birmingham'> 
+                            <div class="profile-photo-name">Simon Birmingham</div>
+                        </div>
+                        <div class='profile-photo kate-ellis-158' id='kate-ellis'>
+                            <div class="profile-photo-name">Kate Ellis</div>  
+                        </div>
+                    </div>
+                </div>
+                <!-- Environment portfolios -->
+                <div id='environmentGroup'>
+                   <div class='portfolioDesktop' id='environmentPortfolioDesktop'>
+                        <div class='portfolioProfile' id='environmentPortfolioGHunt'>
+                            <div class="profileBasics"></div>
+                            <div class='profileDetailButton'>View details and analysis</div>
+                        </div>
+                        <hr>
+                        <div class='portfolioProfile' id='environmentPortfolioMButler'>
+                            <div class="profileBasics"></div>
+                            <div class='profileDetailButton'>View details and analysis</div>                             
+                        </div>                        
+                    </div>                      
+                    <div class='portfolioMobile'>                     
+                        <div class='profile-photo greg-hunt-158' id='greg-hunt'> 
+                            <div class="profile-photo-name">Greg Hunt</div>
+                            <div class="profile-position">Environment Minister</div>                        
+                        </div>
+                        <div class='profile-photo mark-butler-158' id='mark-butler'>
+                            <div class="profile-photo-name">Mark Butler</div>
+                            <div class="profile-position">Shadow Environment Minister</div>    
+                        </div>
+                    </div>
+                </div>
+                <!-- Agriculture portfolios -->
+                <div id='agricultureGroup'>
+                    <div class='portfolioDesktop' id='agriculturePortfolioDesktop'>
+                        <div class='portfolioProfile' id='agriculturePortfolioBJoyce'>
+                            <div class="profileBasics"></div>
+                            <div class='profileDetailButton'>View details and analysis</div>
+                        </div>
+                        <hr>
+                        <div class='portfolioProfile' id='agriculturePortfolioJFitzgibbon'>
+                            <div class="profileBasics"></div>
+                            <div class='profileDetailButton'>View details and analysis</div>                             
+                        </div>                        
+                    </div>                      
+                    <div class='portfolioMobile'>                     
+                        <div class='profile-photo barnaby-joyce-158' id='barnaby-joyce'> 
+                            <div class="profile-photo-name">Barnaby Joyce</div>
+                            <div class="profile-position">Agriculture Minister</div>                          
+                        </div>
+                        <div class='profile-photo joel-fitzgibbon-158' id='joel-fitzgibbon'>
+                            <div class="profile-photo-name">Joel Fitzgibbon</div>
+                            <div class="profile-position">Shadow Agriculture Minister</div> 
+                        </div>
+                    </div>
+                </div>                
+                <!-- Health portfolios -->
+                <div id='healthGroup'>
+                    <div class='portfolioDesktop' id='healthPortfolioDesktop'>
+                        <div class='portfolioProfile' id='healthPortfolioSLey'>
+                            <div class="profileBasics"></div>
+                            <div class='profileDetailButton'>View details and analysis</div>
+                        </div>
+                        <hr>
+                        <div class='portfolioProfile' id='healthPortfolioCKing'>
+                            <div class="profileBasics"></div>
+                            <div class='profileDetailButton'>View details and analysis</div>                           
+                        </div>                        
+                    </div>                     
+                    <div class='portfolioMobile'> 
+                        <div class='profile-photo sussan-ley-158' id='sussan-ley'> 
+                            <div class="profile-photo-name">Sussan Ley</div>
+                        </div>
+                        <div class='profile-photo catherine-king-158' id='catherine-king'>
+                            <div class="profile-photo-name">Catherine King</div>  
+                        </div>
+                    </div>
+                </div>
+                <!-- Immigration portfolios -->
+                <div id='immigrationGroup'>
+                    <div class='portfolioDesktop' id='immigrationPortfolioDesktop'>
+                        <div class='portfolioProfile' id='immigrationPortfolioPDutton'>
+                            <div class="profileBasics"></div>
+                            <div class='profileDetailButton'>View details and analysis</div>
+                        </div>
+                        <hr>
+                        <div class='portfolioProfile' id='immigrationPortfolioRM'>
+                            <div class="profileBasics"></div>
+                            <div class='profileDetailButton'>View details and analysis</div>                            
+                        </div>                        
+                    </div>                    
+                    <div class='portfolioMobile'> 
+                        <div class='profile-photo peter-dutton-158' id='peter-dutton'> 
+                            <div class="profile-photo-name">Peter Dutton</div>
+                        </div>
+                        <div class='profile-photo richard-marles-158' id='richard-marles'>
+                            <div class="profile-photo-name">Richard Marles</div>  
+                        </div>
+                    </div>
+                </div>
+                <!-- Foreign Affairs portfolios -->
+                <div id='foreignGroup'>
+                    <div class='portfolioDesktop' id='foreignPortfolioDesktop'>
+                        <div class='portfolioProfile' id='foreignPortfolioJBishop'>
+                            <div class="profileBasics"></div>
+                            <div class='profileDetailButton'>View details and analysis</div>
+                        </div>
+                        <hr>
+                        <div class='portfolioProfile' id='foriegnPortfolioTPlibersek'>
+                            <div class="profileBasics"></div>
+                            <div class='profileDetailButton'>View details and analysis</div>                            
+                        </div>                        
+                    </div>                     
+                    <div class='portfolioMobile'> 
+                        <div class='profile-photo julie-bishop-158' id='julie-bishop'>
+                            <div class="profile-photo-name">Julie Bishop</div>   
+                        </div>                       
+                        <div class='profile-photo tanya-plibersek-158' id='tanya-plibersek'>     
+                            <div class="profile-photo-name">Tanya Plibersek</div>  
+                        </div>
+                    </div>
+                </div>
+                <!-- Defence portfolios -->
+                <div id='defenceGroup'>
+                   <div class='portfolioDesktop' id='defencePortfolioDesktop'>
+                        <div class='portfolioProfile' id='defencePortfolioMPayne'>
+                            <div class="profileBasics"></div>
+                            <div class='profileDetailButton'>View details and analysis</div>
+                        </div>
+                        <hr>
+                        <div class='portfolioProfile' id='defencePortfolioSConroy'>
+                            <div class="profileBasics"></div>
+                            <div class='profileDetailButton'>View details and analysis</div>                            
+                        </div>                        
+                    </div>                     
+                    <div class='portfolioMobile'>                     
+                        <div class='profile-photo marise-payne-158' id='marise-payne'> 
+                            <div class="profile-photo-name">Marise Payne</div>
+                        </div>
+                        <div class='profile-photo stephen-conroy-158' id='stephen-conroy'>
+                            <div class="profile-photo-name">Stephen Conroy</div>  
+                        </div>   
+                    </div>
+                </div>
+                <!-- Small Business portfolios -->
+                <div id='smallbusinessGroup'>
+                   <div class='portfolioDesktop' id='businessPortfolioDesktop'>
+                        <div class='portfolioProfile' id='businessPortfolioKOdwyer'>
+                            <div class="profileBasics"></div>
+                            <div class='profileDetailButton'>View details and analysis</div>
+                        </div>
+                        <hr>
+                        <div class='portfolioProfile' id='businessPortfolioMRowland'>
+                            <div class="profileBasics"></div>
+                            <div class='profileDetailButton'>View details and analysis</div>                            
+                        </div>                        
+                    </div>                       
+                    <div class='portfolioMobile'>                     
+                        <div class='profile-photo kelly-o-dwyer-158' id='kelly-o-dwyer'> 
+                            <div class="profile-photo-name">Mitch Fifield</div>
+                        </div>
+                        <div class='profile-photo michelle-rowland-158' id='michelle-rowland'>
+                            <div class="profile-photo-name">Michelle Rowland</div>  
+                        </div>
+                    </div>
+                </div>                
+                <!-- Communications portfolios -->
+                <div id='communicationsGroup'>
+                   <div class='portfolioDesktop' id='communicationsPortfolioDesktop'>
+                        <div class='portfolioProfile' id='communicationsPortfolioMFifield'>
+                            <div class="profileBasics"></div>
+                            <div class='profileDetailButton'>View details and analysis</div>
+                        </div>
+                        <hr>
+                        <div class='portfolioProfile' id='communicationsPortfolioJClare'>
+                            <div class="profileBasics"></div>
+                            <div class='profileDetailButton'>View details and analysis</div>                            
+                        </div>                        
+                    </div>                       
+                    <div class='portfolioMobile'>                     
+                        <div class='profile-photo mitch-fifield-158' id='mitch-fifield'> 
+                            <div class="profile-photo-name">Mitch Fifield</div>
+                        </div>
+                        <div class='profile-photo jason-clare-158' id='jason-clare'>
+                            <div class="profile-photo-name">Jason Clare</div>  
+                        </div>
+                    </div>
+                </div>
+                <!-- Science portfolios -->
+                <div id='scienceGroup'>
+                    <div class='portfolioDesktop' id='sciencePortfolioDesktop'>
+                        <div class='portfolioProfile' id='sciencePortfolioCPyne'>
+                            <div class="profileBasics"></div>
+                            <div class='profileDetailButton'>View details and analysis</div>
+                        </div>
+                        <hr>
+                        <div class='portfolioProfile' id='sciencePortfolioKCarr'>
+                            <div class="profileBasics"></div>
+                            <div class='profileDetailButton'>View details and analysis</div>                            
+                        </div>                        
+                    </div>                       
+                    <div class='portfolioMobile'>                    
+                        <div class='profile-photo christopher-pyne-158' id='christopher-pyne'> 
+                            <div class="profile-photo-name">Christopher Pyne</div>
+                        </div>
+                        <div class='profile-photo kim-carr-158' id='kim-carr'>
+                            <div class="profile-photo-name">Kim Carr</div>  
+                        </div> 
+                    </div>
+                </div>
+                <!-- Legal portfolios -->
+                <div id='legalGroup'>
+                    <div class='portfolioDesktop' id='legalPortfolioDesktop'>
+                        <div class='portfolioProfile' id='legalPortfolioGBrandis'>
+                            <div class="profileBasics"></div>
+                            <div class='profileDetailButton'>View details and analysis</div>
+                        </div>
+                        <hr>
+                        <div class='portfolioProfile' id='legalPortfolioMDreyfus'>
+                            <div class="profileBasics"></div>
+                            <div class='profileDetailButton'>View details and analysis</div>                            
+                        </div>                        
+                    </div>                       
+                    <div class='portfolioMobile'>                    
+                        <div class='profile-photo george-brandis-158' id='george-brandis'> 
+                            <div class="profile-photo-name">George Brandis</div>
+                        </div>
+                        <div class='profile-photo mark-dreyfus-158' id='mark-dreyfus'>
+                            <div class="profile-photo-name">Mark Dreyfus</div>  
+                        </div> 
+                    </div>
+                </div>                
+                <!-- Indigenous Affairs portfolios -->
+                <div id='indigenousGroup'>
+                    <div class='portfolioDesktop' id='indigenousPortfolioDesktop'>
+                        <div class='portfolioProfile' id='indigenousPortfolioNScullion'>
+                            <div class="profileBasics"></div>
+                            <div class='profileDetailButton'>View details and analysis</div>
+                        </div>
+                        <hr>
+                        <div class='portfolioProfile' id='indigenousPortfolioSNeumann'>
+                            <div class="profileBasics"></div>
+                            <div class='profileDetailButton'>View details and analysis</div>                            
+                        </div>                        
+                    </div>                       
+                    <div class='portfolioMobile'>                    
+                        <div class='profile-photo nigel-scullion-158' id='nigel-scullion'> 
+                            <div class="profile-photo-name">Nigel Scullion</div>
+                        </div>
+                        <div class='profile-photo shayne-neumann-158' id='shayne-neumann'>
+                            <div class="profile-photo-name">Shayne Neumann</div>  
+                        </div> 
+                    </div>                 
+                </div>
+                <!-- Arts portfolios -->
+                <div id='artsGroup'>
+                    <div class='portfolioDesktop' id='artsPortfolioDesktop'>
+                        <div class='portfolioProfile' id='artsPortfolioMFifield'>
+                            <div class="profileBasics"></div>
+                            <div class='profileDetailButton'>View details and analysis</div>
+                        </div>
+                        <hr>
+                        <div class='portfolioProfile' id='artsPortfolioMDreyfus'>
+                            <div class="profileBasics"></div>
+                            <div class='profileDetailButton'>View details and analysis</div>                            
+                        </div>                        
+                    </div>                       
+                    <div class='portfolioMobile'>                    
+                       <div class='profile-photo mitch-fifield-158' id='mitch-fifield'> 
+                            <div class="profile-photo-name">Mitch Fifield</div>
+                        </div>
+                        <div class='profile-photo mark-dreyfus-158' id='mark-dreyfus'>
+                            <div class="profile-photo-name">Mark Dreyfus</div>  
+                        </div> 
+                    </div>
+                </div>                   
+                <!-- Social Services portfolios -->
+                <div id='socialGroup'>
+                    <div class='portfolioDesktop' id='socialPortfolioDesktop'>
+                        <div class='portfolioProfile' id='socialPortfolioCPorter'>
+                            <div class="profileBasics"></div>
+                            <div class='profileDetailButton'>View details and analysis</div>
+                        </div>
+                        <hr>
+                        <div class='portfolioProfile' id='socialPortfolioJMacklin'>
+                            <div class="profileBasics"></div>
+                            <div class='profileDetailButton'>View details and analysis</div>                            
+                        </div>                        
+                    </div>                       
+                    <div class='portfolioMobile'>                    
+                       <div class='profile-photo christian-porter-158' id='christian-porter'> 
+                            <div class="profile-photo-name">Christian Porter</div>
+                        </div>
+                        <div class='profile-photo jenny-macklin-158' id='jenny-macklin'>
+                            <div class="profile-photo-name">Jenny Macklin</div>  
+                        </div> 
+                    </div>
+                </div>                
+            </div>
+        </div>
+      </div>
+
+		
+</body>

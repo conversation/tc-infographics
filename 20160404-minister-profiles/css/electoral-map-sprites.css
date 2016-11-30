@@ -1,0 +1,184 @@
+.Adelaide, .Ballarat, .Blair, .Blaxland, .Brand, .Cook, .Corio, .Curtin, .Dickson, .Farrer, .Flinders, .Gippsland, .Gorton, .Grayndler, .Greenway, .Higgins, .Isaacs, .Jagajaga, .Kooyong, .Maribyrnong, .McMahon, .Moncrieff, .New-England, .Pearce, .Port-Adelaide, .Sturt, .Sydney, .Watson, .Wentworth, .Hunter{
+	background: url(../images/electoral-map-sprites.png) no-repeat;
+}
+
+.Adelaide{
+	background-position: 0 0;
+	width: 300px;
+	height: 298px;
+}
+
+.Ballarat{
+	background-position: -300px 0;
+	width: 300px;
+	height: 288px;
+}
+
+.Blair{
+	background-position: -600px 0;
+	width: 300px;
+	height: 298px;
+}
+
+.Blaxland{
+	background-position: -900px 0;
+	width: 300px;
+	height: 300px;
+}
+
+.Brand{
+	background-position: 0 -298px ;
+	width: 300px;
+	height: 298px;
+}
+
+.Cook{
+	background-position: -300px -296px ;
+	width: 300px;
+	height: 302px;
+}
+
+.Corio{
+	background-position: -600px -298px ;
+	width: 300px;
+	height: 315px;
+}
+
+.Curtin{
+	background-position: -900px -305px ;
+	width: 300px;
+	height: 354px;
+}
+
+.Dickson{
+	background-position: 0 -600px ;
+	width: 300px;
+	height: 300px;
+}
+
+.Farrer{
+	background-position: -300px -598px ;
+	width: 300px;
+	height: 300px;
+}
+
+.Flinders{
+	background-position: -600px -616px ;
+	width: 300px;
+	height: 229px;
+}
+
+.Gippsland{
+	background-position: -900px -659px ;
+	width: 300px;
+	height: 277px;
+}
+
+.Gorton{
+	background-position: 0 -900px ;
+	width: 300px;
+	height: 245px;
+}
+
+.Grayndler{
+	background-position: -300px -900px ;
+	width: 301px;
+	height: 320px;
+}
+
+.Greenway{
+	background-position: -600px -845px ;
+	width: 300px;
+	height: 346px;
+}
+
+.Higgins{
+	background-position: -900px -936px ;
+	width: 300px;
+	height: 278px;
+}
+
+.Isaacs{
+	background-position: 0 -1144px ;
+	width: 300px;
+	height: 295px;
+}
+
+.Jagajaga{
+	background-position: -300px -1219px ;
+	width: 300px;
+	height: 242px;
+}
+
+.Kooyong{
+	background-position: -600px -1192px ;
+	width: 300px;
+	height: 264px;
+}
+
+.Maribyrnong{
+	background-position: -900px -1213px ;
+	width: 300px;
+	height: 262px;
+}
+
+.McMahon{
+	background-position: 0 -1440px ;
+	width: 300px;
+	height: 259px;
+}
+
+.Moncrieff{
+	background-position: -300px -1464px ;
+	width: 300px;
+	height: 338px;
+}
+
+.New-England{
+	background-position: -600px -1459px ;
+	width: 300px;
+	height: 322px;
+}
+
+.Pearce{
+	background-position: -900px -1475px ;
+	width: 300px;
+	height: 248px;
+}
+
+.Port-Adelaide{
+	background-position: 0 -1698px ;
+	width: 300px;
+	height: 295px;
+}
+
+.Sturt{
+	background-position: -300px -1799px ;
+	width: 300px;
+	height: 300px;
+}
+
+.Sydney{
+	background-position: -600px -1782px ;
+	width: 300px;
+	height: 293px;
+}
+
+.Watson{
+	background-position: -900px -1727px ;
+	width: 300px;
+	height: 296px;
+}
+
+.Wentworth{
+	background-position: 0 -1994px ;
+	width: 300px;
+	height: 305px;
+}
+
+.Hunter{
+	background-position: -900px -2023px ;
+	width: 300px;
+	height: 314px;
+}
+

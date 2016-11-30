@@ -1,0 +1,136 @@
+.agriculture, .arts, .communications, .defence, .deputy, .finance, .education, .employment, .environment, .foreign-affairs, .health, .immigration, .indigenous-affairs, .leadership, .legal, .resources, .science, .small-business, .social-services, .trade, .treasury, .transport{
+	background: url(../images/portfolio-icons.png) no-repeat;
+}
+
+.agriculture{
+	background-position: 0 0;
+	width: 158px;
+	height: 197px;
+}
+
+.arts{
+	background-position: -158px 0;
+	width: 158px;
+	height: 197px;
+}
+
+.communications{
+	background-position: -316px 0;
+	width: 158px;
+	height: 197px;
+}
+
+.defence{
+	background-position: -474px 0;
+	width: 158px;
+	height: 197px;
+}
+
+.deputy{
+	background-position: 0 -197px ;
+	width: 158px;
+	height: 197px;
+}
+
+.finance{
+	background-position: -158px -197px ;
+	width: 158px;
+	height: 197px;
+}
+
+.education{
+	background-position: -316px -197px ;
+	width: 158px;
+	height: 197px;
+}
+
+.employment{
+	background-position: -474px -197px ;
+	width: 158px;
+	height: 197px;
+}
+
+.environment{
+	background-position: 0 -394px ;
+	width: 158px;
+	height: 197px;
+}
+
+.foreign-affairs{
+	background-position: -158px -394px ;
+	width: 158px;
+	height: 197px;
+}
+
+.health{
+	background-position: -316px -394px ;
+	width: 158px;
+	height: 197px;
+}
+
+.immigration{
+	background-position: -474px -394px ;
+	width: 158px;
+	height: 197px;
+}
+
+.indigenous-affairs{
+	background-position: 0 -591.0000228881836px ;
+	width: 158px;
+	height: 197px;
+}
+
+.leadership{
+	background-position: -158px -591.0000152587891px ;
+	width: 158px;
+	height: 197px;
+}
+
+.legal{
+	background-position: -316px -591.0000305175781px ;
+	width: 158px;
+	height: 197px;
+}
+
+.resources{
+	background-position: -474px -591.0000305175781px ;
+	width: 158px;
+	height: 197px;
+}
+
+.science{
+	background-position: 0 -789.0000305175781px ;
+	width: 158px;
+	height: 197px;
+}
+
+.small-business{
+	background-position: -158px -789.0000305175781px ;
+	width: 158px;
+	height: 197px;
+}
+
+.social-services{
+	background-position: -316px -789.0000305175781px ;
+	width: 158px;
+	height: 197px;
+}
+
+.trade{
+	background-position: -474px -789.0000305175781px ;
+	width: 158px;
+	height: 197px;
+}
+
+.treasury{
+	background-position: 0 -986px ;
+	width: 158px;
+	height: 197px;
+}
+
+.transport{
+	background-position: -158px -986px ;
+	width: 158px;
+	height: 197px;
+}
+

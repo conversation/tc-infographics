@@ -1,0 +1,774 @@
+    
+/* Reset */
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, em, img, samp, strong, b, u, i, center,
+dl, dt, dd, ol, ul, li, table, caption, tbody,
+figure, figcaption, footer, header, 
+menu, nav, section, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+	font-family: "Helvetica Neue", "Arial", clean, sans-serif;
+}
+
+hr {
+ height: 12px; border: 0; box-shadow: inset 0 12px 12px -12px rgba(255, 153, 0, 0.5);
+}
+/* ========================================= */
+/*----- List of ministers Tabs -----*/
+.tabs {
+    width:100%;
+    display:inline-block;
+    max-width: 644px;
+    background: #f4f5f7;
+    min-width: 350px;
+/*    max-width: 754px; */
+    
+}
+ 
+/*----- Tab Links -----*/
+/* Clearfix */
+.tab-links:after {
+    display:block;
+    clear:both;
+    content:"";
+}
+
+.tab-links li {
+    margin:0px 2px 0px 2px;
+    float:left;
+    list-style:none;
+    text-decoration:none;    
+}
+
+.tab-links-small {
+    display:none;
+}
+
+.tab-links a {
+    padding:8px 6px;
+    display:inline-block;
+    /* border-radius:5px 5px 0px 0px; */
+    background:#e6e6e6;
+    font-size: 0.85em;
+    font-weight:400;
+    color:#8c8c8c;
+    transition:all linear 0.15s;
+    text-decoration:none;      
+}
+
+.tab-links a:hover {
+    background:#a6a6a6;
+    text-decoration:none;
+    color:#4c4c4c;    
+}
+
+li.active a, li.active a:hover {
+    background:#727272;
+    color:#4c4c4c;
+}
+
+.showPositionButton {
+    display: inline-block;
+    width: 60px;
+    text-align: center;
+    position: sticky;
+    margin: 10px 20px 0px 10px;
+    background: #50e3c2;
+    opacity: 0.5;
+    top:0px;
+    color: #000000;
+    padding: 4px;
+    font-size: 0.75em;
+    cursor: pointer;
+}
+
+.showPositionButton:hover {
+    opacity: 0.95;
+}
+
+.showNamesButton {
+    display: inline-block;
+    width: 70px;
+    text-align: center;    
+    position: sticky;
+    margin: 10px 0px 0px 20px;
+    background: #4a90e2;
+    opacity: 0.5;
+    top:0px;
+    color: #000000;
+    padding: 4px;
+    font-size: 0.75em;
+    cursor: pointer;
+}
+
+.showNamesButton:hover {
+    opacity: 0.95;
+}
+
+
+/*----- Content of Tabs -----*/
+.tab-content {
+    padding:0px;
+    /* border-radius:3px; */
+    box-shadow:-1px 1px 1px rgba(0,0,0,0.15);
+    background:#e6e6e6;
+}
+
+.tab {
+    display:none;
+}
+
+
+.tab.active {
+    display:block;
+}
+
+/* ----- List of profile photos style --------- */
+
+.minister-list-container {
+    display: inline;
+}
+
+.government-ministers {
+    display: block;
+    float:left;
+}
+
+.opposition-ministers {
+    float: left;
+}
+
+.profile-photo {
+    float:left;
+    position:relative;
+    margin: 0px 1px 1px 1px;
+    /* border-radius: 3px; */
+    cursor: pointer;
+}
+
+
+.profile-photo:hover {
+    opacity: .75;
+}
+
+/* TITLE tooltip */
+
+.profile-position {
+    display: block;
+	content:attr(title);
+	color:#000000;
+	background:#fff;
+	/* background:rgba(255,255,180,0.75); */
+	background:rgba(255,255,255,0.75);
+	padding:2px;
+	position:absolute;
+	left: 0px;
+	bottom:5px;
+    width: 98%;
+	opacity:1;
+    font-size: 0.75em;
+    text-align: center;
+}
+
+.profile-position:hover {
+	opacity: 0.15;
+}
+
+.profile-photo:hover .profile-position {
+    opacity: 0.15;
+}
+
+.profile-photo:hover .profile-photo-name {
+    color: #fff;
+    background: rgba(1, 1, 1, 0.75);
+}
+
+.profile-photo-name {
+    position: absolute;
+    top: 0px;
+    left:0px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 5px;
+    color: #cccccc;
+    text-align: center;
+    margin: 0;
+    font-size: 0.9em;
+    width: 93%;
+    opacity: 0.95;
+}
+
+/* ----- Profile menu style --------- */
+
+.profile-tab-links:after {
+    display:block;
+    clear:both;
+    content:"";
+}
+
+.profile-tab-links li {
+    margin:0px 5px;
+    float:left;
+    list-style:none;
+    text-decoration:none;    
+}
+
+.profile-tab-links a {
+    padding:9px 8px;
+    display:inline-block;
+    /*border-radius:5px 5px 0px 0px;*/
+    background:#ffddcc;
+    font-size:0.85em;
+    font-weight:400;
+    color:#4c4c4c;
+    transition:all linear 0.15s;
+    text-decoration:none;      
+}
+
+.profile-tab-links a:hover {
+    background:#ff884d;
+    text-decoration:none;
+}
+
+li.active a, li.active a:hover {
+    background:#ffaa80;
+    color:#4c4c4c;
+}
+
+
+/* -------- CHART - SVG PROPERTIES / NOT CSS -------- */
+
+.chart {
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    height: 60px;
+}
+
+.chart rect {
+    opacity: 0.75;
+}
+
+.chart text {
+  fill: white;
+  font: 11px sans-serif;
+  text-anchor: end;
+}
+
+.axis path,
+.axis line {
+    fill: none;
+    stroke: black;
+    shape-rendering: crispEdges;
+}
+
+.axis text {
+    font-family: sans-serif;
+    font-size: 11px;
+    fill: #999999;
+}
+
+/* --------- PORTFOLIO BUTTONS ---------------------- */
+
+.portfolioButton {
+    float:left;
+    background-color: red;
+    position:relative;
+    margin: 0px 1px 1px 1px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.portfolioName {
+    position:absolute;
+    /* top:160px; */
+    top: 10px;
+    left:0;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 5px;
+    color: #cccccc;
+    text-align: center;
+    margin: 0;
+    font-size: 0.75em;
+    width: 94%;
+    opacity: 1;    
+}
+
+
+.portfolioButton:hover {
+    opacity: .5;
+}
+
+
+.portfolioButton:hover .portfolioName {
+    color: #fff;
+    background: rgba(1, 1, 1, 0.75);
+}
+
+
+
+/* ------- PORTFOLIO SECTION -------------------- */
+
+.portfolioDesktop {
+    display: inline-block;
+    background: #f4f5f7;
+    width: 100%;
+}
+    
+.portfolioMobile {
+    display: none;
+}
+/*
+#financePortfolioMCormann {
+    display: inline-block;
+} */
+
+#leadershipGroup {
+    display: none;
+}
+
+#leadershipGroup.active {
+    display: block;
+}
+
+#artsGroup {
+    display: none;
+}
+
+#artsGroup.active {
+    display: block;
+}
+
+#deputyGroup {
+    display: none;
+}
+
+#deputyGroup.active {
+    display: block;
+}
+
+#treasuryGroup {
+    display: none; 
+}
+
+#treasuryGroup.active {
+    display: block; 
+}
+
+#resourcesGroup {
+    display: none; 
+}
+
+#resourcesGroup.active {
+    display: block; 
+}
+
+#financeGroup {
+    display: none; 
+}
+
+#financeGroup.active {
+    display: block; 
+}
+
+#employmentGroup {
+    display: none; 
+}
+
+#employmentGroup.active {
+    display: block; 
+}
+
+#tradeGroup {
+    display: none; 
+}
+
+#tradeGroup.active {
+    display: block; 
+}
+
+
+#smallbusinessGroup {
+    display: none; 
+}
+
+#smallbusinessGroup.active {
+    display: block; 
+}
+
+#transportGroup {
+    display: none; 
+}
+
+#transportGroup.active {
+    display: block; 
+}
+
+#agricultureGroup {
+    display: none; 
+}
+
+#agricultureGroup.active {
+    display: block; 
+}
+#educationGroup {
+    display: none; 
+}
+
+#educationGroup.active {
+    display: block; 
+}
+
+#environmentGroup {
+    display: none; 
+}
+
+#environmentGroup.active {
+    display: block; 
+}
+
+#healthGroup {
+    display: none; 
+}
+
+#healthGroup.active {
+    display: block; 
+}
+
+#immigrationGroup {
+    display: none;
+}
+
+#immigrationGroup.active {
+    display: block; 
+}
+
+#foreignGroup {
+    display: none; 
+}
+
+#foreignGroup.active {
+    display: block; 
+}
+
+#defenceGroup {
+    display: none; 
+}
+
+#defenceGroup.active {
+    display: block; 
+}
+
+#communicationsGroup {
+    display: none; 
+}
+
+#communicationsGroup.active {
+    display: block; 
+}
+
+#scienceGroup {
+    display: none; 
+}
+
+#scienceGroup.active {
+    display: block; 
+}
+
+#legalGroup {
+    display: none; 
+}
+
+#legalGroup.active {
+    display: block; 
+}
+
+#indigenousGroup {
+    display: none; 
+}
+
+#indigenousGroup.active {
+    display: block; 
+}
+
+#socialGroup {
+    display: none; 
+}
+
+#socialGroup.active {
+    display: block; 
+}
+
+/* ------- MINISTER DETAILS AND ANALYSIS -------- */
+
+/*----- main container -----*/
+.profile-content {
+    /*padding:10px;*/
+    /*border-radius:3px; */
+    /*box-shadow:-1px 1px 1px rgba(0,0,0,0.15);*/
+    background:#f4f5f7;
+    max-width: 644px;
+}
+
+.minister-profile-container {
+    display: none;
+    max-width: 644px;    
+}
+
+.minister-portfolio-container {
+    display: none;
+    max-width: 644px;    
+}
+
+.profileBasics {
+    display: block;
+    margin-left: 10px;
+    margin-right: 10px;   
+}
+
+.portfolioList {
+    border: 1px solid #f2f2f2;
+    margin: 10px 10px 0px 10px;
+    padding: 10px;
+    background: rgba(230, 238, 255, 0.25); /* default Coalition color */
+}
+
+.Labor {
+    background: rgba(255, 230, 230, 0.25);;
+}
+
+.profileImage {
+    display: inline-block;
+    float: right;
+    margin-left: 20px;
+    margin-top: 0px;
+}
+
+.profileDetail {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.profileNotes {
+    font-style: italic;
+    font-weight: 200;
+    font-size: 0.85em;
+    color: #727272;
+    margin-right: 5px;
+}
+
+.ministerSeatNote {
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.senateHeading {
+    font-weight: 500;
+    color: #727272;
+    font-size: 1.0em;
+}
+
+.chartHeading {
+    font-weight: 200;
+    color: black;
+    font-size: 0.9em;
+    margin-top: 0px;
+    margin-bottom: 15px;
+    margin-left: 10px;
+/*    margin-right: 5px; */
+/*     */
+}
+
+.profileHeading {
+    font-weight: bold;
+    color: darkgrey;
+    font-size: 1.0em;
+/*    margin-right: 5px; */
+/*    margin-left: 15px; */
+}
+
+.profileValue {
+    color: black;
+    font-weight: 300;
+    font-size: 1em;
+    line-height: 1.25em;
+    margin: 0.25em;
+    margin: 0.25em;
+}
+
+.ministerName {
+/*    margin: 0px 5px 5px 5px; */
+    font-size: 1em;
+    font-weight: 600;
+    padding-top: 10px;
+    padding-bottom: 0px;    
+}
+
+.ministerPosition {   
+    font-weight: 500;
+    font-size: 1em;
+    color: firebrick;
+/*    margin: 5px;    */
+}
+
+.ministerAgeFaction {
+    display: inline;
+}
+
+#ministerAge {
+    display: inline;
+}
+
+#ministerEnteredParliament {
+    display: inline;
+    margin-left: 10px;
+}
+
+/* View profile details button */
+
+.profileDetailButton {
+	font-size: 1.0em;
+	margin: .5em;
+	display: block;
+    padding: .5em;
+	background-color: #cccccc; 
+    cursor:pointer;
+    text-align: center;
+}
+
+.profileDetailButton:hover,
+.profileDetailButton:active,
+.profileDetailButton:focus {
+    color: white;
+	background-color: #5d5d5d;
+}
+
+/* Profile buttons style */
+
+.profileSeatButton {
+	font-size: 1.0em;
+	margin: .5em;
+	display: block;
+    padding: .5em;
+	background-color: #cccccc; 
+    cursor:pointer;
+}
+
+.profileSeatButton:hover,
+.profileSeatButton:active,
+.profileSeatButton:focus {
+    color: white;
+	background-color: #5d5d5d;
+}
+
+.profileAnalysisButton {
+	font-size: 1.0em;
+	margin: .5em;
+	display: block;
+    padding: .5em;
+	background-color: #cccccc; 
+    cursor:pointer;
+}
+
+.profileAnalysisButton:hover,
+.profileAnalysisButton:active,
+.profileAnalysisButton:focus {
+    color: white;
+	background-color: #5d5d5d;
+}
+
+.expandButton {
+    float: right;
+}
+
+/* click button instructions */
+.analysisExpandInfo {
+    font-style: italic;
+    font-weight: 100;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.seatExpandInfo {
+    font-style: italic;
+    font-weight: 100;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.analysisExpand {
+    font-weight: 600;
+    font-size: 1em;
+}
+
+.seatExpand {
+    font-weight: 600;
+    font-size: 1em;
+}
+
+.ministerSeatDetails {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.ministerSeatMap {
+    float: right;
+    margin-left: 10px;
+    margin-right: 10px;
+} 
+
+.ministerAnalysis {
+    display: inline-block;
+}
+
+.ministerAnalysis p {
+    font-size: 1em;
+    line-height: 1.25em;
+    font-weight: 300;    
+    margin: 0px 10px 15px 10px;
+    text-align: justify;   
+}
+
+#analysisExpandInfo,
+#seatExpandInfo {
+    display: inline;    
+}
+
+/* -------------------------------------------- */
+/* -------------------------------------------- */
+
+@media all and (max-width: 499px) {
+    
+    #analysisExpandInfo,
+    #seatExpandInfo {
+        display: none;    
+    }
+    
+    .profileImage {
+        display: none;
+    }
+    
+    .portfolioDesktop {
+        display: none;
+    }
+    
+    .portfolioMobile {
+        display: inline-block;
+    }
+    
+    .showPositionButton {
+        display: none;
+    }
+
+    .showNamesButton {
+        display: none;
+    }
+
+    .profile-position {
+        display: block;
+    }
+}
+
+    
