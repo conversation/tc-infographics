@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Australia's marine reserves</title>
+    
+<link href="css/leaflet.css" rel="stylesheet" type="text/css">    
+<link href="css/main-style.css" rel="stylesheet" type="text/css">    
+<script type="text/javascript" src="js/leaflet.js"></script>
+<script type="text/javascript" src="js/pym.min.js"></script>     
+</head>
+  <body id="page">
+
+    <div class="show-hide-buttons">
+        <div id="showLegendBtn" class="active">Show key</div>
+        <div id="hideLegendBtn">Hide key</div>
+    </div>
+      
+      <!-- <div class='zone-colour-box' id="sanctuary"></div> -->
+      <div id='legend'>
+        <div class="zone-item" id="sanctuary-zone">
+            <span class="zone-colour-box" id="sanctuary"></span>
+            <span class="zone-label">Sanctuary zone</span>
+        </div>
+        <div class="zone-item" id="national-park-zone">
+            <span class="zone-colour-box" id="national-park"></span>
+            <span class="zone-label">Marine national park zone</span>
+        </div>
+        <div class="zone-item" id="recreational-use-zone">
+            <span class="zone-colour-box" id="recreational-use"></span>
+            <span class="zone-label">Recreational use zone</span>
+        </div>
+        <div class="zone-item" id="habitat-protection-zone">
+            <span class="zone-colour-box" id="habitat-protection"></span>
+            <span class="zone-label">Habitat Protection Zone</span>
+        </div>
+        <div class="zone-item" id="habitat-protection-zone-lord-howe">
+            <span class="zone-colour-box" id="habitat-protection-lord-howe"></span>
+            <span class="zone-label">Habitat protection zone (Lord Howe)</span>
+        </div>
+        <div class="zone-item" id="habitat-protection-zone-reefs">
+            <span class="zone-colour-box" id="habitat-protection-reefs"></span>
+            <span class="zone-label">Habitat protection zone (reefs)</span>
+        </div>           
+        <div class="zone-item" id="special-purpose-zone">
+            <span class="zone-colour-box" id="special-purpose"></span>
+            <span class="zone-label">Special purpose zone</span>
+        </div>
+        <div class="zone-item" id="special-purpose-zone-a">
+            <span class="zone-colour-box" id="special-purpose-a"></span>
+            <span class="zone-label">Special purpose zone (A)</span>
+        </div>
+        <div class="zone-item" id="special-purpose-zone-b">
+            <span class="zone-colour-box" id="special-purpose-b"></span>
+            <span class="zone-label">Special purpose zone (B)</span>
+        </div>
+        <div class="zone-item" id="special-purpose-zone-c">
+            <span class="zone-colour-box" id="special-purpose-c"></span>
+            <span class="zone-label">Special purpose zone (C)</span>
+        </div>          
+        <div class="zone-item" id="multiple-use-zone">
+            <span class="zone-colour-box" id="multiple-use"></span>
+            <span class="zone-label">Multiple use zone</span>
+        </div>
+        <div class="zone-item" id="multiple-use-zone-a">
+            <span class="zone-colour-box" id="multiple-use-a"></span>
+            <span class="zone-label">Multiple use zone (A)</span>
+        </div>
+          <div class='footnote'>Please refer to the <a href='http://www.environment.gov.au/system/files/pages/23061bf8-df19-4b74-b867-5a57ccbc5c8b/files/cmrreviewbioregionaladvisorypanelreportfinal_1.pdf' target="_blank">BAP Report</a> for a full explanation of allowed and prohibited activities in each zone type. A summary is provided below.</div>
+      </div>
+      
+      <div id="map"></div>
+        <script src="js/jquery-1.11.3.min.js"></script>
+        <script src="js/topojson.v1.min.js"></script>          
+        <script>
+        // Copyright (c) 2013 Ryan Clark
+        // https://gist.github.com/rclark/5779673
+        // Support for Topo JSON for Leaflet
+        L.TopoJSON = L.GeoJSON.extend({
+          addData: function(jsonData) {    
+            if (jsonData.type === "Topology") {
+              for (key in jsonData.objects) {
+                geojson = topojson.feature(jsonData, jsonData.objects[key]);
+                L.GeoJSON.prototype.addData.call(this, geojson);
+              }
+            }    
+            else {
+              L.GeoJSON.prototype.addData.call(this, jsonData);
+            }
+          }  
+        });
+        </script>  
+        <script type="text/javascript" src="js/map-script.js"></script>
+        <script>
+            var pymChild = new pym.Child({ polling: 500 });
+        </script> 
+    </body>
+</html>
+
+        
+        
+
+

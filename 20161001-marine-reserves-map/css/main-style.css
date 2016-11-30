@@ -1,0 +1,306 @@
+    
+/* Reset */
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, em, img, samp, strong, b, u, i, center,
+dl, dt, dd, ol, ul, li, table, caption, tbody,
+figure, figcaption, footer, header, 
+menu, nav, section, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#map { 
+    height: 600px;
+    z-index: 1;
+}
+
+.info {
+    padding: 6px 8px;
+    background: white;
+    background: rgba(255,255,255,0.9);
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    border-radius: 1px;
+}
+
+.info h4 {
+    margin: 0 0 5px;
+    color: #777;
+}
+
+.zone-label {
+    display: inline;
+    width: auto;
+}
+
+.zone-table-box {
+    display: inline-block;
+    height: 7px;
+    width: 7px;
+    border: 1px solid #e6e6e6;
+    margin-right: 2px;
+}
+
+.zone-colour-box {
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    border: 1px solid #e6e6e6;
+    z-index: 2;
+}
+
+#sanctuary {
+    background-color: #ffb3b3;
+}
+
+#national-park {
+    background-color: #53c653;
+}
+
+#recreational-use {
+    background-color: #ffcc33;
+}
+
+#conservation {
+    background-color: #ffff80;
+}
+
+#habitat-protection {
+    background-color: #ffff80;
+}
+
+#habitat-protection-seamounts {
+    background-color: #cccc00;
+}
+
+#habitat-protection-coral-sea {
+    background-color: #66ccff;
+}
+
+#habitat-protection-reefs {
+    background-color: #b3e6b3;
+}
+
+#habitat-protection-lord-howe {
+    background-color: #e6e600;
+}
+
+#special-purpose {
+    background-color: #2479db;
+}
+
+#special-purpose-a {
+    background-color: #1d61af;
+}
+
+#special-purpose-b {
+    background-color: #19559a;
+}
+
+#special-purpose-c {
+    background-color: #154984;
+}
+
+#multiple-use {
+    background-color: #a7caf1;
+}
+
+#multiple-use-a {
+    background-color: #91bced;
+}
+
+#general-use {
+    background-color: #cceeff;
+}
+/* marine reserve info - zones table */
+table {
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #f2f2f2;
+    padding: 2px;
+}
+
+.zone-table {
+    margin-top: 5px;
+}
+
+.zone-table th {
+    font-size: 0.95em;
+    text-align: left;
+    font-weight: 300;
+    color: #727272;
+}
+
+.zone-table td {
+    font-size: 0.95em;
+    text-align: left;
+    font-weight: 300;
+    color: #a6a6a6;
+}
+
+.reserve-name-hover{
+    position: absolute;
+    top:5em;
+    left:1em;
+    z-index:2;
+    background:rgba(0,0,0,.75);
+    color:white;
+    padding:.5em .75em;
+    font-size:.85em;
+    display:none;
+  }
+
+.no-change-text {
+    margin-top: 5px;
+    font-size: 0.9em;
+    font-weight: 100;
+    color: #a6a6a6;    
+}
+.name {
+    font-size: 1.15em;
+    font-weight: 600;
+    color: #727272;
+    margin-bottom: 2px;
+}
+
+.zone-name {
+    font-size: 1em;
+    font-weight: 300;
+    color: #727272;
+    margin-top: 2px;
+    margin-bottom: 0px;
+}
+
+.zone-name:before {
+    color: black;
+    content: "Selected zone: ";      
+}
+
+.zone-area {
+    font-size: 1em;
+    font-weight: 300;
+    color: #727272;
+    margin-bottom: 2px;    
+}
+
+.zone-area:before {
+    color: black;
+    content: "Zone area: ";      
+}
+
+.size, .region {
+    color: #727272;
+    font-size: 1em;
+}
+.size:before {
+    color: black;
+    content: "Total area: ";  
+}
+
+.region:before {
+    color: black;
+    content: "Network: ";
+}
+
+/* map key legend */
+#legend {
+    position: absolute;
+    display: none;
+    top:17em;
+    right:3em;
+    z-index:2;    
+    padding: 6px 8px;
+    font-size: 0.9em;
+    font-weight: 200;
+    color: #8c8c8c;
+    background: rgba(255,255,255,0.95);
+    box-shadow: 0 0 5px rgba(0,0,0,0.25);
+    border-radius: 1px;
+}
+
+.footnote {
+    width: 250px;
+    font-size: 0.85em;
+    color: #a6a6a6;
+    font-style: italic;
+    margin-top: 10px;
+}
+
+/* user interaction buttons */
+/* map key show/hide */
+
+.show-hide-buttons {
+    position: absolute;
+    top:34em;
+    right:3em;
+    z-index: 2;    
+}
+
+.show-hide-buttons div {
+    display: none;
+    text-align: center;
+    font-size: .80em;
+    width: 100px;
+    height: auto;
+    padding: 5px;
+    border: 1px solid black;
+    background-color: rgba(255, 255, 255, 0.75);
+    box-shadow: 0 0 5px rgba(0,0,0,0.25);       
+    cursor: pointer;
+    opacity: 0.75;
+}
+
+.show-hide-buttons div:hover {
+    background-color: rgba(252, 225, 182, 0.5);
+    opacity: 1;
+}
+
+.show-hide-buttons .active {
+    display: inline-block;
+}
+
+/* -------------------------------------------- */
+
+@media all and (max-width: 499px) {
+
+    .show-hide-buttons {
+        top:33em;   
+    }
+    
+    #legend {
+        top:19em;
+        font-size: 0.85em;       
+    }    
+    
+    .zone-table th {
+        font-size: 0.9em;
+        color: #727272;
+    }
+    
+    .zone-table td {
+        font-size: 0.9em;
+        color: #8c8c8c;
+    }
+    
+    .name {
+        font-size: 1em;
+    }
+
+    .zone {
+        font-size: 0.95em;   
+    }
+
+    .size, .region {
+        font-size: 0.95em;
+    }
+    
+    .zone-table {
+        display: none;
+    }
+    
+}
