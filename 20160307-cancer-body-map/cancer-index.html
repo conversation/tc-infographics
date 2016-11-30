@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html id="doc" class="no-js">
+<head>
+<meta charset="UTF-8">
+<title>Cancer risk factors</title>
+<script type="text/javascript">
+	var doc = document.getElementById('doc');
+	doc.removeAttribute('class', 'no-js');
+	doc.setAttribute('class', 'js');
+</script>
+<link href="css/main-style.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="data/cancerdata.js"></script>    
+<script type="text/javascript" src="js/main-script.js"></script>
+</head>
+  <body id="page">		
+	<div class="container">	
+       
+		<nav class="off-canvas-navigation">
+			<ul>
+				<li class="menu-item"><a class='main-menu-btn' href="#menu">Click to choose risk factors</a></li>            
+			</ul>
+		</nav>
+		<nav id="menu" role="navigation">
+			<ul id="nav">
+				<li class="category-nav" id="food-nav" >Food & beverage<span class='expand-button' id="food-expand">+</span></li>
+                    <ul class="riskfactors-nav" id="food-risks-submenu">
+                        <li id="risk-alcohol">Alcohol</li>
+                        <li id="risk-red-meat">Red meat</li>
+                        <li id="risk-processed-meat">Processed meat</li>
+                        <li id="risk-salt">Salt and salty foods</li>
+                        <li id="risk-fruit">Inadequate intake of fruits</li>
+                        <li id="risk-fibre">Inadequate intake of fibre</li>
+                        <li id="risk-vegetables">Inadequate intake of non-starchy vegetables</li>                        
+                    </ul>
+				<li class="category-nav" id="lifestyle-nav">Lifestyle & behaviour<span class='expand-button' id="lifestyle-expand">+</span></li>
+                    <ul class="riskfactors-nav" id="lifestyle-risks-submenu">
+                        <li id="risk-smoking">Smoking</li>
+                        <li id="risk-sun">Sun exposure and ultraviolet radiation</li>
+                        <li id="risk-inactivity">Inadequate physical activity</li>
+                    </ul>                
+				<li class="category-nav" id="disease-nav">Disease & illness<span class='expand-button' id="disease-expand">+</span></li>
+                    <ul class="riskfactors-nav" id="disease-risks-submenu">
+                        <li id="risk-obesity">Obesity (BMI over 30)</li>
+                        <li id="risk-overweight">Overweight (BMI between 25-30)</li>
+                        <li id="risk-hpv">Human papilloma virus</li>
+                        <li id="risk-helicobacter">Helicobacter pylori</li>
+                        <li id="risk-hepB">Hepatitis B</li>
+                        <li id="risk-hepC">Hepatitis C</li>
+                        <li id="risk-HIV">HIV</li>
+                    </ul>
+    			<li class="category-nav" id="medication-nav">Medication & treatment<span class='expand-button' id="medication-expand">+</span></li>
+                    <ul class="riskfactors-nav" id="medication-risks-submenu">
+                        <li id="risk-contraceptive">Combined oral contraceptive pill</li>
+                        <li id="risk-HRT">Hormone Replacement Therapy</li>
+                    </ul> 
+			</ul>											
+		</nav>
+        
+
+
+		<section role="main">
+
+            <!-- body map graphics -->
+            <!-- default / empty -->            
+        <div class="tabs">
+            <ul class="tab-links">
+                <li><a href="#Male" id="male-tab">Male</a></li>
+                <li class="active" id="female-tab"><a href="#Female">Female</a></li>
+                <li class="riskchosen" id="risk-breadcrumb"></li>
+                <!-- <li id="risk-breadcrumb">Choose a risk factor</li> -->               
+            </ul>
+            
+            <ul class="tab-links-small">
+                <li><a href="#Male" id="male-tab-small">M</a></li>
+                <li class="active" id="female-tab-small"><a href="#Female">F</a></li>                
+                <li class="riskchosen" id="risk-breadcrumb-small"></li>       
+            </ul>
+
+            <div class="tab-content">
+                <div id="Female" class="tab active">
+                    <object class="female-svg" id="female-default-svg" data='images/body-female-default.svg' type='image/svg+xml'></object>
+                    <!-- preload other SVG images, display set to 'none' -->
+                    <object class="female-svg" id="female-alcohol-svg" data='images/body-female-alcohol.svg' type='image/svg+xml'></object>
+                    <object class="female-svg" id="female-contraceptive-svg" data='images/body-female-contraceptive.svg' type='image/svg+xml'></object>
+                    <object class="female-svg" id="female-fibre-svg" data='images/body-female-fibre.svg' type='image/svg+xml'></object>
+                    <object class="female-svg" id="female-fruit-svg" data='images/body-female-fruit.svg' type='image/svg+xml'></object>
+                    <object class="female-svg" id="female-veg-svg" data='images/body-female-veg.svg' type='image/svg+xml'></object>                    
+                    <object class="female-svg" id="female-helicobacter-svg" data='images/body-female-helicobacter.svg' type='image/svg+xml'></object>
+                    <object class="female-svg" id="female-hep-b-svg" data='images/body-female-hep-b.svg' type='image/svg+xml'></object>
+                   <object class="female-svg" id="female-hep-c-svg" data='images/body-female-hep-c.svg' type='image/svg+xml'></object>                    
+                    <object class="female-svg" id="female-hiv-svg" data='images/body-female-hiv.svg' type='image/svg+xml'></object>
+                    <object class="female-svg" id="female-hrt-svg" data='images/body-female-hrt.svg' type='image/svg+xml'></object>
+                    <object class="female-svg" id="female-human-papilloma-svg" data='images/body-female-human-papilloma.svg' type='image/svg+xml'></object>
+                    <object class="female-svg" id="female-inactivity-svg" data='images/body-female-inactivity.svg' type='image/svg+xml'></object>
+                    <object class="female-svg" id="female-meat-svg" data='images/body-female-meat.svg' type='image/svg+xml'></object>                
+                    <object class="female-svg" id="female-obesity-svg" data='images/body-female-obesity.svg' type='image/svg+xml'></object>
+                    <object class="female-svg" id="female-overweight-svg" data='images/body-female-overweight.svg' type='image/svg+xml'></object>                    
+                    <object class="female-svg" id="female-salt-svg" data='images/body-female-salt.svg' type='image/svg+xml'></object>
+                    <object class="female-svg" id="female-smoking-svg" data='images/body-female-smoking.svg' type='image/svg+xml'></object>
+                    <object class="female-svg" id="female-sun-svg" data='images/body-female-sun.svg' type='image/svg+xml'></object>
+
+                </div>
+
+                <div id="Male" class="tab">
+                    <object class="male-svg active-svg" id="male-default-svg" data='images/body-male-default.svg' type='image/svg+xml'></object>
+                    
+                    <!-- preload other SVG images, display set to 'none' -->
+                    <object class="male-svg" id="male-alcohol-svg" data='images/body-male-alcohol.svg' type='image/svg+xml'></object>
+                    <object class="male-svg" id="male-empty-svg" data='images/body-male-empty.svg' type='image/svg+xml'></object>
+                    <object class="male-svg" id="male-fibre-svg" data='images/body-male-fibre.svg' type='image/svg+xml'></object>
+                    <object class="male-svg" id="male-fruit-svg" data='images/body-male-fruit.svg' type='image/svg+xml'></object>
+                    <object class="male-svg" id="male-veg-svg" data='images/body-male-veg.svg' type='image/svg+xml'></object>                    
+                    <object class="male-svg" id="male-helicobacter-svg" data='images/body-male-helicobacter.svg' type='image/svg+xml'></object>
+                    <object class="male-svg" id="male-hep-b-svg" data='images/body-male-hep-b.svg' type='image/svg+xml'></object>
+                    <object class="male-svg" id="male-hep-c-svg" data='images/body-male-hep-c.svg' type='image/svg+xml'></object>                    
+                    <object class="male-svg" id="male-hiv-svg" data='images/body-male-hiv.svg' type='image/svg+xml'></object>
+                    <object class="male-svg" id="male-human-papilloma-svg" data='images/body-male-human-papilloma.svg' type='image/svg+xml'></object>
+                    <object class="male-svg" id="male-inactivity-svg" data='images/body-male-inactivity.svg' type='image/svg+xml'></object>
+                    <object class="male-svg" id="male-meat-svg" data='images/body-male-meat.svg' type='image/svg+xml'></object>
+                    <object class="male-svg" id="male-obesity-svg" data='images/body-male-obesity.svg' type='image/svg+xml'></object>                    
+                    <object class="male-svg" id="male-overweight-svg" data='images/body-male-overweight.svg' type='image/svg+xml'></object>
+                    <object class="male-svg" id="male-salt-svg" data='images/body-male-salt.svg' type='image/svg+xml'></object>
+                    <object class="male-svg" id="male-smoking-svg" data='images/body-male-smoking.svg' type='image/svg+xml'></object>
+                    <object class="male-svg" id="male-sun-svg" data='images/body-male-sun.svg' type='image/svg+xml'></object>                    
+                </div>            
+            
+            
+            
+                <div id="cancerdetails">
+                    <!-- this is where all the details of the cancer associated with the risk factor is shown -->
+                </div>
+                
+            </div>
+        </div>
+		</section>
+        
+		
+	
+
+		
+</body>
