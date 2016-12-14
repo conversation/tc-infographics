@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html id="doc">
+<head>
+    <meta charset="UTF-8">
+    <title>Physical inactivity and disease risk</title>
+    <link href="css/main-style.css" rel="stylesheet" type="text/css">
+    <link href="css/tipsy.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="data/exercisedata.js"></script>
+    <script type="text/javascript" src="js/jquery.tipsy.js"></script>
+    <script type="text/javascript" src="js/jquery.svg.min.js"></script>  
+    <script type="text/javascript" src="js/main-script.js"></script>
+    <script type="text/javascript" src="js/pym.min.js"></script>      
+</head>
+<body id="page">		  
+    <div class="tabs">
+            <div class="tab active" id="main-tab-content">
+                
+                <div id="main-body-div">
+                    <svg version="1.1" id="bodymap" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+         viewBox="0 0 430 490">
+
+                    <path id="body" class="body-base" d="M273.9,377.6c-5.5-14.3-10-25.5-10-32.7c0-24.6,14.3-59,20.3-84.9c5.8-21.5,8.1,59.1,21.6,89.6
+                        c4.1,37.9,18,69.7,30.4,92.1v0.1c3.6,8.2,8.6,15,8.6,23c-0.1,9.8,0.5,36.7,0.9,39c1.3,5.5,1.4,8.5,4.1,16.4c0.7,2,2.1,5,2.9,4.9
+                        c1.6-0.3,2.4,1,1.7-4.9c-0.5-4.6-3-17.7-1.3-18.3c2-0.5,1.3,0.6,4.7,15.2c2.9,12.3,2.6,17,5.9,16.6c1.2-0.1,2.1-1.7,1.8-5.1
+                        c-0.5-4-1-4.8-2-8.7c-2.9-15.7-3.4-20.1-1.7-20.1c1.6,0,3.3,5.3,7.8,19.3c2.1,6.7,3.4,8.2,5.4,13.4c0.7,1.7,5.8,1.8,4.5-2.1
+                        c-1.8-5.5-2.5-8.1-4.6-14.2c-1.5-4.1-7.9-18.6-2.8-18.6c1.7,0,2.1,2.9,6.5,14.3c2.6,6.6,4.3,10.6,6.6,13.4c1.1,1.2,5.4,2.6,3.3-4
+                        c-0.5-1.3-3.9-12.3-8.2-26.4c-0.7-1.8-0.8-4.9-1.3-6.6c-2.6-8.3-7.3-17.8-1.5-17.8c6.7,0,11.9,13.2,19.3,13.2l0,0
+                        c1.8,0,4.1-1.1,4.1-2.1c0.1-1.1-1.5-2.6-3-3.4h-0.1h-0.1c-0.3-0.3-2.9,0.4-12.2-11.5c-9.2-11.9-23-20.2-23-20.2
+                        c-14.7-21.3-1.6-59-23.8-99.9c-0.7-32.7-9-115.4-19.8-148.1c-7.4-19.5-27.6-23.4-45.7-27.5c-16-3.6-28.6-8.6-36.8-16.5
+                        c-8.6-8.2-9.2-16.2-9.2-35.5c6.2-2.5,13.6-16.1,16.5-30.2c-0.3,1.3,1.6,3.6,3.6,0c2.6-4.5,6.3-16.6,6.3-26.1c0-6.9-4-7.8-6.7-3.3
+                        c-0.5-32.1-9.1-56.6-42.4-56c-33.4-0.8-42.8,24-43.4,56c-2.9-4.5-6.7-3.6-6.7,3.3c0,9.5,4.2,21.8,7.3,26.1c2.2,3.4,4.1,1.6,3.8,0
+                        c2.9,14.3,8.3,27.6,16.1,30.2c0.5,17-0.7,27.3-9.2,35.5c-8.2,7.9-20.9,12.9-36.8,16.5c-18.1,4-38.4,8.6-45.8,28.1
+                        c-10.8,32.9-19.5,116-20.2,148.8c-22,40.9-4,68.4-17.7,93c0,0-13.6,8.2-23,20.2c-9.2,11.9-17.2,19.3-17.4,19.5h-0.1h-0.1
+                        c-1.6,0.8-3.3,2.5-3,3.4c0.1,1.1,2.5,2.1,4.1,2.1l0,0c7.4,0,12.5-13.2,19.3-13.2c5.8,0,1.2,9.5-1.5,17.8c-0.5,1.8-0.8,4.9-1.3,6.6
+                        c-4.1,14-7.9,22.5-8.4,23.9c-2,6.6,2.2,5.3,3.3,4c2.1-2.8,4.2-6.3,6.8-12.9c4.2-11.4,4.8-12.2,6.6-12.2c5.1,0-1.3,12.3-2.8,16.6
+                        c-2,6.1-2.8,8.2-4.8,13.7c-1.3,3.8,3.8,3.7,4.5,2.1c2.1-5.1,3.5-6.2,5.6-12.9c4.6-14,6.3-17.1,7.8-17.2c1.6,0,1.2,2.4-1.7,18
+                        c-0.7,4-1.5,4.3-2.2,8.3c-0.5,3.4,0.7,5,1.7,5.1c3.3,0.5,2.7-0.2,5.6-12.8c3.4-14.5,3.2-17.1,5.3-16.6c1.7,0.5-0.8,11.7-1.3,16.3
+                        c0.5-4.3-0.5,8,1.2,8.3c0.7,0.1,2.2-2.8,2.9-4.9c2.6-7.9,3.3-12.2,4.6-17.8c0.5-2.2,6.3-37.2,6.2-47c-0.1-7.8,4.9-14.7,8.6-23v-0.1
+                        c12.3-22.4,20.5-46.6,24.6-84.4c13.6-30.4,16.2-113.1,22-91.5c5.9,25.7,20.3,60.3,20.3,84.9c0,7.3-4.5,18.3-10,32.7
+                        c-26.7,68.2-25.3,94-25.3,131.7c0.8,13.1,1.4,20.8,2.3,25.8h86.1c-0.2-2.4,2.1-14,3.4-21.6c0.5-16.2,6.6-16.2,7.4,0.1
+                        c1.6,12.6,2.5,14.6,3.1,21.5h81.3c0.4-7.5,1.3-7.6,0.8-26C294.3,471.3,300.4,445.9,273.9,377.6z"/>                    
+
+                        <!-- disease dots -->
+                        <g id="all-disease-dots">
+                            <g class="psychological">
+                                <g class="disease-dot" id="depression" onclick="buttonEvent('depression')">
+                                    <title>Depression</title>
+                                    <g class='dots'>
+                                        <title>Depression</title>
+                                        <circle class="outer" cx="206" cy="71" r="10"/>
+                                        <circle class="inner" cx="206" cy="71" r="7"/>
+                                    </g>
+                                </g>
+                                <g class="disease-dot" id="happiness" onclick="buttonEvent('happiness')">
+                                    <title>Happiness</title>
+                                    <g class='dots'>
+                                        <title>Happiness</title>
+                                        <circle class="outer" cx="176" cy="71" r="10"/>
+                                        <circle class="inner" cx="176" cy="71" r="7"/>
+                                    </g>
+                                </g>
+                                <g class="disease-dot" id="optimism" onclick="buttonEvent('optimism')">
+                                    <title>Optimism</title>
+                                    <g class='dots'>
+                                        <title>Optimism</title>
+                                        <circle class="outer" cx="206" cy="45" r="10"/>
+                                        <circle class="inner" cx="206" cy="45" r="7"/>
+                                    </g>
+                                </g>
+                                <g class="disease-dot" id="cognitive" onclick="buttonEvent('cognitive')">
+                                    <title>Brain function</title>
+                                    <g class='dots'>
+                                        <title>Brain function</title>
+                                        <circle class="outer" cx="236" cy="71" r="10"/>
+                                        <circle class="inner" cx="236" cy="71" r="7"/>
+                                    </g>
+                                </g>
+                                <g class="disease-dot" id="anxiety" onclick="buttonEvent('anxiety')">
+                                    <title>Anxiety</title>
+                                    <g class='dots'>
+                                        <title>Anxiety</title>
+                                        <circle class="outer" cx="223" cy="93" r="10"/>
+                                        <circle class="inner" cx="223" cy="93" r="7"/>
+                                    </g>
+                                </g>
+                                <g class="disease-dot" id="suicide" onclick="buttonEvent('suicide')">
+                                    <title>Suicide attempts</title>
+                                    <g class='dots'>
+                                        <title>Suicide attempts</title>
+                                        <circle class="outer" cx="191" cy="93" r="10"/>
+                                        <circle class="inner" cx="191" cy="93" r="7"/>
+                                    </g>
+                                </g>
+                            </g>
+                            <g class="neural">
+                                <g id="parkinsons" onclick="buttonEvent('parkinsons')" class="disease-dot">
+                                    <title>Parkinson's disease</title>
+                                    <g class='dots'>
+                                        <title>Parkinson's disease</title>
+                                        <circle class="outer" cx="230" cy="40" r="10"/>
+                                        <circle class="inner" cx="230" cy="40" r="7"/>
+                                    </g>
+                                </g>
+                                <g id="alzheimers" onclick="buttonEvent('alzheimers')" class="disease-dot">
+                                    <title>Alzheimers's disease</title>
+                                    <g class='dots'>
+                                        <title>Alzheimers's disease</title>
+                                        <circle class="outer" cx="180" cy="40" r="10"/>
+                                        <circle class="inner" cx="180" cy="40" r="7"/>
+                                    </g>
+                                </g>
+                            </g>
+                            <g class="cardiovascular">
+                                <g id="cvd" onclick="buttonEvent('cvd')" class="disease-dot">
+                                    <title>Heart disease</title>
+                                    <g class='dots'>
+                                        <title>Heart disease</title>
+                                        <circle class="outer" cx="234" cy="259" r="10"/>
+                                        <circle class="inner" cx="234" cy="259" r="7"/>
+                                    </g>
+                                </g>
+                                <g id="pad" onclick="buttonEvent('pad')" class="disease-dot">
+                                    <title>Peripheral artery disease</title>
+                                    <g class='dots'>
+                                        <title>Peripheral artery disease</title>
+                                        <circle class="outer" cx="150" cy="477" r="10"/>
+                                        <circle class="inner" cx="150" cy="477" r="7"/>
+                                    </g>
+                                </g>
+                                <g id="stroke" onclick="buttonEvent('stroke')" class="disease-dot">
+                                    <title>Stroke</title>
+                                    <g class='dots'>
+                                        <title>Stroke</title>
+                                        <circle class="outer" cx="203" cy="17" r="10"/>
+                                        <circle class="inner" cx="203" cy="17" r="7"/>
+                                    </g>
+                                </g>
+                                <g id="carotid" onclick="buttonEvent('carotid')" class="disease-dot">
+                                    <title>Constriction of the carotid artery</title>
+                                    <g class='dots'>
+                                        <title>Constriction of the carotid artery</title>
+                                        <circle class="outer" cx="205" cy="157" r="10"/>
+                                        <circle class="inner" cx="205" cy="157" r="7"/>
+                                    </g>
+                                </g>
+                                <g id="hypertension" onclick="buttonEvent('hypertension')" class="disease-dot">
+                                    <title>High blood pressure</title>
+                                    <g class='dots'>
+                                        <title>High blood pressure</title>
+                                        <circle class="outer" cx="223" cy="279" r="10"/>
+                                        <circle class="inner" cx="223" cy="279" r="7"/>
+                                    </g>
+                                </g>
+                                <g id="coronary" onclick="buttonEvent('coronary')" class="disease-dot">
+                                    <title>Heart attack</title>
+                                    <g class='dots'>
+                                        <title>Heart attack</title>
+                                        <circle class="outer" cx="211" cy="259" r="10"/>
+                                        <circle class="inner" cx="211" cy="259" r="7"/>
+                                    </g>
+                                </g>
+                            </g>
+                            <g class="bone">
+                                <g id="osteoporosis" onclick="buttonEvent('osteoporosis')" class="disease-dot">
+                                    <title>Osteoporosis (fracture)</title>
+                                    <g class='dots'>
+                                        <title>Osteoporosis (fracture)</title>
+                                        <circle class="outer" cx="154" cy="412" r="10"/>
+                                        <circle class="inner" cx="154" cy="412" r="7"/>
+                                    </g>
+                                </g>
+                                <g id="osteoarthritis" onclick="buttonEvent('osteoarthritis')" class="disease-dot">
+                                    <title>Osteoarthritis</title>
+                                    <g class='dots'>
+                                        <title>Osteoarthritis</title>
+                                        <circle class="outer" cx="52" cy="475" r="10"/>
+                                        <circle class="inner" cx="52" cy="475" r="7"/>
+                                    </g>
+                                </g>
+                            </g>
+                            <g class="other">
+                                <g id="chronickidney" onclick="buttonEvent('chronickidney')" class="disease-dot">
+                                    <title>Chronic kidney disease</title>
+                                    <g class='dots'>
+                                        <title>Chronic kidney disease</title>
+                                        <circle class="outer" cx="193" cy="299" r="10"/>
+                                        <circle class="inner" cx="193" cy="299" r="7"/>
+                                    </g>
+                                </g>
+                                <g id="copd" onclick="buttonEvent('copd')" class="disease-dot">
+                                    <title>Chronic obstructive pulmonary disease</title>
+                                    <g class='dots'>
+                                        <title>Chronic obstructive pulmonary disease</title>
+                                        <circle class="outer" cx="155" cy="228" r="10"/>
+                                        <circle class="inner" cx="155" cy="228" r="7"/>
+                                    </g>
+                                </g>
+                                <g id="diabetes" onclick="buttonEvent('diabetes')" class="disease-dot">
+                                    <title>Diabetes</title>
+                                    <g class='dots'>
+                                        <title>Diabetes</title>
+                                        <circle class="outer" cx="186" cy="274" r="10"/>
+                                        <circle class="inner" cx="186" cy="274" r="7"/>
+                                    </g>
+                                </g>
+                                <g id="general" onclick="buttonEvent('general')" class="disease-dot active">
+                                    <title rel='tipsy'>General health</title>
+                                    <g class='dots'>
+                                        <title>General health</title>
+                                        <circle class="outer" cx="206" cy="338" r="10"/>
+                                        <circle class="inner" cx="206" cy="338" r="7"/>
+                                    </g>
+                                </g>                             
+                            </g>
+                            <g class="cancer">
+                                <g id="oesophageal" onclick="buttonEvent('oesophageal')" class="disease-dot">
+                                    <title>Oesophageal cancer</title>
+                                    <g class='dots'>
+                                        <title>Oesophageal cancer</title>
+                                        <circle class="outer" cx="206" cy="185" r="10"/>
+                                        <circle class="inner" cx="206" cy="185" r="7"/>
+                                    </g>
+                                </g>
+                                    <g id="clickme-text">
+                                        <text x="125" y="190">Click me</text>
+                                        <rect x="120" y="175" width="70" height="20" stroke="blue" fill="none" stroke-opacity="0.8" stroke-linecap="round"/>
+                                        <polygon points="190,180 195,185 190,190"/>
+                                    </g>
+                                <g id="liver" onclick="buttonEvent('liver')" class="disease-dot">
+                                    <title>Liver cancer</title>
+                                    <g class='dots'>
+                                        <title>Liver cancer</title>
+                                        <circle class="outer" cx="162" cy="251" r="10"/>
+                                        <circle class="inner" cx="162" cy="251" r="7"/>
+                                    </g>
+                                </g>
+                                <g id="lung" onclick="buttonEvent('lung')" class="disease-dot">
+                                    <title>Lung cancer</title>
+                                    <g class='dots'>
+                                        <title>Lung cancer</title>
+                                        <circle class="outer" cx="256" cy="226" r="10"/>
+                                        <circle class="inner" cx="256" cy="226" r="7"/>
+                                    </g>
+                                </g>
+                                <g id="kidneycancer" onclick="buttonEvent('kidneycancer')" class="disease-dot">
+                                    <title>Kidney cancer</title>
+                                    <g class='dots'>
+                                    <circle class="outer" cx="226" cy="312" r="10"/>
+                                    <circle class="inner" cx="226" cy="312" r="7"/>
+                                    </g>
+                                </g>
+                                <g id="stomach" onclick="buttonEvent('stomach')" class="disease-dot">
+                                    <title>Stomach cancer</title>
+                                    <g class='dots'>
+                                        <title>Stomach cancer</title>
+                                        <circle class="outer" cx="236" cy="332" r="10"/>
+                                        <circle class="inner" cx="236" cy="332" r="7"/>
+                                    </g>
+                                </g>
+                                <g id="endometrial" onclick="buttonEvent('endometrial')" class="disease-dot">
+                                    <title>Endometrial cancer</title>
+                                    <g class='dots'>
+                                        <title>Endometrial cancer</title>
+                                        <circle class="outer" cx="222" cy="477" r="10"/>
+                                        <circle class="inner" cx="222" cy="477" r="7"/>
+                                    </g>
+                                </g>
+                                <g id="leukaemia" onclick="buttonEvent('leukaemia')" class="disease-dot">
+                                    <title>Leukaemia</title>
+                                    <g class='dots'>
+                                        <title>Leukaemia</title>
+                                        <circle class="outer" cx="82" cy="364" r="10"/>
+                                        <circle class="inner" cx="82" cy="364" r="7"/>
+                                    </g>
+                                </g>
+                                <g id="myeloma" onclick="buttonEvent('myeloma')" class="disease-dot">
+                                    <title>Myeloma</title>
+                                    <g class='dots'>
+                                        <title>Myeloma</title>
+                                        <circle class="outer" cx="90" cy="322" r="10"/>
+                                        <circle class="inner" cx="90" cy="322" r="7"/>
+                                    </g>
+                                </g>
+                                <g id="colon" onclick="buttonEvent('colon')" class="disease-dot">
+                                    <title>Colon cancer</title>
+                                    <g class='dots'>
+                                        <title>Colon cancer</title>
+                                        <circle class="outer" cx="232" cy="355" r="10"/>
+                                        <circle class="inner" cx="232" cy="355" r="7"/>
+                                    </g>
+                                </g>
+                                <g id="head" onclick="buttonEvent('head')" class="disease-dot">
+                                    <title>Head and neck cancer</title>
+                                    <g class='dots'>
+                                        <title>Head and neck cancer</title>
+                                        <circle class="outer" cx="205" cy="131" r="10"/>
+                                        <circle class="inner" cx="205" cy="131" r="7"/>
+                                    </g>
+                                </g>
+                                <g id="rectal" onclick="buttonEvent('rectal')" class="disease-dot">
+                                    <title>Rectal cancer</title>
+                                    <g class='dots'>
+                                        <title>Rectal cancer</title>
+                                        <circle class="outer" cx="206" cy="457" r="10"/>
+                                        <circle class="inner" cx="206" cy="457" r="7"/>
+                                    </g>
+                                </g>
+                                <g id="bladder" onclick="buttonEvent('bladder')" class="disease-dot">
+                                    <title>Bladder cancer</title>
+                                    <g class='dots'>
+                                        <title>Bladder cancer</title>
+                                        <circle class="outer" cx="206" cy="435" r="10"/>
+                                        <circle class="inner" cx="206" cy="435" r="7"/>
+                                    </g>
+                                </g>
+                                <g id="prostate" onclick="buttonEvent('prostate')" class="disease-dot">
+                                    <title>Prostate cancer</title>
+                                    <g class='dots'>
+                                        <title>Prostate cancer</title>
+                                        <circle class="outer" cx="190" cy="477" r="10"/>
+                                        <circle class="inner" cx="190" cy="477" r="7"/>
+                                    </g>
+                                </g>
+                                <g id="melanoma" onclick="buttonEvent('melanoma')" class="disease-dot">
+                                    <title>Melanoma</title>
+                                    <g class='dots'>
+                                        <title>Melanoma</title>
+                                        <circle class="outer" cx="74" cy="402" r="10"/>
+                                        <circle class="inner" cx="74" cy="402" r="7"/>
+                                    </g>
+                                </g>
+                                <g id="pancreas" onclick="buttonEvent('pancreas')" class="disease-dot">
+                                    <title>Pancreatic cancer</title>
+                                    <g class='dots'>
+                                        <title>Pancreatic cancer</title>
+                                        <circle class="outer" cx="166" cy="286" r="10"/>
+                                        <circle class="inner" cx="166" cy="286" r="7"/>
+                                    </g>    
+                                </g>
+                                <g id="breast" onclick="buttonEvent('breast')" class="disease-dot">
+                                    <title>Breast cancer</title>
+                                    <g class='dots'>
+                                        <title>Breast cancer</title>
+                                        <circle class="outer" cx="255" cy="280" r="10"/>
+                                        <circle class="inner" cx="255" cy="280" r="7"/>
+                                    </g>    
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+                </div>
+                
+                <div class="controls">
+                    <div class="category-select">
+                        <p>Filter by type</p>
+                        <input class="category-checkbox" id="select-neural" type="checkbox" name="select-neural" value="neural" onchange="categoryNeuralChange(this)">
+                        <label for="select-neural"><span id="neural-checkbox"></span>Brain</label><br>
+                        <input class="category-checkbox" id="select-psychological" type="checkbox" name="select-psychological" value="psychological" onchange="categoryPsychologicalChange(this)">
+                        <label for="select-psychological"><span id="psychological-checkbox"></span>Psychological</label><br>
+                        <input class="category-checkbox" id="select-cardiovascular" type="checkbox" name="select-cardiovascular" value="cardiovascular" onchange="categoryCardiovascularChange(this)">
+                        <label for="select-cardiovascular"><span id="cardiovascular-checkbox"></span>Heart</label><br>
+                        <input class="category-checkbox" id="select-cancer" type="checkbox" name="select-cancer" value="cancer" onchange="categoryCancerChange(this)">
+                        <label for="select-cancer"><span id="cancer-checkbox"></span>Cancer</label><br>
+                        <input class="category-checkbox" id="select-bone" type="checkbox" name="select-bone" value="bone" onchange="categoryBoneChange(this)">
+                        <label for="select-bone"><span id="bone-checkbox"></span>Bone</label><br>
+                        <input class="category-checkbox" id="select-other" type="checkbox" name="select-other" value="other" onchange="categoryOtherChange(this)">
+                        <label for="select-other"><span id="other-checkbox"></span>Other</label><br>
+                        <input type="checkbox" id="select-all" name="select-all" value="all" onchange="categorySelectAllChange(this)" checked>
+                        <label for="select-all"><span id="all-checkbox"></span>Select all</label><br>
+                    </div>
+
+                    <div class="infobox Other">
+                        <!-- <div id="diseaseName">General health</div> -->
+
+                        <div class="selectdiv">
+                          <label>
+                              <select onchange="selectDisease()" id='selectOpt'>
+                              
+                                  <optgroup id="braingroup" label="Brain">
+                                      <option value="alzheimers">Alzheimer's</option>
+                                      <option value="parkinsons">Parkinson's</option>
+                                  </optgroup>
+                                  <optgroup id='psychgroup' label="Psychological">
+                                      <option value="happiness">Happiness</option>
+                                      <option value="depression">Depression</option>
+                                      <option value="optimism">Optimism</option>
+                                      <option value="anxiety">Anxiety</option>
+                                      <option value="cognitive">Brain function</option>
+                                      <option value="suicide">Suicide attempts</option>
+                                  </optgroup>
+                                  <optgroup id='heartgroup' label="Heart">
+                                      <option value="cvd">Heart disease</option>
+                                      <option value="pad">Peripheral artery disease</option>
+                                      <option value="carotid">Constriction of the carotid artery</option>
+                                      <option value="hypertension">High blood pressure</option>
+                                      <option value="stroke">Stroke</option>
+                                      <option value="coronary">Heart attack</option>
+                                  </optgroup>
+                                  <optgroup id='bonegroup' label="Bone">
+                                      <option value="osteoporosis">Osteoporosis</option>
+                                      <option value="osteoarthritis">Osteoarthritis</option>
+                                  </optgroup>
+                                  <optgroup id='othergroup' label="Other">
+                                      <option value="general" selected="selected">General health</option>                    
+                                      <option value="chronickidney">Chronic kidney disease</option>
+                                      <option value="diabetes">Diabetes</option>
+                                      <option value="copd">Chronic obstructive pulmonary disease</option>         
+                                  </optgroup>
+                                  <optgroup id='cancergroup' label="Cancer">
+                                      <option value="oesophageal">Oesophageal cancer</option>
+                                      <option value="liver">Liver cancer</option>
+                                      <option value="lung">Lung cancer</option>
+                                      <option value="kidneycancer">Kidney cancer</option>
+                                      <option value="stomach">Stomach cancer</option>
+                                      <option value="endometrial">Endometrial cancer</option>
+                                      <option value="leukaemia">Leukaemia</option>
+                                      <option value="myeloma">Myeloma</option>
+                                      <option value="colon">Colon cancer</option>
+                                      <option value="head">Head and neck cancers</option>
+                                      <option value="rectal">Rectal cancer</option>
+                                      <option value="bladder">Bladder cancer</option>
+                                      <option value="prostate">Prostate cancer</option>
+                                      <option value="melanoma">Melanoma</option>
+                                      <option value="breast">Breast cancer</option>
+                                      <option value="pancreas">Pancreatic cancer</option>
+                                  </optgroup>
+                              </select>
+                          </label>
+                        </div>                    
+
+                        <div class="highlight">
+                            <div id="mainFigure">114</div>
+                            <div id="supportText">increased risk of poorer health if physically inactive</div>
+                        </div>
+                        <div id="descriptionText">If a person living in the developed world is physically inactive, they have a 114% increased risk of reporting poorer general health than a person who is physically active.</div>
+                        <div id="source"><a href='http://www.sciencedirect.com/science/article/pii/S0091743503001798'>Brown</a></div>
+                        <div id="next-prev-btn">
+                            <button class="button" title="Next" id="next-btn">&#62;</button>
+                            <button class="button" title="Previous" id="prev-btn">&#60;</button>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- end of main tab -->
+       </div>
+		
+        <script type='text/javascript'>
+            var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+            // iOS detection from: http://stackoverflow.com/a/9039885/177710
+            if (!(/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream)) {
+                $('.disease-dot').tipsy({gravity: 's', offset:4, fade: true, opacity: 0.25, delayIn: 100, delayOut: 200, trigger: 'focus'});
+                         
+                $('.dots').tipsy({gravity: 's', offset:4, fade: true, opacity: 0.75, delayIn: 100, delayOut: 200, trigger: 'hover'});
+            }
+
+            
+            $('#prev-btn').tipsy({gravity: 'nw', offset:5, fade: true});
+            $('#next-btn').tipsy({gravity: 'ne', offset:5, fade: true});
+        </script>
+
+        <script>
+            var pymChild = new pym.Child({ polling: 500 });
+        </script>    
+</body>
+</html>

@@ -1,0 +1,621 @@
+    
+/* Reset */
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+/*	font-size: 100%; */
+/*	font: inherit; */
+	vertical-align: baseline;
+	font-family: "Helvetica Neue", "Arial", clean, sans-serif;
+}
+
+
+/* Globals */
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section 
+{ 
+    display: block; 
+}
+
+[hidden] { display: none; }
+
+html 
+{ 
+    font-size: 100%;
+    overflow-y: scroll;
+    -webkit-text-size-adjust: 100%; 
+    -ms-text-size-adjust: 100%; 
+}
+
+/* includes menu text */
+body 
+{ 
+    color: #333; 
+    /* color: rgba(0,0,0,.7); */
+    /* background: #99a1a5 url('../images/background.gif') -50% top; */
+    /* margin-top: .5em; */
+}
+
+/* ========================================= */
+/*----- Tabs -----*/
+.tabs {
+    width:100%;
+    display:inline-block;
+    max-width: 754px;
+}
+ 
+/*----- Tab Links -----*/
+/* Clearfix */
+.tab-links:after {
+    display:block;
+    clear:both;
+    content:"";
+}
+
+.tab-links li {
+    margin:0px 5px;
+    float:right;
+    list-style:none;
+    text-decoration:none;    
+}
+
+.tab-links-small {
+    display:none;
+}
+
+.tab-links a {
+    padding:5px 5px;
+    display:inline-block;
+    font-size:14px;
+    font-weight:400;
+    border-right: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    
+    color:#4c4c4c;
+    transition:all linear 0.15s;
+    text-decoration:none;      
+}
+
+.tab-links a:hover {
+    background:#a6a6a6;
+    text-decoration:none;
+}
+
+li.active a, li.active a:hover {
+    background:#cccccc;
+    color:#4c4c4c;
+}
+
+
+/*----- Content of Tabs -----*/
+.main-tab {
+    padding:0px;
+    background:#fff;
+}
+
+.tab {
+    display:none;
+}
+
+.tab.active {
+    display:block;
+}
+
+/* ------------------------------------------- */
+/* Disease/condition dropdown */
+
+/*
+select {
+  border: 1px solid #111;
+  background: transparent;
+  width: 150px;
+  padding: 5px 5px 5px 5px;
+    margin-left: 10px;
+  font-size: 0.8em;
+    font-weight: 500;
+  border: 1px solid #ccc;
+  height: 30px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+    position: absolute;
+    top: 5px;
+    left: 30px;    
+} */
+
+
+.selectdiv {
+  position: absolute;
+    top: 5px;
+    left: 30px;     
+}
+
+
+.selectdiv select {
+  border: 1px solid #111;
+  background: transparent;
+  width: 300px;
+  padding: 5px 5px 5px 5px;
+  margin-left: 10px;
+  font-size: 0.8em;
+  font-weight: 500;
+  border: 1px solid #ccc;
+  height: 30px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: absolute;
+  
+}
+
+.selectdiv:after {
+  content: '<>';
+  font: 12px "Consolas", monospace;
+  color: #333;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+    
+  left: 280px;
+  
+  top: 3px;
+  padding: 5px 5px 5px 5px;
+  border-bottom: 1px solid #999;
+  
+  position: absolute;
+  pointer-events: none;
+}
+
+
+/* ------------------------------------------- */
+/*category select checkboxes */
+
+.controls {
+    position: relative;
+}
+
+.category-select {
+    position: absolute;
+    font-size: 0.95em;
+    top: -160px;
+    right: 25px;
+} 
+
+
+.category-select p {
+    margin-bottom: 5px;
+}
+
+input[type="checkbox"] {
+    display:none;
+}
+
+input[type="checkbox"] + label span {
+    display:inline-block;
+    width:13px;
+    height:13px;
+    margin:-1px 4px 0 5px;
+    vertical-align:middle;
+    border: 1px solid #000;
+    cursor:pointer;
+}
+
+
+input[type="checkbox"]:checked + label span {
+    background:url(../images/tick.png) top no-repeat;
+}
+
+input[type="checkbox"] + label {
+    opacity: 0.75;
+    font-weight: 200;
+}
+
+input[type="checkbox"]:checked + label {
+    opacity: 0.95;
+    font-weight: 300;
+}
+
+input[type="checkbox"] + label span#all-checkbox {
+    margin: 0px 4px 2px 5px;       
+}
+
+input[type="checkbox"] + label span#neural-checkbox {
+    background-color: rgba(245, 166, 35, 0.5); 
+}
+
+input[type="checkbox"] + label span#neural-checkbox:hover {
+    background-color: rgba(245, 166, 35, 1);
+}
+
+input[type="checkbox"] + label span#psychological-checkbox {
+    background-color: rgba(141, 113, 178, 0.5);
+}
+
+input[type="checkbox"] + label span#psychological-checkbox:hover {
+    background-color: rgba(141, 113, 178, 1);
+}
+
+input[type="checkbox"] + label span#cardiovascular-checkbox {
+    background-color: rgba(218, 53, 42, 0.5);
+}
+
+input[type="checkbox"] + label span#cardiovascular-checkbox:hover {
+    background-color: rgba(218, 53, 42, 1);
+}
+
+input[type="checkbox"] + label span#cancer-checkbox {
+    background-color: rgba(74, 144, 226, 0.5);
+}
+
+input[type="checkbox"] + label span#cancer-checkbox:hover {
+    background-color: rgba(74, 144, 226, 1);
+}
+
+input[type="checkbox"] + label span#bone-checkbox {
+    background-color: rgba(32, 197, 162, 0.5);
+}
+
+input[type="checkbox"] + label span#bone-checkbox:hover {
+    background-color: rgba(32, 197, 162, 1);
+}
+
+input[type="checkbox"] + label span#other-checkbox {
+    background-color: rgba(114, 114, 114, 0.5);
+}
+
+input[type="checkbox"] + label span#other-checkbox:hover {
+    background-color: rgba(114, 114, 114, 1);
+}
+
+/* ------------------------------------------- */
+/* disease detail infobox */
+.infobox
+{
+    position: relative;
+    border:1px solid #cccccc;
+    padding: 10px;
+    height: auto;
+}
+
+.infobox.Cancer
+{
+    background-color: rgba(74, 144, 226, 0.05);
+}
+
+.infobox.Cardiovascular
+{
+    background-color: rgba(218, 53, 42, 0.025);
+}
+
+.infobox.Bone
+{
+    background-color: rgba(32, 197, 162, 0.05);
+}
+
+.infobox.Other
+{
+    background-color: rgba(114, 114, 114, 0.05);
+}
+
+.infobox.Psychological
+{
+    background-color: rgba(141, 113, 178, 0.1);
+}
+
+.infobox.Neural
+{
+    background-color: rgba(245, 166, 35, 0.025);
+}
+
+#diseaseName {
+    position: absolute;
+    font-weight: 500;
+    font-size: 1.25em;
+    top: 5px;
+    left: 30px;
+    /*margin: 0px 0px 0px 50px;*/
+}
+
+.highlight {
+    position: relative;
+    color: #da352a;
+    margin: 30px 0 10px 20px;
+}
+
+#mainFigure {
+    margin-top: 10px;
+    font-weight: 700;
+    font-size: 1.5em;
+    display: inline;
+}
+
+#mainFigure::after {
+    content: "%";
+}
+
+#source {
+   /* position: absolute; */
+    font-weight: 200;
+    font-size: 0.75em;
+    color: #727272;
+    margin: 10px 0px 0px 20px;
+    /* left: 20;  */     
+}
+
+#source::before {
+    content: "Source: ";
+}
+
+#supportText {
+    display: inline;
+}
+
+#descriptionText {
+    font-weight: 200;
+    margin-left: 20px;
+}
+
+/* ------------------------------------------- */
+/* next prev buttons */
+
+.button {
+    /* position: absolute;
+    top: 280px; */
+    background-color: #ccc; /* Green */
+    border: none;
+    color: white;
+    padding: 5px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 0.8em;
+    margin: 2px 2px;
+    cursor: pointer;
+}
+
+.button.disabled {
+    opacity: 0.05;
+    pointer-events: none;
+}
+
+.button:hover {
+    background-color: #727272; /* Green */
+}
+
+.button#next-btn {
+    position: absolute;
+    top: 0;
+    right: 0;    
+}
+
+.button#prev-btn {
+    position: absolute;
+    top: 0;
+    left: 0; 
+}
+
+/* ------------------------------------------- */
+/* body svg */
+
+#bodymap {
+    width: 100%;
+}
+
+#main-body-div {
+    position: relative;
+    margin-left: 20px;
+    margin-top: 30px;
+}
+
+
+/* ------------------------------------------- */
+/* disease dots */
+
+.body-base {
+    fill:#cccccc;
+    opacity: 0.45;
+}
+
+#all-disease-dots {
+    display: inline;
+}
+
+.disease-dot {
+    cursor: pointer;
+    opacity: 0.35;
+}
+
+.disease-dot:hover {
+    opacity: 1;
+}
+
+.disease-dot.visited:hover {
+    opacity: 1;
+}
+
+.disease-dot.active {
+    opacity: 1;
+    stroke: black;
+}
+
+.disease-dot.visited {
+    opacity: 0.25;
+}
+.disease-dot.visited .outer {
+    stroke: black;
+}
+
+.outer {
+    opacity:0.5;
+}
+
+.psychological {
+    fill:#8d71b2;
+}
+
+.cardiovascular {
+    fill:#da352a;
+}
+
+.neural {
+    fill:#f5a623;
+}
+
+.bone {
+    fill:#20c5a2;
+}
+
+.cancer {
+    fill:#4a90e2;
+}
+
+.other {
+    fill:#727272;
+}
+
+/* -------------------------------------------- */
+/* click me button */
+
+#clickme-text {
+    opacity: 1;
+    font-size: 0.95em;
+    font-style: italic;
+}
+
+#clickme-text.disable {
+    display: none;
+}
+
+#clickme-btn {
+    border: 1px solid red;
+    position: absolute;
+    top: -280px;
+    left: 100px;
+    width: 74px;
+    border-radius: 3px;
+    padding: 3px;
+    text-align: center;
+    font-size: 0.8em;
+    font-style: italic;
+    opacity: 0.75;
+}
+.arrow-right {
+  width: 0; 
+  height: 0; 
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid red;
+    position: absolute;
+    top: 1px;
+    left: 80px;
+    
+}
+
+/* -------------------------------------------- */
+/* SVG image */
+
+#body {
+    z-index: -1;
+}
+
+/* -------------------------------------------- */
+
+@media all and (max-width: 399px) {
+    .category-select {
+        display: none;
+    }
+    
+    .selectdiv select {
+        width: 200px;
+        font-size: 0.7em;
+        font-weight: 400;        
+    }
+    
+    
+    .selectdiv:after {
+      left: 205px;
+      border-bottom: none;
+    }
+
+    
+    /*infobox media query */
+    
+    
+    .highlight {
+        margin: 30px 0 10px 20px;
+    }
+
+    #mainFigure {
+        font-weight: 600;
+        font-size: 0.8em;
+    }
+
+
+    #source {
+        font-size: 0.5em;  
+    }
+
+    #supportText {
+        font-size: 0.8em;
+    }
+
+    #descriptionText {
+        font-size: 0.8em;
+    }
+
+}
+
+@media all and (max-width: 299px) {
+
+    
+    .selectdiv select {
+        width: 150px;     
+    }
+    
+    
+    .selectdiv:after {
+      left: 155px;
+      border-bottom: none;
+    }
+}
+
+@media all and (max-width: 249px) {
+
+    
+    .selectdiv select {
+        width: 100px;     
+    }
+    
+    
+    .selectdiv:after {
+      left: 105px;
+      border-bottom: none;
+    }
+}
+
+/*
+@media all and (max-height: 799px) {
+    #bodymap {
+        width: 80%;
+    }
+}
+
+@media all and (max-height: 699px) {
+    #bodymap {
+        width: 60%;
+    }
+} */
