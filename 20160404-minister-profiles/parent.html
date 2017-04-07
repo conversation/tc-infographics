@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Parent Stub</title>
+  <script type="text/javascript" src="js/pym.js"></script>
+  <style type="text/css">
+    #container {
+      border: 5px dashed red;
+    }
+  </style>
+</head>
+<body>
+  <h1 id="header">Parent Stub</h1>
+  <div id="container">
+    <div id="infographic"></div>
+    <script type="text/javascript">
+      var pymParent = pym.Parent('infographic', './index.html', {});
+
+      var lastPosition;
+      pymParent.onMessage('savePosition', function(){
+        lastPosition = window.pageYOffset || document.documentElement.scrollTop;
+        console.log("saving position as", lastPosition)
+      });
+
+      pymParent.onMessage('revertPosition', function() {
+        console.log("reverting saved postition", lastPosition)
+        document.documentElement.scrollTop = document.body.scrollTop = lastPosition;
+      })
+    </script>
+  </div>
+  <h2 id="header-2">another header</h2>
+  <h2 id="header-3">another header</h2>
+  <h2 id="header-4">another header</h2>
+</body>
+</html>
