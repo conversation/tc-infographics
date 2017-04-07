@@ -462,6 +462,7 @@ function setPortfolioView(selectedPortfolio) {
 // ========================================================================= //
 // DOCUMENT READY FUNCTION
 jQuery(document).ready(function($) {
+    var pymChild = new pym.Child();
 
     // ********************* TABS MENU CLICK *********************
     // TABS CLICK- desktop
@@ -489,11 +490,7 @@ jQuery(document).ready(function($) {
     // ********************* VIEW PORTFOLIO DETAILS CLICK *********************
     jQuery('.profileDetailButton').on('click', function(e)  {
         chosenMinister = jQuery(this).attr('id');
-        //console.log("Portfolio details view - Chosen minister id: " + chosenMinister);
-        
-        // set scroll position
-        scrollPosition = $(document).scrollTop();
-         
+
         // hide profiles list and show chosen minister's details
         $(".minister-list-container").hide();
         $(".minister-portfolio-container").hide();
@@ -501,22 +498,18 @@ jQuery(document).ready(function($) {
 
         //call function to fill out minister profile
         ministerProfileView(chosenMinister, ministerClickInsertID);
-        
-        // set scroll to top
-        $(document).scrollTop(0);
-        //$('body, html', parent.document).animate({ scrollTop: 0 },500);
+
+        pymChild.sendHeight();
+        pymChild.scrollParentToChildPos(0);
         e.preventDefault();
     });
 
     // ********************* MINISTER CLICK *********************
     jQuery('.profile-photo').on('click', function(e)  {
         chosenMinister = jQuery(this).attr('id');
-        //console.log("Chosen minister id: " + chosenMinister);
-        
-        // set scroll position
-        scrollPosition = $(document).scrollTop();
-        //console.log("Profile Detail Scroll Position: " + scrollPosition);
-         
+
+        pymChild.sendMessage('saveScrollPosition');
+
         // hide profiles list and show chosen minister's details
         $(".minister-list-container").hide();
         $(".minister-portfolio-container").hide();
@@ -524,10 +517,9 @@ jQuery(document).ready(function($) {
 
         //call function to fill out minister profile
         ministerProfileView(chosenMinister, ministerClickInsertID);
-        
-        // set scroll to top
-        $(document).scrollTop(0);        
-        //$('body, html', parent.document).animate({ scrollTop: 0 },500);
+
+        pymChild.sendHeight();
+        pymChild.scrollParentToChildPos(0);
         e.preventDefault();
     });
 
@@ -538,9 +530,7 @@ jQuery(document).ready(function($) {
         chosenPortfolio = jQuery(this).attr('id');
         //console.log("Chosen Portfolio: " + chosenPortfolio);
 
-        // set scroll position
-        scrollPosition = $(document).scrollTop();
-        
+
         // hide profiles list and show chosen minister's details
         $(".minister-list-container").hide();
         $(".minister-profile-container").hide();
@@ -570,11 +560,8 @@ jQuery(document).ready(function($) {
         }
 
         // Set scroll position to previous location
-        if(scrollPosition !="") {
-            //$(window).scrollTop(scrollPosition);
-            //$("html,body").scrollTop(scrollPosition);
-            $(document).scrollTop(scrollPosition);
-        }         
+        pymChild.sendHeight();
+        pymChild.sendMessage('revertScrollPosition');
         e.preventDefault();
     });
 
@@ -594,14 +581,10 @@ jQuery(document).ready(function($) {
             $(".minister-profile-container").hide();
             $(".minister-portfolio-container").show();
             setPortfolioView(chosenPortfolio);
-        }        
-        
-        // Set scroll position to previous location
-        if(scrollPosition !="") {
-            //$(window).scrollTop(scrollPosition);
-            //$("html,body").scrollTop(scrollPosition);
-            $(document).scrollTop(scrollPosition);
-        }         
+        }
+
+        pymChild.sendHeight();
+        pymChild.sendMessage('revertScrollPosition');
         e.preventDefault();
     });
 
@@ -612,12 +595,9 @@ jQuery(document).ready(function($) {
 
         $(".minister-list-container").show();
         $(".minister-portfolio-container").hide();
-        
-        // Set scroll position to previous location
-        if(scrollPosition !="") {
-            //$("html,body").scrollTop(scrollPosition);
-            $(document).scrollTop(scrollPosition);
-        }         
+
+        pymChild.sendHeight();
+        pymChild.sendMessage('revertScrollPosition');
         e.preventDefault();
     });
 
@@ -696,6 +676,7 @@ jQuery(document).ready(function($) {
 
         }
         e.preventDefault();
+        pymChild.sendHeight();
     });
 
     // ********************* ANALYSIS EXPAND BUTTON CLICK *********************
@@ -736,11 +717,10 @@ jQuery(document).ready(function($) {
 
             // update instructions
             $("#" + clickID + " .analysisExpandInfo").empty();
-            
-            // move scroll position to top of page
-            //$("#page").scrollTop(0);
-            $("html,body").scrollTop(0);
             $("#" + clickID + " .analysisExpandInfo").append('expand');
+
+            pymChild.scrollParentToChildPos(0);
+            pymChild.sendHeight();
         }
         e.preventDefault();
     });
