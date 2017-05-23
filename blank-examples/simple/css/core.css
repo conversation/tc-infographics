@@ -1,0 +1,14 @@
+
+/* Reset */
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, em, img, samp, strong, b, u, i, center,
+dl, dt, dd, ol, ul, li, table, caption, tbody,
+figure, figcaption, footer, header,
+menu, nav, section, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
