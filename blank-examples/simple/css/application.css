@@ -1,0 +1,13 @@
+body {
+  padding: 10px;
+}
+
+.something-large {
+  background: #EEE;
+  border: 1px solid #DDD;
+  height: 1000px;
+  margin: 2px;
+  line-height: 500px;
+  text-align: center;
+  vertical-align: middle;
+}
