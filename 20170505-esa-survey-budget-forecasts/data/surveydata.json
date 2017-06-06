@@ -1,0 +1,212 @@
+var surveyResults = [
+ {
+   "Fullname": "Paul Frijters",
+   "Response": "Strongly agree",
+   "Confidence": 8,
+   "Comment": "<p>This should indeed happen for two separate reasons. One is that a more independent body will have less pressure to gild the lily and hence whilst they too wont be able to accurately forecast the macro-economy (no-one can do that), at least they wont be too optimistic on average.</p><p>The second reason is that the Parliamentary Budget Office should have something difficult and recurrent to do which increases their expertise, so that they can be asked to do more useful thing in the future, such as to assess the budgetary claims of political parties making election promises, and when assessing major proposals before parliament. The proposal hits both those goals.</p>"
+ },
+ {
+   "Fullname": "Max Corden",
+   "Response": "Strongly agree",
+   "Confidence": 9,
+   "Comment": "<p>I agree with the proposal to follow the UK example.</p>"
+ },
+ {
+   "Fullname": "Brian Dollery",
+   "Response": "Strongly agree",
+   "Confidence": 9,
+   "Comment": "<p>The accuracy of assumptions underpinning budget estimates have consistently been too optimistic. This may be because it serves to suggest that the federal government is addressing budget repair adequately. There is thus a strong case for an independent body to prepare forecasting assumptions.</p>"
+ },
+ {
+   "Fullname": "Alison Booth",
+   "Response": "Strongly agree",
+   "Confidence": 6,
+   "Comment": ""
+ },
+ {
+   "Fullname": "Rana Roy",
+   "Response": "Strongly agree",
+   "Confidence": 9,
+   "Comment": "<p>An independent budget office should help to restore the credibility of our economic forecasts and public confidence therein. Hopefully, it would also help to make the forecasts more accurate. For this last to obtain, we need an informed debate on some of the fundamental assumptions used in these forecasts.</p><p>To take just one example, the continued use of the assumption that nominal and real GDP growth will always revert to “the average” just around the corner and continue at that average thereafter is an assumption that needs serious scrutiny; whilst any attempt at a fresh forecast each year will carry the risk of error, the use of this default assumption more or less guarantees error.</p>"
+ },
+ {
+   "Fullname": "Janine Dixon",
+   "Response": "Strongly agree",
+   "Confidence": 9,
+   "Comment": ""
+ },
+ {
+   "Fullname": "Beth Webster",
+   "Response": "Agree",
+   "Confidence": 9,
+   "Comment": "<p>Generally, the average of multiple independent forecasts are more accurate than one forecast - but in the case of the budget, this can be empirically verified. To do this, Treasury would need to commission several independent expert assessors (including university experts).</p><p>The Treasury would have to make detailed budget data available to independent experts. This would also bring transparency and confidence to the public discussion about budgets and spending.</p>"
+ },
+ {
+   "Fullname": "Jeffrey Sheen",
+   "Response": "Agree",
+   "Confidence": 7,
+   "Comment": "<p>Treasury is more than competent at analysis and forecasts of the Australian economy, but many have the perception that Treasury is affected by ministerial interference. Setting up something like a Parliamentary Budget Office would be good if it was obviously free from any political constraints.</p>"
+ },
+ {
+   "Fullname": "Allan Fels",
+   "Response": "Agree",
+   "Confidence": 8,
+   "Comment": ""
+ },
+ {
+   "Fullname": "Tony Makin",
+   "Response": "Agree",
+   "Confidence": 8,
+   "Comment": "<p>There is a case for transferring ultimate responsibility for the budget forecasts from Treasury to the Parliamentary Budget Office to avoid any suggestion of political interference. \n\nPost GFC, Treasury consistently over-predicted GDP growth reflecting its failure to appreciate how fiscal policy works in open economies like Australia.</p><p> Treasury failed to predict the negative impact of excessive fiscal stimulus and large budget deficits on the real exchange rate and competitiveness, which subsequently contributed to significant job losses in the tradable sector, especially manufacturing. It also neglected the impact of fast-rising public debt on household and business confidence, which subsequently contributed to higher saving and lower private investment.</p><p>That said, Treasury gathers valuable macroeconomic intelligence and should continue to provide key input to official budget forecasts via the Joint Economic Forecasting Group (with the Parliamentary Budget Office as the new chair), along with the Reserve Bank of Australia, the Department of the Prime Minister and Cabinet, the Department of Finance and Administration, and the Australian Bureau of Statistics.</p>"
+ },
+ {
+   "Fullname": "Hugh Sibly",
+   "Response": "Agree",
+   "Confidence": 6,
+   "Comment": "<p>Political debates around the validity of particular economic forecasts are, for the most part, unproductive. This debate is fuelled by claims that Treasury forecasts are distorted by the political requirements of the government.</p><p>The proposed move should help de-politicise the development and discussion of economic forecasts. Hopefully, then, public debate could be more usefully directed at the trade-offs the government (and thus the country) faces when framing budgets, in particular raising revenue and directing spending.<p>"
+ },
+ {
+   "Fullname": "David Butler",
+   "Response": "Agree",
+   "Confidence": 7,
+   "Comment": "<p>I suspect uncertainty in such forecasts is a fact of reality. But if there is any evidence an outside agency could do a better job then I wouldn't have a problem with it.</p>"
+ },
+ {
+   "Fullname": "Garry Barrett",
+   "Response": "Agree",
+   "Confidence": 8,
+   "Comment": "<p>Having an agency at arms length from government should reduce the risk of political interference in the budget forecasting process. This, in turn, has the potential to improve the credibility and accuracy of key forecasts.</p>"
+ },
+ {
+   "Fullname": "Lisa Cameron",
+   "Response": "Uncertain",
+   "Confidence": 6,
+   "Comment": "<p>Treasury has a host of good economic minds. I would not be confident that an independent agency could do a better job, although countering this an independent agency may be under less political pressure.</p>"
+ },
+ {
+   "Fullname": "Doug McTaggart",
+   "Response": "Uncertain",
+   "Confidence": 10,
+   "Comment": "<p>Depends on the motivation. If it is to get better quality -- i.e. more accurate forecasts -- it is doubtful that the private sector will consistently do better. If it is to remove hints of political interference, then perhaps it will be worth it.</p>"
+ },
+ {
+   "Fullname": "Saul Eslake",
+   "Response": "Disagree",
+   "Confidence": 6,
+   "Comment": "<p>With no disrespect to the PBO, there's no reason to think they'd do a better job than Treasury has done of forecasting the major economic parameters required for framing the annual federal budget.</p>"
+ },
+ {
+   "Fullname": "Bruce Chapman",
+   "Response": "Disagree",
+   "Confidence": 7,
+   "Comment": "<p>The issue here concerns the capacity of the officials to make accurate forecasts. I don't think there is any reason to believe that a different body would do a better job than Treasury.</p><p>If there is an inference that Treasury is not \"independent\" this suggests that the institution is prepared to make mistakes for political purposes even though this would tarnish the reputation of the institution, which I find somewhat implausible.</p>"
+ },
+ {
+   "Fullname": "Lin Crase",
+   "Response": "Disagree",
+   "Confidence": 7,
+   "Comment": "<p>The supposition that 'outsourcing' forecasts will lead to better outcomes misses the point. The challenges with public finance relate more to the lack of political will to tackle some of the underlying problems, than any notion that one set of forecasts is superior to another.</p>"
+ },
+ {
+   "Fullname": "James Morley",
+   "Response": "Disagree",
+   "Confidence": 9,
+   "Comment": "<p>It is better if Treasury develops an internal capacity for credible forecasts. This will help guide better policymaking if there is a consistency between what economists sometimes call \"conditional\" and \"unconditional\" forecasts (e.g. <a href=\"https://www.aeaweb.org/articles?id=10.1257/jep.12.2.175\" target=\"_blank\">Diebold, 1998</a>).</p><p>Large discrepancies between the two would provide a check on biased/political influences distorting conditional forecasts of the effects of policy.</p>"
+ },
+ {
+   "Fullname": "Geoffrey Kingston",
+   "Response": "Disagree",
+   "Confidence": 8,
+   "Comment": "<p>There's a lot of useful information impounded in budget forecasts of revenue growth and nominal GDP growth, at least for one year ahead, and notwithstanding the fact of demonstrable room for improvement in forecasting accuracy. For details, see my article with Lance Fisher in the March 2017 issue of the Australian Economic Review.</p><p>The closer I examined Treasury's track record over the last couple of decades, the more I was impressed with the superiority of Treasury methods over simple predictive regressions.</p><p>What the critics fail to show is that they could come up with superior forecasts without any reliance on official ones. I'm not aware of any evidence that the UK 's outsourcing procedure has resulted in more accurate forecasts by the official family in that country.</p>"
+ },
+ {
+   "Fullname": "Deborah Cobb-Clark",
+   "Response": "Disagree",
+   "Confidence": 8,
+   "Comment": ""
+ },
+ {
+   "Fullname": "John Quiggin",
+   "Response": "Disagree",
+   "Confidence": 5,
+   "Comment": "<p>More consistency if fiscal policies are based on Treasury projections, even if these turn out to be wrong.</p>"
+ },
+ {
+   "Fullname": "Harry Bloch",
+   "Response": "Disagree",
+   "Confidence": 8,
+   "Comment": ""
+ },
+ {
+   "Fullname": "John Freebairn",
+   "Response": "Disagree",
+   "Confidence": 9,
+   "Comment": "<p>Economic forecasting is difficult and always with error. No one organisation or person has shown repeated success at being the \"best forecaster\".</p><p>The sooner government and the wider community accept inevitable errors with economic forecasts the better. Current Treasury scenario work should be given greater prominence. There is no evidence that the Treasury in its forecasts is swayed by the wishes of the government.</p><p>In aggregate, there is no evidence that PBO would develop \"better forecasts\" than Treasury. Just another Canberra empire funded by the taxpayer.</p>"
+ },
+ {
+   "Fullname": "Michael Knox",
+   "Response": "Disagree",
+   "Confidence": 8,
+   "Comment": "<p>A better comparison would be the US example of the Congressional Budget Office. This takes its forecasts from a sample of private sector forecasters.</p><p>In Australia the forecasters provide very good aggregate forecasts but they do not provide the granular detail that is required for budget preparation.</p>"
+ },
+ {
+   "Fullname": "Fabrizio Carmignani",
+   "Response": "Disagree",
+   "Confidence": 8,
+   "Comment": "<p>We should find ways to improve Treasury's forecasts rather than outsourcing forecasts to other agencies/offices, which could also make significant mistakes. I also do not believe that outsourcing is necessary to address an issue of 'independence', because the very notion of independence here is vague and controversial.</p><p>This of course does not mean that the forecasts of the Treasury should not be analyzed, discussed and compared with forecasts from other offices or agencies. But, again, this discussion ought to be constructive and help the Treasury improve their forecasting models.</p>"
+ },
+ {
+   "Fullname": "Warwick McKibbin",
+   "Response": "Disagree",
+   "Confidence": 7,
+   "Comment": "<p>The problem is not with Treasury's ability to forecast. A range of forecasts should be used to make it clear how uncertain the future projections are.</p><p>A mix of Treasury and external forecasts would provide a more accurate picture of risks in the budget outlays and revenue assumptions.</p>"
+ },
+ {
+   "Fullname": "Renee Fry-McKibbin",
+   "Response": "Disagree",
+   "Confidence": 10,
+   "Comment": "<p>The Treasury needs to understand the drivers of the forecasts that go into the key variables of the budget so that they can undertake some sensitivity to the budget settings.</p><p>Also, when shocks which cannot be forecast occur as the fiscal year unfolds, the Treasury need to be able to understand how they will affect the budget bottom line. Taking away the forecasting function of the Treasury would inhibit this process.</p>"
+ },
+ {
+   "Fullname": "Kevin Davis",
+   "Response": "Disagree",
+   "Confidence": 6,
+   "Comment": "<p>I'm not familiar with the evidence on whether Treasury forecasts are better or worse than others, and if they are worse the prior question to ask is why - is it inherent biases induced by need to present particular acceptable budget forecasts, lack of adequate resourcing, or use of incorrect models etc.</p>"
+ },
+ {
+   "Fullname": "Abigail Payne",
+   "Response": "Disagree",
+   "Confidence": 7,
+   "Comment": "<p>I think the issue is the notion of outsourcing implies that one group would still be responsible for the forecasts. We know there will be measurement error and/or judgment calls (assumptions) to make when constructing a forecast. We also know that politics can interfere the judgment calls and/or assumptions made.</p><p>To me the question is whether more than one group/organisation should be used to develop a forecast - expecting that in some periods all groups will reach consensus and in other periods groups may differ.</p><p> Critical for giving credibility to any forecast is some \"objective\" measure that best practices are used to develop the forecast.</p>"
+ },
+ {
+   "Fullname": "Gigi Foster",
+   "Response": "Disagree",
+   "Confidence": 7,
+   "Comment": "<p>Accurately forecasting national macroeconomic aggregates for Australia is a difficult job that many private-sector organizations already have an incentive to do. International organizations also try to do it.</p><p>While an argument could be made that these incentives for other players imply that generating official government forecasts in-house is optional, forecasting the country's progress is a natural role for a competent government to take on: it has a public-goods aspect, can inform policy (including the development and refinement of economic measures), and nurtures economic competence within the country's public service.</p><p>Whether to split the forecasting job off from other Treasury responsibilities and give it to a separate government department is a second-order question to which the answer depends on factors like the degree of bureaucratization and the returns to scale and specialization within the public service.</p>"
+ },
+ {
+   "Fullname": "Rodney Maddock",
+   "Response": "Strongly disagree",
+   "Confidence": 9,
+   "Comment": "<p>It is profoundly undemocratic to put 'experts' between the government and the people. The budget is the government's key economic document and it should take responsibility for it.</p>"
+ },
+ {
+   "Fullname": "Julie Toth",
+   "Response": "Strongly disagree",
+   "Confidence": 9,
+   "Comment": "<p>There are several reasons why one might wish to 'outsource' macroeconomic parameter forecasting for federal budget purposes. For example: </p><p>1. Quality of the forecasts. No forecasts are ever perfect. Treasury is not worse than other Australian public or private sector forecasters. Treasury's own analysis of its previous forecasts has found no evidence systemic or quality-related bias. There is a very limited pool of people in Australia with the right skills & experience for this type of work, so the proposition that it could be done better elsewhere is questionable. Outsourcing is unlikely to improve the quality or accuracy.</p><p>2. Independence of the forecasts. If the political independence of Treasury's macroeconomic forecasting is genuinely of concern, then this problem should be identified and rectified within Treasury, not through a 'second-best' outsourcing arrangement.</p><p>3. Cost of providing forecasts. staff costs for an appropriate level of skill & experience are unlikely to be lower outside Treasury than inside it, given the tiny pool of people available in Australia who can do this type of work at the level required.</p>"
+ },
+ {
+   "Fullname": "Stephen King",
+   "Response": "Strongly disagree",
+   "Confidence": 9,
+   "Comment": "<p>The only reason to out source the budget forecasts is if Treasury is unable to do them as well as an external agency. Why could this be the case? There is no reason to believe that an external agency would be more competent at making the forecasts than the Treasury.</p><p>So the only reason to outsource is if Treasury faces another barrier to producing accurate forecasts. If there is another (say political) barrier, then this should be fixed. The problem is not solved by outsourcing.</p>"
+ },
+ {
+   "Fullname": "Matthew Butlin",
+   "Response": "Strongly disagree",
+   "Confidence": 8,
+   "Comment": "<p>The Treasury is the government's chief adviser within the official family and draws on expertise and information from the RBA, ATO, Department of Finance and so on that is not available to external forecasters. In addition it has access to the array of published forecasts of private providers.</p><p>It is highly appropriate that the Treasury is accountable for the economic forecasts used in the budget, and that it has the expertise to do it as well as reasonably possible.</p><p>That said, it would be useful to include a sensitivity analysis in the forecast to key assumptions (e.g. commodity prices, exchange rates, international events and so on) and a comparison with contemporaneous private sector forecasts.</p>"
+ }
+]
