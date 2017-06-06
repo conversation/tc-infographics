@@ -1,0 +1,188 @@
+var surveyResults =[
+ {
+   "Fullname": "Gary Barrett",
+   "Response": "Agree",
+   "Confidence": 5,
+   "Comment": ""
+ },
+ {
+   "Fullname": "Harry Bloch",
+   "Response": "Agree",
+   "Confidence": 8,
+   "Comment": "<p>Australia is suffering the effects of poor planning in the energy sector, especially with regards to the approval of export LNG plants without assurance of sufficient supplies of natural gas. This leaves the country exposed to the ironic position of being a major exporter of gas even though domestic customers are faced with prices far exceeding those paid by customers in gas-importing countries.</p><p> Requiring a substantial proportion of any new gas supply be provided to the domestic market is a second-best solution to this situation and could have some disincentive effect on developing new gas fields (although not if the domestic prices remains above the export price).</p><p> The alternative of doing nothing would jeopardise the international competitiveness of domestic manufacturers who are heavy users of natural gas as a fuel source or feedstock.</p>"
+ },
+ {
+   "Fullname": "Alison Booth",
+   "Response": "Agree",
+   "Confidence": 7,
+   "Comment": "<p>How much is 'some'?</p>"
+ },
+ {
+   "Fullname": "David Butler",
+   "Response": "Agree",
+   "Confidence": 4,
+   "Comment": "<p>While my instinct is to disagree, we have had this policy in WA for a number of years and we have not suffered the supply problems currently afflicting the Eastern States.</p><p>I have no deep knowledge of this policy area however.</p>"
+ },
+ {
+   "Fullname": "Mardi Dungey",
+   "Response": "Agree",
+   "Confidence": 6,
+   "Comment": "<p>The contracts for gas export are certainly proving difficult in maintaining good domestic gas supply at (or around) world price. One way to manage this (at least in the short run) is to mandate that a certain amount be retained for Australian consumption, another would be to buy out some of the export contracts.</p><p>Another might be to invest in infrastructure which allows gas to be easily transported to areas of demand.</p>"
+ },
+ {
+   "Fullname": "Saul Eslake",
+   "Response": "Agree",
+   "Confidence": 6,
+   "Comment": "<p>I think a 'domestic reservations' policy is very much a 'second best' compared with a much better designed domestic market combined with more appropriate resource rent taxation (or royalties) for onshore gas production, and more rational rules governing onshore gas production.</p><p>But since we don't have any of those, the 'second best' may be the best available alternative, given the mounting risks regarding the availability and price of gas to domestic (household and business) gas consumers in eastern Australia."
+ },
+ {
+   "Fullname": "Gigi Foster",
+   "Response": "Agree",
+   "Confidence": 7,
+   "Comment": "<p>What's initially unappealing about this proposal is that it constitutes an intervention in a market that doesn't appear to be exhibiting an obvious market failure. However, there are two reasons to support this policy. The first is that unlike in the case of most protectionist-style policies, the group benefiting from it would be not a small subgroup, but rather all of Australia - anyone who uses natural gas, which is essentially everyone.</p><p>Australian politicians have previously failed to find ways of extracting some of the surplus created by the country's rich natural resources and channeling it towards the people (with the shining example of this failure being the mining tax debacle), and gas reservation constitutes an alternative mechanism for doing basically the same thing.</p><p>Second, the world price of a crucial productive input like natural gas may be affected by things other than \"traditional\" market factors, such as financial speculation on future prices, and protecting Australian consumers from unpredictable price fluctuations in core commodities due to socially unproductive speculation is a pro-social thing for the government to do.</p>"
+ },
+ {
+   "Fullname": "Abigail Payne",
+   "Response": "Agree",
+   "Confidence": 7,
+   "Comment": ""
+ },
+ {
+   "Fullname": "John Piggot",
+   "Response": "Agree",
+   "Confidence": 5,
+   "Comment": ""
+ },
+ {
+   "Fullname": "John Quiggin",
+   "Response": "Agree",
+   "Confidence": 3,
+   "Comment": "<p>Energy policy in Australia is a mess. Prices don't reflect economic or climatic costs. Availability of some low-cost gas would obviously improve the situation here, in particular allowing an adjustment away from coal. I don't know whether the opportunity cost of forgoing overseas sales is accurately reflected by the export price.</p>"
+ },
+ {
+   "Fullname": "Rana Roy",
+   "Response": "Agree",
+   "Confidence": 7,
+   "Comment": "<p>I have not had time to study this question in any depth or do any back-of-the-envelope number-crunching. But my guess is that the probable gains to the winners from the proposed action (the consumer surplus gains from lower prices; the avoidance of industrial shut-downs and bankruptcies and redundancies; the avoidance of deaths from hyperthermia; etc., etc.) will outweigh the probable costs to the losers (a reduction in the flow of economic rent to the monopolies in question; a reduction in the vicarious pleasure that we doubtless experience in witnessing the ever-greater enrichment of the said monopolies; etc., etc.).</p><p>The only caveat I would enter here is the risk of unintended consequences: hence, given that I have not had time to study the question in depth, I am unable to write \"strongly agree\" or give my answer a 90% confidence rating.</p>"
+ },
+ {
+   "Fullname": "Jeffrey Sheen",
+   "Response": "Agree",
+   "Confidence": 7,
+   "Comment": ""
+ },
+ {
+   "Fullname": "Matthew Butlin",
+   "Response": "Uncertain",
+   "Confidence": 5,
+   "Comment": "<p>Ultimately economic efficiency is served by pricing the gas at its opportunity cost - the international price. Currently the internal price is said to be above this level driven by an excess domestic demand over available domestic supply arguably due to a downward spike in supply - indicating a significant inefficiency. Reservations coupled with a tax to achieve the international price for gas is an option.</p>"
+ },
+ {
+   "Fullname": "Bruce Chapman",
+   "Response": "Uncertain",
+   "Confidence": 9,
+   "Comment": ""
+ },
+ {
+   "Fullname": "Joaquin Vespignani",
+   "Response": "Uncertain",
+   "Confidence": 6,
+   "Comment": "<p>As a short term strategy may be good, however in the long run this restrictions produce market inefficiencies.</p>"
+ },
+ {
+   "Fullname": "Beth Webster",
+   "Response": "Uncertain",
+   "Confidence": 5,
+   "Comment": "<p>Australian gas producers are preferencing export markets because they can get contracts with certain prices. If we, the Australian consumer, want certainty over our gas supplies, we also need to offer these contracts. Offering these contracts will also give companies the confidence to invest in new gas fields. Offering these contracts will not solve our problems in the short term but is a longer term solution.</p>"
+ },
+ {
+   "Fullname": "Peter Abelson",
+   "Response": "Disagree",
+   "Confidence": 7,
+   "Comment": "<p>The proposed regulatory solution is third best. The best ways are to introduce peak pricing of power to manage energy demand and consistent carbon pricing policy to encourage renewables and guide investment by other possible energy sources.</p>"
+ },
+ {
+   "Fullname": "Kevin Davis",
+   "Response": "Disagree",
+   "Confidence": 6,
+   "Comment": ""
+ },
+ {
+   "Fullname": "Janine Dixon",
+   "Response": "Disagree",
+   "Confidence": 5,
+   "Comment": "<p>The east coast, until recently physically isolated from world gas markets, has long had the cheap gas from Bass Strait that underpins manufacturing activity and provides heating to households. Victorians in particular have enjoyed gas prices well below world prices for many decades. Now that we have the facilities to export gas, market economics suggests that Victorians will need to pay the higher world price for gas.</p><p>A complete transition to world gas prices may be prevented by a domestic reservation policy, but it will come at a cost. Kelly Neill and colleagues at UWA find that the gas reservation policy in Western Australia causes a deadweight loss, diverting gas to relatively low-value uses. Yet it would be unwise to allow a sudden, market-driven increase in gas prices without some policy response. The transition needs to be carefully managed as there will be winners and losers. Foreign-owned corporations extracting gas for export unambiguously contribute to GDP and boost the terms of trade.</p><p>However, not all of the contribution to GDP carries over into national income. No discussion of the gas market is complete without mentioning royalties. Royalty revenue (from the PRRT) should be used to help manufacturers and low-income households adjust to higher gas prices. This will require a strong commitment from government to collect royalties and company taxes from the gas extraction companies, otherwise the overwhelming winners will be non-resident shareholders.</p>"
+ },
+ {
+   "Fullname": "Uwe Dulleck",
+   "Response": "Disagree",
+   "Confidence": 9,
+   "Comment": "<p>This type of intervention can only work in the short-term. For the long-term smarter regulation is needed to avoid ending up (dis-)favoring one source of energy over another.</p>"
+ },
+ {
+   "Fullname": "Lata Gangadharan",
+   "Response": "Disagree",
+   "Confidence": 8,
+   "Comment": "<p>Sounds like a protectionist policy which is not great. If energy reserves are low then markets may figure out how to use the scarce resources appropriately and also alternatives such as renewable resources would enter to reduce scarcity.</p>"
+ },
+ {
+   "Fullname": "Geoffrey Kingston",
+   "Response": "Disagree",
+   "Confidence": 7,
+   "Comment": "<p>Like other providers of goods and services, gas producers should be free to sell as much as they want, and on the best terms they can get. What is needed in the market for natural gas is fewer bans on exploration. If farmers with land above deposits could be cut in on (say) 10% of the profits, that would weaken the lobby against exploration.</p>"
+ },
+ {
+   "Fullname": "Michael Knox",
+   "Response": "Disagree",
+   "Confidence": 8,
+   "Comment": "<p>The problem seems to be the supporting legislation for the Renewable Energy Target. This subsidises wind and solar energy but not gas or coal.</p><p>The renewable energy target nationally needs to be frozen in place. Otherwise the current crisis will get worse and worse.</p><p> The moratorium for gas exploration in some states needs to be lifted.</p><p>Farmers need to be rewarded for gas found on their farms in all states as they are in Queensland.</p><p> Gas needs to be treated as the low emission fuel source that it is.</p>"
+ },
+ {
+   "Fullname": "Tony Makin",
+   "Response": "Disagree",
+   "Confidence": 8,
+   "Comment": "<p>World gas prices have risen due to higher global demand for cleaner energy sources. Australian gas prices need to reflect this market reality. Higher world prices provide an incentive for greater exploration. This could lead to increased supply, which in turn would reduce upward pressure on gas prices.</p>"
+ },
+ {
+   "Fullname": "Hugh Sibly",
+   "Response": "Disagree",
+   "Confidence": 7,
+   "Comment": ""
+ },
+ {
+   "Fullname": "John Freebairn",
+   "Response": "Strongly disagree",
+   "Confidence": 8,
+   "Comment": "<p>Over the many years of the lives of gas projects market forces are more likely to select quantities to maximise OZ wellbeing than governments. The real world of the future will be one of changes in domestic gas supply, domestic demand and export demand, and of course prices, and there is much uncertainty about these variables.</p><p>Almost certainly, government choices of the reservation gas quantity for the domestic market will result in a mixture of large effective subsidies/taxes which misallocate gas resources.</p>"
+ },
+ {
+   "Fullname": "Stephen King",
+   "Response": "Strongly disagree",
+   "Confidence": 10,
+   "Comment": "<p>There is a short term problem with gas supply in Australia as we adjust from a domestic market insulated from the world market, to a market where price is set by the export price. The transition is involving significant pain for some businesses. However, a gas reservation policy (like that in place in WA) makes no sense as a solution. First, unless the government was going to make the policy retrospective, it would only apply to future gas developments. These will not occur until the current problem is history.</p><p> If the federal government did make the policy retrospective then it will be an expost imposition on the gas field developers. The amount of gas reserved for domestic use has to be sufficient to set the domestic price below export parity if the reservation policy is to have any effect in the longer term. So it will lower the price of the gas sold domestically compared to the export parity price. Gas sellers will have to bear the loss - a great example of sovereign risk.</p><p>Second, even if there was a long term problem, a reservation policy is a poor policy to help ensure the long term viability of businesses that have high demands for carbon intensive fuels like gas. If the government really wants to assist these manufacturers in the long term then it should use a direct, transparent subsidy - not a hidden fuel subsidy. Of course, why the government would actually want to subsidise these high carbon polluting industries is another question.</p>"
+ },
+ {
+   "Fullname": "Rodney Maddock",
+   "Response": "Strongly disagree",
+   "Confidence": 8,
+   "Comment": "<p>There are two separable issues. Australia is now linked to the world gas market and that will result in some permanent rise in domestic prices. Since it is permanent it is best that households and businesses are allowed to adjust to the new reality. In the short run however, some firms have committed to export volumes they do not have.</p><p>This is temporarily forcing some local prices above the world prices as firms bid for volumes to export. It would be better if they bought gas on the world market to meet their offshore contracts rather than forcing local prices up unnecessarily. The short run spike has the potential to cause significant short term damage especially to the manufacturing industry. Reserving gas for local uses will create a long term distortion if it keeps domestic prices below world prices.</p>"
+ },
+ {
+   "Fullname": "Flavio Menezes",
+   "Response": "Strongly disagree",
+   "Confidence": 9,
+   "Comment": "<p>A gas reservation policy will tax gas exports and subsidise domestic consumption. While a small export tax may make sense if a country has 'market power', and subsidies may make sense if they are 'correcting' some distortion, this is not the case for gas exports. Such a policy would reduce welfare by penalising investment and distorting consumption.</p>"
+ },
+ {
+   "Fullname": "James Morley",
+   "Response": "Strongly disagree",
+   "Confidence": 10,
+   "Comment": ""
+ },
+ {
+   "Fullname": "Julie Toth",
+   "Response": "Strongly disagree",
+   "Confidence": 8,
+   "Comment": "<p>Australia's energy markets face a wall of inter-related problems at present, in electricity and in gas. Inconsistent, uncoordinated and heavily politicised policy decisions over the past decade have taken a heavy toll. For gas suppliers, there is little incentive to invest and grow beyond what is needed to meet current contracts. Growth in gas supply is also constrained by regulatory restrictions on where, how and who can explore and extract gas.</p><p>For industrial gas customers, this is creating problems with the stability, price and tenor of contracts on offer. Those that can substitute electricity for gas are trying to do so (e.g. as an onsite energy source for ovens or other equipment), but some industrial customers need gas as an input rather than an energy source, so this option isn't open to them.</p><p>Another layer of bad policy that artificially restricts the gas market is unlikely to help resolve the bottlenecks and constraints. Trade restrictions are almost always a bad idea, but in the absence of stronger growth in local gas supplies, federal and state governments should think carefully before approving any expansions or new LNG export facilties. More detail on recent business responses to Australia's gas and energy supply problems is documented <a href='http://cdn.aigroup.com.au/Reports/2017/Energy_shock_report_Feb2017.pdf' target='_blank'>here</a>.</p>"
+ }
+]

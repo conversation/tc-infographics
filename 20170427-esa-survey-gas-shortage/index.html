@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html id="doc">
+<head>
+<meta charset="UTF-8">
+<title>Monash ESA Survey</title>
+<link href="css/survey-main-style.css" rel="stylesheet" type="text/css">
+
+<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>   
+<script type="text/javascript" src="js/survey-main-script.js"></script>
+<script type="text/javascript" src="js/pym.js"></script>    
+</head>
+<body id="page">
+    
+    <!-- ------------- STRONGLY AGREE ---------------------- -->
+    <div id='surveyResults'>
+
+    </div>
+    
+ <!-- 
+
+        <div class='responseButton stronglyAgree'><img class="icon" src="images/Kevin-Davis.jpg"><div class="buttonItems"><span class="heading">Kevin Davis</span><span class="response">Strongly Agree</span><span class='expandButton expandSymbol'>+</span><span class='expandButton expandText'>expand</span></div></div>
+        <div class='responseText'>
+           <p>The issue should not be restricted to houses - in fact to do so would probably introduce other types of distortions. Rather, a return to full taxation of real capital gains would make sense. The practical problem is whether/how past unrealised capital gains could/should be grandfathered.</p>            
+            <div class='confidence'>
+                <ul>
+                    <li><span class='label'>Confidence:</span><span class='value'>10</span></li>
+                </ul>
+            </div>            
+            <div class="bottomCloseBtn">&uarr; Close</div> 
+        </div>
+
+-->
+
+    
+    <script>
+        var pymChild = new pym.Child({ polling: 500 });
+    </script>
+    
+    <!-- include data -->
+    <script type="text/javascript" src="data/surveydata.json"></script>  
+</body>
