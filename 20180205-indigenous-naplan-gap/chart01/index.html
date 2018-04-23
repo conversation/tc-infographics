@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Closing the gap in Indigenous literacy and numeracy</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main-style.css">
+    <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
+      <script type="text/javascript" src="js/pym.min.js"></script>
+      
+  </head>
+  <body>
+    <header>
+    </header>
+
+    <div class="container" style="margin-top: 5px;">
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Numeracy 
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                <button class="dropdown-item" id="Numeracy" type="button">Numeracy</button>    
+                <button class="dropdown-item" id="Reading" type="button">Reading</button>
+                <button class="dropdown-item" id="Writing" type="button">Writing</button>
+                <button class="dropdown-item" id="Spelling" type="button">Spelling</button>
+                <button class="dropdown-item" id="Grammar" type="button">Grammar</button>
+            </div>  
+        </div> <!-- dropdown menu -->
+        
+        <div class="content-images">
+            <img class="active" id="numeracy-img" src="images/National_Numeracy.jpg" alt="Numeracy"/>
+            <img id="reading-img" src="images/National_Reading.jpg" alt="Reading"/>
+            <img id="writing-img" src="images/National_Writing.jpg" alt="Writing"/>
+            <img id="spelling-img" src="images/National_Spelling.jpg" alt="Spelling"/>
+            <img id="grammar-img" src="images/National_Grammar.jpg" alt="Grammar"/>            
+        </div>
+
+        
+    </div><!-- content -->
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main-script.js"></script>
+      
+        <script>
+            var pymChild = new pym.Child({ polling: 500 });
+        </script>       
+  </body>
+</html>

@@ -1,0 +1,11 @@
+img {
+    width: 100%
+}
+
+.content-images img {
+    display: none;
+}
+
+.content-images .active {
+    display: inline-block;
+}
