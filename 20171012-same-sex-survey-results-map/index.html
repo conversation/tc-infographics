@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Same-sex marriage survey results</title>
+    
+<link href="css/leaflet.css" rel="stylesheet" type="text/css">    
+<link href="css/main-style.css" rel="stylesheet" type="text/css">    
+<script type="text/javascript" src="lib/leaflet.js"></script>
+<script src="lib/underscore.min.js"></script>    
+<script type="text/javascript" src="lib/pym.min.js"></script>     
+  
+  
+</head>
+  <body id="page">
+        <div class="dropdown">
+          <button id="zoomtobtn" type="button" class="dropbtn">Cities ></button>
+          <div id="myDropdown" class="dropdown-content">
+            <div id="melbourne">Melbourne</div>
+            <div id="sydney">Sydney</div>
+            <div id="brisbane">Brisbane</div>
+            <div id="darwin">Darwin</div>
+            <div id="perth">Perth</div>
+            <div id="adelaide">Adelaide</div>
+            <div id="hobart">Hobart</div>
+            <div id="australia"> -- Reset zoom -- </div>
+          </div>
+        </div>
+
+<!--
+    <div class="show-hide-buttons">
+        <div id="showLegendBtn" class="active">Show key</div>
+        <div id="hideLegendBtn">Hide key</div>
+    </div>
+-->      
+      <script src='lib/leaflet-omnivore.min.js'></script>
+      <!-- <script src='//api.tiles.mapbox.com/mapbox.js/plugins/leaflet-omnivore/v0.3.1/leaflet-omnivore.min.js'></script> -->
+      
+      <div id="map"></div>
+        
+        <script type="text/javascript" src="lib/papaparse.min.js"></script>
+        <script type="text/javascript" src="lib/jquery-1.11.3.min.js"></script> 
+        <script type="text/javascript" src="js/map-script.js"></script>
+        <script>
+            var pymChild = new pym.Child({ polling: 500 });
+        </script> 
+    </body>
+</html>
+
+        
+
+        
+
+
