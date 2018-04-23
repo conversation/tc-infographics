@@ -1,0 +1,152 @@
+var surveyResults = [
+ {
+   "Fullname": "Stephen King",
+   "Response": "Agree",
+   "Confidence": 8,
+   "Comment": "<p>To answer this question it is necessary to look at the Finkel Report and see what the Panel was trying to achieve.</p><p>First, the alternative schemes the Panel considered are just for electricity generation - so we are not talking all sources of carbon emissions in an economy wide scheme. </p><p>Second, it is important to recognise that the CET scheme and the alternative EIS scheme looked at in the Report - as with all schemes that are based on a quantity path of carbon emissions - can get to the same level of emissions over time, but with different costs. As the Report notes (p.95) \"[b]oth an EIS and a CET can also be designed to achieve a set emissions reduction target, though they get there in different ways\".</p><p>If we are looking at economic costs and incentives then the EIS is clearly superior in theory to the CET scheme for the reason noted in the Report. The CET is asymmetric. \"In the long-term, the CET scenario saw more electricity produced by brown coal than the EIS scenario because there is no penalty for high emissions generators\" (p.92). The EIS 'punishes' higher emitting sources of generation and 'rewards' lower emitting generators. So is close to a Pigouvian tax. The CET does not do this but simply 'rewards' generators who have emissions below a certain threshold. So the EIS will provide better incentives to reduce emissions in the least cost way.</p><p>If the only criteria for a 'preferable' scheme was reducing carbon emissions from electricity generation at the lowest economic cost, the EIS would win over the CET.</p><p>But this is not the only criteria. The additional criteria, as the Report makes clear, is workability and (implicitly) the likelihood of having the scheme implemented via a political process.</p><p>As the Report states on p.96: \"The Panel notes that many stakeholders have expressed strong support for an EIS. The Panel also notes that to date the Australian Government has ruled out implementing an EIS\".</p><p>In other words, an EIS may be a well-supported, efficient and effective scheme, but it would be politically dead in the water if it was recommended. Add on to this the ability to build a CET scheme on the current RET scheme, so a CET is relatively easy to implement, and the Report, in Recommendation 3.2, \"recommends a Clean Energy Target be adopted\".</p><p>So is the CET scheme preferable to the alternatives? Yes, if the objective is to actually get a working and reasonably efficient emissions reduction scheme working for electricity generation in the NEM. It is not the best scheme that economists could design, but it is the one most likely to be implemented.</p>"
+ },
+ {
+   "Fullname": "Harry Bloch",
+   "Response": "Agree",
+   "Confidence": 7,
+   "Comment": "<p>A major advantage of the mandatory certificate scheme is that it is likely to encourage investment in renewable energy generation. Both retailers and energy suppliers will have incentives to enter into long-term contracts for the supply of renewable energy sufficient to meet the mandatory certificate requirements.</p><p>If the terms on offer for renewable energy and more favourable than those available for non-renewable energy, retailers have the option to contract for more than the mandated requirements.</p><p>Uncertainty about the future price of electricity under possible emissions taxes or cap and trade schemes are contributing to the current negative investment climate for energy production from both renewable and non-renewable sources.</p><p>This adds to the negative impact on investment from the political impasse regarding the adoption of a sustainable policy for emissions control.</p>"
+ },
+ {
+   "Fullname": "Michael Knox",
+   "Response": "Agree",
+   "Confidence": 7,
+   "Comment": "<p>The question is wrong. The choice is between the Finkel System and the current highly dysfunctional state based renewable energy target.</p><p>The alternative of an internationally functioning Cap and Trade system including China and India might be better in theory. However repeated attempts over more than 20 years have been unable to construct such a market in practice.</p>"
+ },
+ {
+   "Fullname": "Jeffrey Sheen",
+   "Response": "Agree",
+   "Confidence": 7,
+   "Comment": ""
+ },
+ {
+   "Fullname": "Bruce Chapman",
+   "Response": "Uncertain",
+   "Confidence": 10,
+   "Comment": ""
+ },
+ {
+   "Fullname": "Paul Frijters",
+   "Response": "Uncertain",
+   "Confidence": 7,
+   "Comment": "<p>Climate change is of course a reality, but I have argued for many years now that emission trading schemes and taxes are not going to help. We should be preparing to adapt to a different climate, with the main realistic hope for reducing the severity of climate change being the advent of low-emission energy that is truly cheaper than high-emission energy.</p><p>We should thus set prizes for technological breakthroughs, where many countries can contribute to the prize pot. Paying for what we want (proven new technology) is a much better way of providing incentives for research than any tinkering with emissions or emission costs.</p><p>If we're serious about truly reducing our effects on world emissions, banning coal exports is far, far, far more effective than all this domestic electricity nonsense.</p>"
+ },
+ {
+   "Fullname": "John Quiggin",
+   "Response": "Uncertain",
+   "Confidence": 6,
+   "Comment": "<p>All of these schemes are roughly equivalent. The LET has the limitation that it is specific to electricity, but it is a price based policy.</p><p>The only thing that matters is finding a proposal that the current government is willing to accept. The Finkel proposal seemed like the most promising option in this respect, but it was rejected by the climate science denialists who dominate the government, just like everything else.</p><p>Nevertheless, it may play a role in the future, as a basis for consensus after the current government is replaced.</p>"
+ },
+ {
+   "Fullname": "Margaret Nowak",
+   "Response": "Uncertain",
+   "Confidence": 6,
+   "Comment": "<p>Pricing, assuming it is possible to arrive at the cost of the externality and that a pricing solution is political feasibility, would appear to be the first best option.</p><p>However, on this particular issue, first best options are not feasible and, without serious modelling, coming to a decision on which of the alternatives would provide the next best option is not clear.</p>"
+ },
+ {
+   "Fullname": "Joaquin Vespignani",
+   "Response": "Uncertain",
+   "Confidence": 6,
+   "Comment": ""
+ },
+ {
+   "Fullname": "Ken Clements",
+   "Response": "Disagree",
+   "Confidence": 10,
+   "Comment": ""
+ },
+ {
+   "Fullname": "John Freebairn",
+   "Response": "Disagree",
+   "Confidence": 9,
+   "Comment": "<p>Pollution can be reduced by changing decisions in the production of electricity and decisions on the use of electricity, including energy intensity and mix of energy intensive versus extensive products.</p><p>Finkel proposal and emissions tax roughly similar in cost effective reduction of pollution intensive generation methods. But, the greater price flow-through effect for emissions tax means equality of marginal abatement costs across decisions options available to electricity users as well as electricity generators; Finkel proposal will not incentivise many of the low cost electricity user decision changes.</p><p>Further, the government revenue windfall gain of an emissions tax can be recycled as lump sum compensation for the higher electricity prices to maintain distributional equity, e.g. increases of social security payments and target reductions in marginal income tax rates.</p>"
+ },
+ {
+   "Fullname": "Flavio Menezes",
+   "Response": "Disagree",
+   "Confidence": 8,
+   "Comment": "<p>Cap and trade results in finer price signals. However, the gains of a cap and trade scheme over a CET are of second order compared to inaction and the uncertainty around climate change policy.</p>"
+ },
+ {
+   "Fullname": "Julie Toth",
+   "Response": "Disagree",
+   "Confidence": 8,
+   "Comment": "<p>The Finkel Review is to be highly commended and strongly supported. It made strong recommendations in the face of a difficult political environment.</p><p>Finkel's recommendation of a technology-neutral 'clean energy target' is a pragmatic and openly 'second-best' policy response. It was necessary because the 'first-best' policies (an emissions tax or emissions trading system) are not possible in the current political environment.</p><p>Finkel's recommendation is preferable to doing nothing but it is not preferable to an emissions tax or emissions trading system.</p>"
+ },
+ {
+   "Fullname": "Tony Makin",
+   "Response": "Disagree",
+   "Confidence": 8,
+   "Comment": "<p>The original carbon tax was preferable to the proposed regulatory solution in the Finkel Review, although was set far too high in the first instance.</p><p>As an excellent example of a Pigouvian tax, it would have operated via the price system to alter production and consumption patterns, at the same time generating revenue that could have alleviated federal budgetary pressures.</p>"
+ },
+ {
+   "Fullname": "Alison Booth",
+   "Response": "Disagree",
+   "Confidence": 8,
+   "Comment": "<p>Where the goal is to limit or reduce carbon emissions, the mandatory certificate scheme is a second best alternative to an emissions tax or a cap and trade scheme, both of which are far superior solutions to the problems of how to reduce carbon emissions.</p><p>However, the politics of the situation in Australia are unfortunately currently unfavourable to either the emissions tax or the cap and trade scheme.</p><p>In this situation, it may well be desirable to have the mandatory certificate scheme rather than the short-sighted situation of no scheme.</p>"
+ },
+ {
+   "Fullname": "Uwe Dulleck",
+   "Response": "Disagree",
+   "Confidence": 8,
+   "Comment": ""
+ },
+ {
+   "Fullname": "Saul Eslake",
+   "Response": "Disagree",
+   "Confidence": 7,
+   "Comment": "<p>I support a 'conventional' approach to the pricing of carbon emissions, i.e. a carbon tax or a cap-and-trade scheme.</p><p>However, since it is clear that the current government has no appetite for introducing such an arrangement, the emissions intensity scheme proposed by Finkel is preferable to doing nothing at all.</p>"
+ },
+ {
+   "Fullname": "Geoffrey Kingston",
+   "Response": "Disagree",
+   "Confidence": 7,
+   "Comment": "<p>If the intention is to moderate emissions of carbon dioxide, then a simple Pigouvian-style tax on emissions is far superior, as has been known since pollution problems were first analysed two or three generations ago.</p>"
+ },
+ {
+   "Fullname": "Lin Crase",
+   "Response": "Strongly disagree",
+   "Confidence": 9,
+   "Comment": "<p>Cap and trade remains the preferred option on economic grounds, although the politics of energy generation in this country makes a first-best solution remote.</p>"
+ },
+ {
+   "Fullname": "Mardi Dungey",
+   "Response": "Strongly disagree",
+   "Confidence": 9,
+   "Comment": "<p>Directly pricing the externality is more economically efficient than any workaround scheme. Energy security is critical to both growth and civil functioning (for those who doubt that would be well advised to watch the 2015 documentary American Experience: Blackout).</p><p>The problems of compensation, effective communication to the public and the industry can be overcome, but they need effort and willingness to engage with difficult issues. Ultimately what the consumers and industry want is reliable, least cost power - where that least cost takes into account the properly priced externalities.</p><p>Customers who are off-grid, social services provided when networks are not well-funded by usage charges, renewables, non-synchronicity of newer power sources and upgrades to existing infrastructure are all a part of the necessary points of discussion.</p><p>We need to get to grip with the market design and market failures here - these are not easily solved and involve complex interaction between the technical and social sciences sides of power generation.</p><p>Rushing will not help, but neither will delaying dealing with the difficult issues.</p>"
+ },
+ {
+   "Fullname": "Rana Roy",
+   "Response": "Strongly disagree",
+   "Confidence": 9,
+   "Comment": "<p>I am unaware of any compelling argument or evidence to suggest that \"conventional approaches to the pricing of externalities\" - to wit, Pigouvian taxes designed to align prices to marginal social costs – have been superseded by new and better instruments.</p><p>The findings in the OECD study, Effective Carbon Prices, and in every relevant update in the OECD environmental policy database, demonstrate that the various alternative instruments – feed-in tariffs and other such subsidies for renewables, regulatory targets and quotas, tradeable renewables certificates – are more costly by orders of magnitude than either broad-based taxes on GHG emissions or GHG emissions trading systems.</p><p>Indeed, this search for unconventional instruments has imposed not only a high resource cost in terms of euros/dollars per tonne of CO2 saved but also unintended environmental and social costs such as the ethanol fiasco in the United States, the shift from less-polluting petrol vehicles to more-polluting diesel vehicles across the world, and here and now a shift to diesel generators for electricity production in South Australia.</p>"
+ },
+ {
+   "Fullname": "Warwick McKibbin",
+   "Response": "Strongly disagree",
+   "Confidence": 9,
+   "Comment": "<p>I assume that the question is about a Clean Energy Standard (CES) in electricity generation versus an economy wide tax or cap and trade system.</p><p>An economy wide approach will get the same emissions reductions at a much lower price or much larger reductions in emissions at the same price.</p><p>If the question is actually about A CES in electricity versus and cap and trade in electricity then our research on the US shows that there is not much difference in the cost or effectiveness. This is likely true in Australia as well.</p>"
+ },
+ {
+   "Fullname": "James Morley",
+   "Response": "Strongly disagree",
+   "Confidence": 8,
+   "Comment": "<p>This proposal sounds inefficient compared to a Pigouvian tax or Cap and Trade.</p>"
+ },
+ {
+   "Fullname": "Peter Abelson",
+   "Response": "Strongly disagree",
+   "Confidence": 8,
+   "Comment": ""
+ },
+ {
+   "Fullname": "Gigi Foster",
+   "Response": "Strongly disagree",
+   "Confidence": 7,
+   "Comment": "<p>The rationalisation provided in the Finkel review for adopting a certificate-based scheme rather than some other means of market intervention towards lowering emissions due to electricity generation does not convince me that the authors fully understand the alternative market-based mechanisms of achieving emissions reductions.</p><p>It is possible that the institutional history of the Australian electricity sector and/or the ambient sophistication of its players would make another type of scheme tricky to implement in this country, but a convincing economic case for why a certificate-based scheme would be easier to implement is not made in the report.</p><p>Political arguments are offered instead - to quote from the report: \"The Panel notes that many stakeholders have expressed strong support for an EIS [emissions incentive scheme, the primary alternative to a certificate-based scheme that the report considers]\".</p><p>The Panel also notes that to date the Australian Government has ruled out implementing an EIS.\"</p><p>In general, economic logic tends to favour interventions to account for externalities that rely less on regulation and (costly) local enforcement, and more on creating an institutional backdrop for market activity that gives rise to incentives that will work all by themselves at the local level with minimal (costly) local monitoring and enforcement.</p>"
+ }
+]

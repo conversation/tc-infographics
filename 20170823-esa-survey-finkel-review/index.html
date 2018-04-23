@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html id="doc">
+<head>
+<meta charset="UTF-8">
+<title>Monash ESA Survey</title>
+<link href="css/survey-main-style.css" rel="stylesheet" type="text/css">
+
+<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>   
+<script type="text/javascript" src="js/survey-main-script.js"></script>
+<script type="text/javascript" src="js/pym.js"></script>    
+</head>
+<body id="page">
+    
+    <div id='surveyResults'>
+
+    </div>
+    
+    
+    <script>
+        var pymChild = new pym.Child({ polling: 500 });
+    </script>
+    
+    <!-- include data -->
+    <script type="text/javascript" src="data/surveydata.json"></script>  
+</body>
